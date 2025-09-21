@@ -2,13 +2,14 @@
   <div class="app">
     <header class="site-header">
       <nav class="container nav">
-        <a class="brand" href="/">Elite ParkWash</a>
+        <RouterLink class="brand" to="/" aria-label="Elite Park Car Wash home">
+          <img class="brand-logo" src="/logo.png" alt="Elite Park Car Wash logo" />
+        </RouterLink>
         <button class="menu" @click="isOpen=!isOpen" aria-label="Toggle menu"></button>
-        <ul :class="[''links'', { open: isOpen }]">
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/services">Services</RouterLink></li>
-          <li><RouterLink to="/corporate">Corporate</RouterLink></li>
-          <li><RouterLink to="/contact">Contact</RouterLink></li>
+        <ul :class="['links', { open: isOpen }]">
+          <li><RouterLink to="/business-parks">Business Parks</RouterLink></li>
+          <li><RouterLink to="/auto-detailing">Auto Detailing</RouterLink></li>
+          <li><RouterLink to="/bookings">Bookings</RouterLink></li>
         </ul>
       </nav>
     </header>

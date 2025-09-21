@@ -1,0 +1,1 @@
+﻿Add your logo image as public/logo.png (transparent PNG recommended)
