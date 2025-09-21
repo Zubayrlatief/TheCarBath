@@ -3,7 +3,7 @@
     <header class="site-header">
       <nav class="container nav">
         <RouterLink class="brand" to="/" aria-label="Elite Park Car Wash home">
-          <img class="brand-logo" src="/logo.png" alt="Elite Park Car Wash logo" />
+          <div class="brand-logo">Elite Park Car Wash</div>
         </RouterLink>
         <button class="menu" @click="isOpen=!isOpen" aria-label="Toggle menu"></button>
         <ul :class="['links', { open: isOpen }]">
