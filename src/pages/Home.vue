@@ -1,9 +1,13 @@
 ﻿<template>
   <div class="home">
     <section class="hero">
+      <div class="hero-background">
+        <img src="/hero-bg.jpg" alt="Professional car wash service" class="hero-image" />
+        <div class="hero-overlay"></div>
+      </div>
       <div class="hero-content">
         <h1>Professional Car Wash Services for Business Parks</h1>
-        <p>Elite Park Car Wash provides premium car wash and detailing services for business parks and corporate clients.</p>
+        <p>The Car Bath provides premium car wash and detailing services for business parks and corporate clients.</p>
         <div class="hero-buttons">
           <RouterLink to="/business-parks" class="btn btn-primary">Business Parks</RouterLink>
           <RouterLink to="/auto-detailing" class="btn btn-secondary">Auto Detailing</RouterLink>
@@ -42,22 +46,61 @@
 
 <style scoped>
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  height: 100vh;
   color: white;
-  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 0 2rem;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .hero-buttons {
@@ -78,23 +121,28 @@
 
 .btn-primary {
   background: #fff;
-  color: #667eea;
+  color: #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
   background: #f8f9fa;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .btn-secondary {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary:hover {
   background: #fff;
-  color: #667eea;
+  color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .services-preview {
@@ -155,12 +203,20 @@
 
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
   }
   
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .hero-content {
+    padding: 0 1rem;
   }
 }
 </style>
