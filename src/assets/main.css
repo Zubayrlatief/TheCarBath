@@ -8,7 +8,10 @@ a:hover { text-decoration: underline }
 .site-header { position: sticky; top:0; background: rgba(10,10,10,.9); backdrop-filter: blur(6px); border-bottom: 1px solid #1c1c1c; z-index: 10 }
 .nav { display:flex; align-items:center; justify-content:space-between; height:64px }
 .brand { display:inline-flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.5px }
-.brand-logo{ height:36px; width:auto; display:block }
+.brand-logo{ height:64px; width:auto; display:block }
+@media (max-width: 768px){
+  .brand-logo{ height:48px }
+}
 .menu { display:none; background:transparent; border:1px solid #333; color:var(--fg); padding:6px 10px }
 .links { display:flex; gap:24px; list-style:none; margin:0; padding:0 }
 .links a { color:var(--muted) }

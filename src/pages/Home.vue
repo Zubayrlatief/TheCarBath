@@ -47,7 +47,8 @@
 <style scoped>
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100svh;
   color: white;
   display: flex;
   align-items: center;
@@ -67,9 +68,10 @@
 
 .hero-image {
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.08);
 }
 
 .hero-overlay {
