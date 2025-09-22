@@ -2,8 +2,8 @@
   <div class="app">
     <header class="site-header">
       <nav class="container nav">
-        <RouterLink class="brand" to="/" aria-label="Elite Park Car Wash home">
-          <div class="brand-logo">Elite Park Car Wash</div>
+        <RouterLink class="brand" to="/" aria-label="The Car Bath home">
+          <img class="brand-logo" src="/logo.png" alt="The Car Bath logo" />
         </RouterLink>
         <button class="menu" @click="isOpen=!isOpen" aria-label="Toggle menu"></button>
         <ul :class="['links', { open: isOpen }]">
