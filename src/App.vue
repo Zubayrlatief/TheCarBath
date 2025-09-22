@@ -10,21 +10,20 @@
           <li><RouterLink to="/business-parks">Business Parks</RouterLink></li>
           <li><RouterLink to="/auto-detailing">Auto Detailing</RouterLink></li>
           <li><RouterLink to="/bookings">Bookings</RouterLink></li>
+          <li><a href="tel:+27821234567" class="nav-cta">Call Us</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <RouterView />
     </main>
-    <footer class="site-footer">
-      <div class="container">
-        <p> {{ new Date().getFullYear() }} Elite ParkWash. All rights reserved.</p>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import Footer from './components/Footer.vue'
+
 const isOpen = ref(false)
 </script>
