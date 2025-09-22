@@ -47,8 +47,8 @@
 <style scoped>
 .hero {
   position: relative;
-  min-height: 100vh;
-  height: 100svh;
+  min-height: calc(100svh - 64px);
+  height: calc(100svh - 64px);
   color: white;
   display: flex;
   align-items: center;
@@ -68,10 +68,14 @@
 
 .hero-image {
   width: 100%;
-  height: 110%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.08);
+}
+
+/* Remove global main padding on this page so the hero truly fills the screen */
+:global(main){
+  padding: 0;
 }
 
 .hero-overlay {
