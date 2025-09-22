@@ -3,7 +3,7 @@
     <header class="site-header">
       <nav class="container nav">
         <RouterLink class="brand" to="/" aria-label="The Car Bath home">
-          <div class="brand-logo">The Car Bath</div>
+          <img class="brand-logo" src="/The_Car-removebg-preview.png" alt="The Car Bath logo" />
         </RouterLink>
         <button class="menu" @click="isOpen=!isOpen" aria-label="Toggle menu"></button>
         <ul :class="['links', { open: isOpen }]">
