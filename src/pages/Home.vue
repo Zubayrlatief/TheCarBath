@@ -1,10 +1,6 @@
 ﻿<template>
   <div class="home">
     <section class="hero">
-      <div class="hero-background">
-        <img src="/hero-bg.jpg" alt="Professional car wash service" class="hero-image" />
-        <div class="hero-overlay"></div>
-      </div>
       <div class="hero-content">
         <h1>Professional Car Wash Services for Business Parks</h1>
         <p>The Car Bath provides premium car wash and detailing services for business parks and corporate clients.</p>
@@ -46,45 +42,33 @@
 
 <style scoped>
 .hero {
-  position: relative;
   height: 100vh;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  position: relative;
 }
 
-.hero-background {
+.hero::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
   z-index: 1;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   max-width: 800px;
   padding: 0 2rem;
 }
