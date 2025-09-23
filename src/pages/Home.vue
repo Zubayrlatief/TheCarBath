@@ -165,7 +165,7 @@
         </div>
         
         <div class="trust-footer">
-          <p class="trust-guarantee">💯 <strong>100% Satisfaction Guarantee</strong> - If you're not completely satisfied, we'll make it right.</p>
+          <p class="trust-guarantee"><strong>100% Satisfaction Guarantee</strong> - Your complete satisfaction is our commitment. We stand behind every service with our quality promise.</p>
         </div>
       </div>
     </section>
@@ -424,8 +424,8 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -435,7 +435,7 @@
 
 .service-card {
   background: #111111;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 1.25rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   text-align: center;
@@ -445,7 +445,7 @@
 }
 
 .service-card.premium {
-  padding: 2.5rem;
+  padding: 2rem;
 }
 
 .service-card:hover {
@@ -471,14 +471,15 @@
   background: transparent;
   color: #667eea;
   border: 2px solid #667eea;
-  font-weight: 600;
+  font-weight: 700;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .btn-outline:hover {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -505,12 +506,12 @@
   }
   
   .service-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
   .service-footer {
@@ -525,22 +526,33 @@
   }
   
   .business-parks-section {
-    padding: 4rem 0;
+    padding: 0.75rem 0;
   }
 }
 
 /* Business Parks Section */
 .business-parks-section {
-  padding: 6rem 0;
+  padding: 0.5rem 0;
   background: var(--bg);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 }
 
+/* Laptop/Tablet screens (769px - 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .business-parks-section {
+    padding: 0.25rem 0 !important;
+  }
+  
+  .benefits-section {
+    padding: 0.25rem 0 !important;
+  }
+}
+
 /* Large screens (1200px+) */
 @media (min-width: 1200px) {
   .business-parks-section {
-    padding: 8rem 0;
+    padding: 1.5rem 0;
   }
   
   .business-parks-section h2 {
@@ -585,12 +597,12 @@
   
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 2rem;
     max-width: 1400px;
   }
   
   .service-card {
-    padding: 3.5rem;
+    padding: 2.5rem;
   }
   
   .service-card h3 {
@@ -629,7 +641,7 @@
 /* Large screens for Trust */
 @media (min-width: 1200px) {
   .trust-section {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
   
   .trust-section h2 {
@@ -834,7 +846,7 @@
 
 /* Trust Section */
 .trust-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: #0a0a0a;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -938,7 +950,7 @@
   }
   
   .trust-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   .trust-subtitle {
@@ -997,7 +1009,7 @@
 
 /* Transform Your Business Park Section */
 .benefits-section {
-  padding: 6rem 0;
+  padding: 0.5rem 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: var(--bg-secondary);
@@ -1108,7 +1120,7 @@
 /* Responsive Design for Benefits Section */
 @media (max-width: 768px) {
   .benefits-section {
-    padding: 4rem 0;
+    padding: 0.75rem 0;
   }
   
   .benefits-section .container {
@@ -1136,7 +1148,7 @@
 /* Large screens (1200px+) for benefits */
 @media (min-width: 1200px) {
   .benefits-section {
-    padding: 8rem 0;
+    padding: 1.5rem 0;
   }
   
   .benefits-section h2 {
