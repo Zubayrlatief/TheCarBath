@@ -454,7 +454,7 @@
 .requirements-section,
 .testimonials-section,
 .cta-section {
-  padding: 6rem 0;
+  padding: 1rem 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: var(--bg);
@@ -1263,7 +1263,7 @@
   .requirements-section,
   .testimonials-section,
   .cta-section {
-    padding: 8rem 0;
+    padding: 2rem 0;
   }
   
   .benefits-grid {
