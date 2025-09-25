@@ -153,7 +153,12 @@
             </div>
             <div class="summary-grid">
               <div class="summary-item">
-                <div class="summary-icon">⏱️</div>
+                <div class="summary-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
+                  </svg>
+                </div>
                 <div class="summary-content">
                   <h4>Duration</h4>
                   <span>4-6 hours</span>
@@ -239,6 +244,7 @@
 
     <!-- CTA Section -->
     <section id="contact" class="cta-section">
+      <div class="hero-overlay"></div>
       <div class="container">
         <div class="cta-content">
           <div class="cta-header">
@@ -249,18 +255,27 @@
           <div class="cta-main">
             <div class="cta-buttons">
               <a href="tel:+27821234567" class="btn btn-primary">
-                <span class="btn-icon">📞</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
                 <span>Call Us Now</span>
               </a>
               <a href="mailto:partnerships@thecarbath.co.za" class="btn btn-secondary">
-                <span class="btn-icon">✉️</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
                 <span>Email Us</span>
               </a>
             </div>
             
             <div class="contact-info">
               <div class="contact-item">
-                <div class="contact-icon">📞</div>
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
                 <div class="contact-details">
                   <h4>Phone</h4>
                   <p>+27 82 123 4567</p>
@@ -268,7 +283,12 @@
               </div>
               
               <div class="contact-item">
-                <div class="contact-icon">✉️</div>
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
                 <div class="contact-details">
                   <h4>Email</h4>
                   <p>partnerships@thecarbath.co.za</p>
@@ -276,7 +296,12 @@
               </div>
               
               <div class="contact-item">
-                <div class="contact-icon">🕒</div>
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
+                  </svg>
+                </div>
                 <div class="contact-details">
                   <h4>Business Hours</h4>
                   <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
@@ -331,9 +356,10 @@
 .requirements-section .container,
 .testimonials-section .container,
 .cta-section .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* Hero Section */
@@ -368,13 +394,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.6) 50%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 
 .hero-content {
@@ -908,14 +929,32 @@
 .cta-section {
   background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg) 100%);
   text-align: center;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 4rem 0 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45) !important;
+  z-index: 2;
 }
 
 .cta-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .cta-header {
@@ -998,9 +1037,9 @@
 
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }

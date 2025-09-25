@@ -152,7 +152,12 @@
           </div>
           
           <div class="trust-card">
-            <div class="trust-icon">🛡️</div>
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
             <h3>Damage Protection</h3>
             <p>We're fully insured and take every precaution to protect your vehicle's finish, wheels, and interior.</p>
           </div>
@@ -240,9 +245,72 @@
               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Insurance and licensing" />
             </div>
             <div class="benefit-content">
-              <div class="benefit-icon">🛡️</div>
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
               <h3>Fully Insured & Licensed</h3>
               <p>Complete peace of mind with full insurance coverage and all necessary licenses. We're a professional, established business with a proven track record.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="cta-background">
+        <div class="cta-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="cta-content">
+          <div class="cta-badge">
+            <span class="badge-icon">🏆</span>
+            <span>Premium Service</span>
+          </div>
+          <div class="cta-main">
+            <h2>Experience Professional Car Care Excellence</h2>
+            <p>Join hundreds of satisfied customers who trust The Car Bath for their premium vehicle care needs. Book your service today and discover why we're the preferred choice for discerning car owners.</p>
+            <div class="cta-stats">
+              <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">4.9★</div>
+                <div class="stat-label">Average Rating</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">24hr</div>
+                <div class="stat-label">Response Time</div>
+              </div>
+            </div>
+          </div>
+          <div class="cta-actions">
+            <RouterLink to="/bookings" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+              <span>Schedule Your Service</span>
+            </RouterLink>
+            <RouterLink to="/contact" class="btn btn-outline">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Speak with Our Team</span>
+            </RouterLink>
+            <div class="cta-guarantee">
+              <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+              <span>100% Satisfaction Guaranteed</span>
             </div>
           </div>
         </div>
@@ -1158,6 +1226,234 @@
   .benefits-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+  }
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section .container {
+  max-width: 1200px;
+}
+
+.cta-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  z-index: 1;
+}
+
+.cta-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255, 140, 66, 0.03) 0%, transparent 50%);
+  z-index: 2;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--gradient-primary);
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: var(--shadow-soft);
+  letter-spacing: 0.5px;
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+}
+
+.cta-main h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.cta-main p {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.cta-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cta-actions .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 2.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex: 1;
+  max-width: 400px;
+}
+
+.cta-actions .btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.cta-actions .btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+}
+
+.cta-actions .btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+}
+
+.cta-actions .btn-outline:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+}
+
+.cta-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.guarantee-icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design for CTA */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 4rem 0;
+  }
+  
+  .cta-main h2 {
+    font-size: 2.2rem;
+  }
+  
+  .cta-main p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cta-actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .cta-actions .btn {
+    flex: none;
+    min-width: 250px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cta-section {
+    padding: 7rem 0;
+  }
+  
+  .cta-main h2 {
+    font-size: 3.5rem;
+  }
+  
+  .cta-main p {
+    font-size: 1.25rem;
   }
 }
 </style>

@@ -1,28 +1,43 @@
 ﻿<template>
   <div class="bookings-page">
     <section class="booking-hero">
+      <div class="hero-background">
+        <div class="hero-pattern"></div>
+      </div>
       <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">Premium Car Care</span>
-          <h1>Book Your Service</h1>
-          <p class="section-subtitle">Schedule your premium car wash service at your convenience. Professional care, guaranteed results.</p>
-        </div>
-        
-        <div class="trust-indicators">
-          <div class="trust-card">
-            <div class="trust-icon">⭐</div>
-            <h3>4+ Years Experience</h3>
-            <p>Proven track record of excellence</p>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14,2 14,8 20,8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10,9 9,9 8,9"/>
+            </svg>
+            <span>Easy Booking</span>
           </div>
-          <div class="trust-card">
-            <div class="trust-icon">💯</div>
-            <h3>100% Satisfaction</h3>
-            <p>Guaranteed quality service</p>
+          <h1>Schedule Your Premium Car Care</h1>
+          <p>Experience the convenience of professional car care at your fingertips. Our streamlined booking process makes it simple to schedule your next service with just a few clicks.</p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4.9★</div>
+              <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24hr</div>
+              <div class="stat-label">Response Time</div>
+            </div>
           </div>
-          <div class="trust-card">
-            <div class="trust-icon">⚡</div>
-            <h3>24hr Response</h3>
-            <p>Quick booking confirmation</p>
+          <div class="hero-guarantee">
+            <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+            <span>100% Satisfaction Guaranteed - Book with Confidence</span>
           </div>
         </div>
       </div>
@@ -63,14 +78,14 @@
                   <div class="service-icon">🧽</div>
                   <div class="service-info">
                     <h4>Mini Valet</h4>
-                    <p>Quick and thorough interior cleaning</p>
+                    <p>Quick and thorough interior cleaning for private call outs</p>
                     <ul class="service-features">
                       <li>Vacuum and wipe down</li>
                       <li>Glass cleaning</li>
                       <li>Dashboard shine</li>
                     </ul>
                   </div>
-                  <div class="service-price">R100</div>
+                  <div class="service-price">R180</div>
                 </div>
                 
                 <div class="service-option" :class="{ active: formData.service === 'business-park-wash' }" @click="formData.service = 'business-park-wash'">
@@ -84,7 +99,7 @@
                       <li>Light interior tidy</li>
                     </ul>
                   </div>
-                  <div class="service-price">R150</div>
+                  <div class="service-price">R120</div>
                 </div>
               </div>
             </div>
@@ -221,8 +236,8 @@
                       />
                     </div>
                   </div>
-                </div>
-              </form>
+        </div>
+      </form>
             </div>
           </div>
 
@@ -233,247 +248,76 @@
               <h3>Schedule Your Service</h3>
             </div>
             <div class="card-content">
-              
-              <div class="form-step" data-step="2">
-                <h3>Your Details</h3>
-
-                <!-- Business Park Selection -->
-                <div class="form-group">
-                  <label for="businessPark">Business Park / Location</label>
-                  <select id="businessPark" v-model="formData.businessPark" required>
-                    <option value="">Select your location</option>
-                    <option value="arden-grove">Arden Grove, Milnerton</option>
-                    <option value="other">Other Business Park</option>
-                    <option value="private">Private Location</option>
-                  </select>
-                </div>
-
-                <!-- Custom Business Park -->
-                <div v-if="formData.businessPark === 'other'" class="form-group">
-                  <label for="customBusinessPark">Business Park Name</label>
-                  <input 
-                    id="customBusinessPark"
-                    type="text" 
-                    v-model="formData.customBusinessPark"
-                    placeholder="Enter your business park name"
-                    required
-                  />
-                </div>
-
-                <!-- Personal Details -->
-                <div class="form-section">
-                  <h4>Contact Information</h4>
-              
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="firstName">First Name</label>
-                      <input 
-                        id="firstName"
-                        type="text" 
-                        v-model="formData.firstName"
-                        placeholder="Your first name"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="lastName">Last Name</label>
-                      <input 
-                        id="lastName"
-                        type="text" 
-                        v-model="formData.lastName"
-                        placeholder="Your last name"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="email">Email Address</label>
-                      <input 
-                        id="email"
-                        type="email" 
-                        v-model="formData.email"
-                        placeholder="your@email.com"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Phone Number</label>
-                      <input 
-                        id="phone"
-                        type="tel" 
-                        v-model="formData.phone"
-                        placeholder="+27 X XXX XXXX"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Vehicle Details -->
-                <div class="form-section">
-                  <h4>Vehicle Information</h4>
-              
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="vehicleMake">Vehicle Make</label>
-                      <input 
-                        id="vehicleMake"
-                        type="text" 
-                        v-model="formData.vehicleMake"
-                        placeholder="Toyota, BMW, etc."
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="vehicleModel">Model</label>
-                      <input 
-                        id="vehicleModel"
-                        type="text" 
-                        v-model="formData.vehicleModel"
-                        placeholder="Camry, X3, etc."
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="vehicleYear">Year</label>
-                      <input 
-                        id="vehicleYear"
-                        type="number" 
-                        v-model="formData.vehicleYear"
-                        placeholder="2020"
-                        min="1990"
-                        :max="new Date().getFullYear() + 1"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="vehicleColor">Color</label>
-                      <input 
-                        id="vehicleColor"
-                        type="text" 
-                        v-model="formData.vehicleColor"
-                        placeholder="White, Black, Silver, etc."
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="form-step" data-step="3">
-                <h3>Schedule Your Service</h3>
-                
+              <!-- Scheduling -->
+              <div class="form-section">
+                <h4>Preferred Schedule</h4>
                 <div class="form-row">
-                <div class="form-group">
-                  <label for="preferredDate">Preferred Date</label>
-                  <input 
-                    id="preferredDate"
-                    type="date" 
-                    v-model="formData.preferredDate"
-                    :min="minDate"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="preferredTime">Preferred Time</label>
-                  <select id="preferredTime" v-model="formData.preferredTime" required>
-                    <option value="">Select time</option>
-                    <option value="08:00">8:00 AM</option>
-                    <option value="09:00">9:00 AM</option>
-                    <option value="10:00">10:00 AM</option>
-                    <option value="11:00">11:00 AM</option>
-                    <option value="12:00">12:00 PM</option>
-                    <option value="13:00">1:00 PM</option>
-                    <option value="14:00">2:00 PM</option>
-                    <option value="15:00">3:00 PM</option>
-                    <option value="16:00">4:00 PM</option>
-                  </select>
-                </div>
-              </div>
-
-                <!-- Scheduling -->
-                <div class="form-section">
-                  <h4>Preferred Schedule</h4>
-                  
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="preferredDate">Preferred Date</label>
-                      <input 
-                        id="preferredDate"
-                        type="date" 
-                        v-model="formData.preferredDate"
-                        :min="minDate"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="preferredTime">Preferred Time</label>
-                      <select id="preferredTime" v-model="formData.preferredTime" required>
-                        <option value="">Select time</option>
-                        <option value="08:00">8:00 AM</option>
-                        <option value="09:00">9:00 AM</option>
-                        <option value="10:00">10:00 AM</option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="13:00">1:00 PM</option>
-                        <option value="14:00">2:00 PM</option>
-                        <option value="15:00">3:00 PM</option>
-                        <option value="16:00">4:00 PM</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Additional Notes -->
-                <div class="form-section">
-                  <h4>Additional Information</h4>
-                  
                   <div class="form-group">
-                    <label for="notes">Special Requests or Notes</label>
-                    <textarea 
-                      id="notes"
-                      v-model="formData.notes"
-                      placeholder="Any special requests, vehicle condition notes, or accessibility requirements..."
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-
-                <!-- Terms Agreement -->
-                <div class="form-group checkbox-group">
-                  <label class="checkbox-label">
+                    <label for="preferredDate">Preferred Date</label>
                     <input 
-                      type="checkbox" 
-                      v-model="formData.agreedToTerms"
+                      id="preferredDate"
+                      type="date" 
+                      v-model="formData.preferredDate"
+                      :min="minDate"
                       required
                     />
-                    <span class="checkmark"></span>
-                    I agree to The Car Bath's terms of service and privacy policy
-                  </label>
+                  </div>
+                  <div class="form-group">
+                    <label for="preferredTime">Preferred Time</label>
+                    <select id="preferredTime" v-model="formData.preferredTime" required>
+                      <option value="">Select time</option>
+                      <option value="08:00">8:00 AM</option>
+                      <option value="09:00">9:00 AM</option>
+                      <option value="10:00">10:00 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="12:00">12:00 PM</option>
+                      <option value="13:00">1:00 PM</option>
+                      <option value="14:00">2:00 PM</option>
+                      <option value="15:00">3:00 PM</option>
+                      <option value="16:00">4:00 PM</option>
+                    </select>
+                  </div>
                 </div>
+              </div>
 
-                <!-- Form Navigation -->
-                <div class="form-navigation">
-                  <button type="button" class="nav-btn secondary" @click="previousStep" v-if="currentStep > 1">
-                    ← Previous
-                  </button>
-                  <button type="button" class="nav-btn primary" @click="nextStep" v-if="currentStep < 3">
-                    Next →
-                  </button>
-                  <button type="submit" class="submit-btn" :disabled="!isFormValid" v-if="currentStep === 3">
-                    {{ isSubmitting ? 'Submitting...' : 'Complete Booking' }}
-                  </button>
+              <!-- Additional Notes -->
+              <div class="form-section">
+                <h4>Additional Information</h4>
+                <div class="form-group">
+                  <label for="notes">Special Requests or Notes</label>
+                  <textarea 
+                    id="notes"
+                    v-model="formData.notes"
+                    placeholder="Any special requests, vehicle condition notes, or accessibility requirements..."
+                    rows="4"
+                  ></textarea>
                 </div>
-        </div>
-      </form>
+              </div>
+
+              <!-- Terms Agreement -->
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input 
+                    type="checkbox" 
+                    v-model="formData.agreedToTerms"
+                    required
+                  />
+                  <span class="checkmark"></span>
+                  I agree to The Car Bath's 
+                  <a href="/terms-of-service.pdf" target="_blank" class="terms-link">Terms of Service</a> 
+                  and 
+                  <a href="/privacy-policy.pdf" target="_blank" class="terms-link">Privacy Policy</a>
+                </label>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="submit-btn" :disabled="!isFormValid" @click="handleSubmit">
+                {{ isSubmitting ? 'Submitting...' : 'Complete Booking' }}
+              </button>
+            </div>
           </div>
 
-          <!-- Booking Summary -->
+          <!-- Booking Summary Card -->
           <div class="booking-summary">
             <div class="summary-card">
               <h3>Booking Summary</h3>
@@ -499,7 +343,7 @@
               </div>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Contact Info Card -->
             <div class="contact-info">
               <h4>Need Help?</h4>
               <p>Contact us directly:</p>
@@ -540,7 +384,6 @@ const formData = ref({
 })
 
 const isSubmitting = ref(false)
-const currentStep = ref(1)
 
 // Computed properties
 const minDate = computed(() => {
@@ -615,114 +458,35 @@ const formatTime = (time) => {
   return `${displayHour}:${minutes} ${ampm}`
 }
 
-// Step navigation methods
-const nextStep = () => {
-  if (currentStep.value < 3) {
-    currentStep.value++
-    updateProgressSteps()
-    updateFormSteps()
-  }
-}
-
-const previousStep = () => {
-  if (currentStep.value > 1) {
-    currentStep.value--
-    updateProgressSteps()
-    updateFormSteps()
-  }
-}
-
-const updateProgressSteps = () => {
-  const steps = document.querySelectorAll('.progress-step')
-  steps.forEach((step, index) => {
-    step.classList.toggle('active', index + 1 === currentStep.value)
-    step.classList.toggle('completed', index + 1 < currentStep.value)
-  })
-}
-
-const updateFormSteps = () => {
-  const formSteps = document.querySelectorAll('.form-step')
-  formSteps.forEach((step, index) => {
-    step.classList.toggle('active', index + 1 === currentStep.value)
-  })
-}
-
 const handleSubmit = async () => {
   if (!isFormValid.value) return
   
   isSubmitting.value = true
   
   try {
-    // Option 1: Use Formspree (recommended)
-    await submitToFormspree()
+    // Create email content
+    const emailContent = createEmailContent()
     
-    // Option 2: Fallback to mailto
-    // await submitViaMailto()
+    // Create mailto link
+    const subject = `🔔 BOOKING REQUEST - ${getServiceName()} - ${formData.value.firstName} ${formData.value.lastName}`
+    const body = encodeURIComponent(emailContent)
+    const mailtoLink = `mailto:hello@thecarbath.com?subject=${encodeURIComponent(subject)}&body=${body}`
+    
+    // Open email client
+    window.location.href = mailtoLink
     
     // Show success message
-    alert('Thank you for your booking request! We\'ll contact you within 24 hours to confirm your appointment.')
+    alert('Thank you for your booking request! Your email client should open with the booking details.')
     
     // Reset form
     resetForm()
     
   } catch (error) {
     console.error('Error submitting booking:', error)
-    
-    // Fallback to mailto if Formspree fails
-    try {
-      await submitViaMailto()
-      alert('Thank you for your booking request! Your email client should open with the booking details.')
-      resetForm()
-    } catch (mailtoError) {
-      alert('There was an error submitting your booking. Please try again or contact us directly at hello@thecarbath.com')
-    }
+    alert('There was an error submitting your booking. Please try again or contact us directly.')
   } finally {
     isSubmitting.value = false
   }
-}
-
-// Submit via Formspree (immediate Gmail notification)
-const submitToFormspree = async () => {
-  const formData = new FormData()
-  
-  // Add all form fields
-  formData.append('service', getServiceName() + ' - ' + getServicePrice())
-  formData.append('location', getLocationName())
-  formData.append('date', formatDate(formData.preferredDate))
-  formData.append('time', formatTime(formData.preferredTime))
-  formData.append('firstName', formData.value.firstName)
-  formData.append('lastName', formData.value.lastName)
-  formData.append('email', formData.value.email)
-  formData.append('phone', formData.value.phone)
-  formData.append('vehicleMake', formData.value.vehicleMake)
-  formData.append('vehicleModel', formData.value.vehicleModel)
-  formData.append('vehicleYear', formData.value.vehicleYear)
-  formData.append('vehicleColor', formData.value.vehicleColor)
-  formData.append('notes', formData.value.notes || 'None')
-  formData.append('_subject', `🔔 NEW BOOKING: ${getServiceName()} - ${formData.value.firstName} ${formData.value.lastName}`)
-  formData.append('_replyto', formData.value.email)
-  
-  const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  
-  if (!response.ok) {
-    throw new Error('Form submission failed')
-  }
-}
-
-// Fallback: Submit via mailto
-const submitViaMailto = async () => {
-  const emailContent = createEmailContent()
-  const subject = `🔔 BOOKING REQUEST - ${getServiceName()} - ${formData.value.firstName} ${formData.value.lastName}`
-  const body = encodeURIComponent(emailContent)
-  const mailtoLink = `mailto:hello@thecarbath.com?subject=${encodeURIComponent(subject)}&body=${body}`
-  
-  window.location.href = mailtoLink
 }
 
 const createEmailContent = () => {
@@ -773,30 +537,53 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* CSS Variables */
+/* Dark theme with grey cards - Updated 2024 */
+.bookings-page {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.bookings-page * {
+  color: #ffffff !important;
+}
+
+/* CSS Variables - Professional vibrant theme with grey cards */
 :root {
   --bg: #0a0a0a;
-  --bg-secondary: #111111;
+  --bg-secondary: #1a1a1a;
+  --card-bg: #404040;
+  --card-bg-secondary: #505050;
   --text: #ffffff;
-  --text-secondary: #b3b3b3;
+  --text-secondary: #b8b8b8;
   --accent: #ff6b35;
-  --accent-hover: #e55a2b;
-  --border: #1c1c1c;
-  --border-hover: #2a2a2a;
+  --accent-hover: #ff8c42;
+  --accent-light: #ff9a5a;
+  --border: #666666;
+  --border-hover: #777777;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --gradient-primary: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ff9a5a 100%);
+  --gradient-card: linear-gradient(145deg, #606060 0%, #707070 100%);
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-strong: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
 .bookings-page {
-  background: var(--bg);
-  color: var(--text);
+  background: #000000 !important;
+  color: #ffffff !important;
   min-height: 100vh;
 }
 
+/* Hero Section - Consistent with Home page */
 .booking-hero {
   position: relative;
   padding: 6rem 0;
   text-align: center;
-  color: white;
+  color: var(--text);
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .hero-background {
@@ -805,19 +592,22 @@ onMounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 50%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   z-index: 1;
 }
 
-.hero-overlay {
+.hero-pattern {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: 
+    radial-gradient(circle at 25% 25%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255, 140, 66, 0.03) 0%, transparent 50%);
   z-index: 2;
 }
+
 
 .hero-content {
   position: relative;
@@ -830,14 +620,22 @@ onMounted(() => {
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 107, 53, 0.1);
-  border: 1px solid rgba(255, 107, 53, 0.3);
-  padding: 0.5rem 1rem;
+  gap: 0.75rem;
+  background: var(--gradient-primary);
+  border: none;
+  padding: 0.875rem 2rem;
   border-radius: 50px;
-  margin-bottom: 2rem;
-  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  color: white;
+  box-shadow: var(--shadow-soft);
+  letter-spacing: 0.5px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
 }
 
 .badge-icon {
@@ -845,50 +643,79 @@ onMounted(() => {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 800;
-  margin-bottom: 1rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 650px;
+  margin: 0 auto 3rem auto;
   line-height: 1.6;
+  font-weight: 400;
 }
 
 .hero-stats {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-top: 2rem;
+  margin: 3rem 0;
 }
 
-.stat {
+.stat-item {
   text-align: center;
 }
 
 .stat-number {
-  display: block;
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--accent);
-  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
 }
 
 .stat-label {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-/* Section Header */
+.hero-guarantee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.guarantee-icon {
+  font-size: 1.2rem;
+}
+
+/* Section Header - Consistent with site */
 .section-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .section-eyebrow {
@@ -902,136 +729,271 @@ onMounted(() => {
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin: 0 0 1rem 0;
   color: var(--text);
 }
 
 .section-subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
+/* Booking Form Section */
 .booking-form-section {
-  padding: 4rem 0;
+  padding: 3rem 0;
+  background: #000000 !important;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .booking-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.booking-form-container {
-  background: var(--bg-secondary);
+/* Booking Cards - Professional vibrant design */
+.booking-card {
+  background: var(--gradient-card) !important;
   border-radius: 1.5rem;
-  padding: 2.5rem;
-  border: 1px solid var(--border);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Form Progress */
-.form-progress {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
+  border: 1px solid var(--border) !important;
+  box-shadow: 
+    var(--shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
-.form-progress::before {
+.booking-card::before {
   content: '';
   position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 2px;
-  background: var(--border);
+  background: var(--gradient-primary);
+  opacity: 0.6;
   z-index: 1;
 }
 
-.progress-step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  position: relative;
-  z-index: 2;
-  background: var(--bg-secondary);
-  padding: 0 1rem;
+.booking-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 40px 80px rgba(0, 0, 0, 0.8),
+    0 20px 40px rgba(255, 107, 53, 0.1),
+    0 0 0 1px rgba(255, 107, 53, 0.3) !important;
+  border-color: var(--accent) !important;
 }
 
-.step-number {
-  width: 40px;
-  height: 40px;
+.card-header {
+  background: linear-gradient(145deg, #505050 0%, #404040 100%) !important;
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-bottom: 1px solid #666666 !important;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff6b35, transparent);
+  opacity: 0.3;
+}
+
+.step-indicator {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background: var(--border);
-  color: var(--text-secondary);
+  background: var(--gradient-primary);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 1.4rem;
+  box-shadow: 
+    var(--shadow-medium),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 2;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.step-indicator::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b35, #e55a2b);
+  opacity: 0.3;
+  z-index: -1;
+  filter: blur(8px);
+}
+
+.card-header h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(19, 19, 19, 0.5);
+  letter-spacing: -0.02em;
+}
+
+.card-content {
+  padding: 2rem;
+  position: relative;
+  background: linear-gradient(145deg, #111111 0%, #0c0c0c 100%) !important;
+  background-color: #505050 !important;
+}
+
+/* Service Options */
+.service-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.service-option {
+  background: linear-gradient(145deg, #282828 0%, #1a1a1a 100%) !important;
+  border: 2px solid #666666 !important;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.service-option:hover {
+  border-color: #ff6b35 !important;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 
+    0 12px 30px rgba(255, 107, 53, 0.2),
+    0 0 0 1px rgba(255, 107, 53, 0.1) !important;
+}
+
+.service-option.active {
+  border-color: #ff6b35 !important;
+  background: linear-gradient(145deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.05) 100%) !important;
+  box-shadow: 
+    0 8px 25px rgba(255, 107, 53, 0.3),
+    0 0 0 1px rgba(255, 107, 53, 0.2) !important;
+  transform: scale(1.02);
+}
+
+.service-option.active::before {
+  content: '✓';
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
-}
-
-.progress-step.active .step-number {
-  background: var(--accent);
-  color: white;
-  transform: scale(1.1);
-}
-
-.progress-step.completed .step-number {
-  background: #10b981;
-  color: white;
-}
-
-.progress-step span {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
-
-.progress-step.active span {
-  color: var(--text);
-  font-weight: 600;
-}
-
-/* Form Steps */
-.form-step {
-  display: none;
-}
-
-.form-step.active {
-  display: block;
-  animation: fadeInUp 0.5s ease;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.booking-form h3 {
-  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 2rem;
-  color: var(--text);
-  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+  animation: pulse 2s infinite;
 }
 
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 
+      var(--shadow-medium),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3),
+      0 0 20px rgba(255, 107, 53, 0.3);
+  }
+  50% { 
+    box-shadow: 
+      var(--shadow-medium),
+      inset 0 2px 4px rgba(255, 255, 255, 0.3),
+      0 0 30px rgba(255, 107, 53, 0.5);
+  }
+}
+
+.service-icon {
+  font-size: 2.2rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+  border-radius: 1rem;
+  border: 1px solid #333333;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.service-info {
+  flex: 1;
+}
+
+.service-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--text);
+}
+
+.service-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-features li {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.service-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  text-align: right;
+}
+
+/* Form Styles - Consistent with site */
 .form-section {
   margin-bottom: 2rem;
 }
@@ -1043,106 +1005,6 @@ onMounted(() => {
   color: var(--text);
   border-bottom: 1px solid var(--border);
   padding-bottom: 0.5rem;
-}
-
-/* Service Cards */
-.service-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.service-card {
-  background: var(--bg);
-  border: 2px solid var(--border);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  position: relative;
-}
-
-.service-card:hover {
-  border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.1);
-}
-
-.service-card.active {
-  border-color: var(--accent);
-  background: rgba(255, 107, 53, 0.05);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
-}
-
-.service-card.active::before {
-  content: '✓';
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  width: 24px;
-  height: 24px;
-  background: var(--accent);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.service-icon {
-  font-size: 2rem;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-secondary);
-  border-radius: 0.75rem;
-  border: 1px solid var(--border);
-}
-
-.service-content {
-  flex: 1;
-}
-
-.service-content h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  color: var(--text);
-  border: none;
-  padding: 0;
-}
-
-.service-content p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin: 0 0 0.75rem 0;
-  line-height: 1.4;
-}
-
-.service-features {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.service-features span {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-.service-price {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--accent);
-  text-align: right;
 }
 
 .form-group {
@@ -1168,7 +1030,7 @@ onMounted(() => {
 .form-group textarea {
   width: 100%;
   padding: 0.875rem 1rem;
-  background: var(--bg);
+  background: var(--card-bg) !important;
   border: 1px solid var(--border);
   border-radius: 0.5rem;
   color: var(--text);
@@ -1208,23 +1070,44 @@ onMounted(() => {
   transform: scale(1.2);
 }
 
+/* Submit Button - Professional vibrant design */
 .submit-btn {
   width: 100%;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  padding: 1.25rem 2rem;
+  background: var(--gradient-primary);
   color: white;
   border: none;
-  border-radius: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
 }
 
 .submit-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 
+    var(--shadow-strong),
+    0 0 30px rgba(255, 107, 53, 0.4);
 }
 
 .submit-btn:disabled {
@@ -1233,68 +1116,58 @@ onMounted(() => {
   transform: none;
 }
 
-/* Form Navigation */
-.form-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
-.nav-btn {
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-}
-
-.nav-btn.secondary {
-  background: var(--bg);
-  color: var(--text-secondary);
-  border: 1px solid var(--border);
-}
-
-.nav-btn.secondary:hover {
-  background: var(--bg-secondary);
-  color: var(--text);
-  border-color: var(--border-hover);
-}
-
-.nav-btn.primary {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
-  color: white;
-}
-
-.nav-btn.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
-}
-
+/* Booking Summary - Consistent with site cards */
 .booking-summary {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.summary-card {
-  background: var(--bg-secondary);
-  border-radius: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--border);
+.summary-card,
+.contact-info {
+  background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%) !important;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: 1px solid #333333 !important;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.6),
+    0 8px 16px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
-.summary-card h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  color: var(--text);
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.5rem;
+.summary-card::before,
+.contact-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+}
+
+.summary-card:hover,
+.contact-info:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.7),
+    0 12px 24px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 107, 53, 0.2) !important;
+  border-color: #ff6b35 !important;
+}
+
+.summary-card h3,
+.contact-info h4 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #ff6b35;
+  padding-bottom: 0.75rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.02em;
 }
 
 .summary-item {
@@ -1319,20 +1192,6 @@ onMounted(() => {
   color: var(--text);
 }
 
-.contact-info {
-  background: var(--bg-secondary);
-  border-radius: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--border);
-}
-
-.contact-info h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--text);
-}
-
 .contact-info p {
   color: var(--text-secondary);
   margin-bottom: 1rem;
@@ -1347,26 +1206,47 @@ onMounted(() => {
   color: var(--text);
 }
 
+/* Terms Links */
+.terms-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.terms-link:hover {
+  color: var(--accent-light);
+  border-bottom-color: var(--accent);
+  text-shadow: 0 0 8px rgba(255, 107, 53, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   
   .hero-stats {
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
   }
   
-  .stat-number {
-    font-size: 1.5rem;
+  .hero-guarantee {
+    max-width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   
   .booking-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    max-width: 100%;
   }
   
-  .booking-form-container {
+  .card-header,
+  .card-content {
     padding: 1.5rem;
   }
   
@@ -1374,23 +1254,7 @@ onMounted(() => {
     grid-template-columns: 1fr;
   }
   
-  .booking-form h3 {
-    font-size: 1.3rem;
-  }
-  
-  .form-progress {
-    margin-bottom: 2rem;
-  }
-  
-  .form-progress::before {
-    width: 80%;
-  }
-  
-  .progress-step span {
-    font-size: 0.75rem;
-  }
-  
-  .service-card {
+  .service-option {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
@@ -1398,15 +1262,6 @@ onMounted(() => {
   
   .service-price {
     text-align: center;
-  }
-  
-  .form-navigation {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .nav-btn {
-    width: 100%;
   }
   
   .hero-badge {
@@ -1417,15 +1272,19 @@ onMounted(() => {
 
 @media (min-width: 1200px) {
   .booking-hero {
-    padding: 6rem 0;
+    padding: 8rem 0;
   }
   
-  .booking-hero h1 {
+  .hero-content h1 {
     font-size: 3.5rem;
   }
   
   .booking-form-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
+  }
+  
+  .section-header h2 {
+    font-size: 3.5rem;
   }
 }
 </style>

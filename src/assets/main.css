@@ -38,6 +38,75 @@ main { flex: 1; padding: 0 }
 .cta { display:inline-block; border:1px solid #fff; color:#000; background:#fff; padding:12px 18px; border-radius:8px; font-weight:700 }
 .cta.secondary { background: transparent; color: #fff; border-color:#484848 }
 .site-footer { border-top: 1px solid #1c1c1c; padding:24px 0; color: var(--muted) }
+
+/* Professional Icon Styling */
+.btn-icon,
+.badge-icon,
+.guarantee-icon,
+.trust-icon,
+.benefit-icon,
+.feature-icon,
+.summary-icon,
+.contact-icon,
+.highlight-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.guarantee-icon,
+.trust-icon,
+.benefit-icon {
+  color: #ff6b35;
+}
+
+.feature-icon {
+  color: #ff6b35;
+  width: 24px;
+  height: 24px;
+}
+
+.summary-icon {
+  color: #ff6b35;
+  width: 22px;
+  height: 22px;
+}
+
+.contact-icon {
+  color: #ff6b35;
+  width: 20px;
+  height: 20px;
+}
+
+.highlight-icon {
+  color: #ff6b35;
+  width: 18px;
+  height: 18px;
+}
+
+/* Icon hover effects */
+.btn:hover .btn-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 .muted{ color: var(--muted) }
 .hero{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap:24px; align-items:center; margin:40px 0 }
 .hero-text{ align-self:center; justify-self:start; max-width:620px }
