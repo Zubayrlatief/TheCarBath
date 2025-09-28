@@ -61,7 +61,11 @@
             <div class="card-content">
               <div class="service-options">
                 <div class="service-option" :class="{ active: formData.service === 'executive-detail' }" @click="formData.service = 'executive-detail'">
-                  <div class="service-icon">✨</div>
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                  </div>
                   <div class="service-info">
                     <h4>Executive Detail</h4>
                     <p>Showroom-level finish inside and out</p>
@@ -75,7 +79,13 @@
                 </div>
                 
                 <div class="service-option" :class="{ active: formData.service === 'mini-valet' }" @click="formData.service = 'mini-valet'">
-                  <div class="service-icon">🧽</div>
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0"/>
+                      <path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/>
+                      <path d="M12 3v18"/>
+                    </svg>
+                  </div>
                   <div class="service-info">
                     <h4>Mini Valet</h4>
                     <p>Quick and thorough interior cleaning for private call outs</p>
@@ -89,7 +99,12 @@
                 </div>
                 
                 <div class="service-option" :class="{ active: formData.service === 'business-park-wash' }" @click="formData.service = 'business-park-wash'">
-                  <div class="service-icon">🏢</div>
+                  <div class="service-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                      <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                  </div>
                   <div class="service-info">
                     <h4>Business Park Wash</h4>
                     <p>On-site, zero-hassle washes</p>
@@ -547,22 +562,25 @@ onMounted(() => {
   color: #ffffff !important;
 }
 
-/* CSS Variables - Professional vibrant theme with grey cards */
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CSS Variables - Professional cyan blue and black theme */
 :root {
-  --bg: #0a0a0a;
+  --bg: #000000;
   --bg-secondary: #1a1a1a;
   --card-bg: #404040;
   --card-bg-secondary: #505050;
   --text: #ffffff;
   --text-secondary: #b8b8b8;
-  --accent: #ff6b35;
-  --accent-hover: #ff8c42;
-  --accent-light: #ff9a5a;
+  --accent: #00bcd4;
+  --accent-hover: #0097a7;
+  --accent-light: #26c6da;
   --border: #666666;
   --border-hover: #777777;
   --success: #10b981;
   --warning: #f59e0b;
-  --gradient-primary: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ff9a5a 100%);
+  --gradient-primary: linear-gradient(135deg, #00bcd4 0%, #0097a7 50%, #26c6da 100%);
   --gradient-card: linear-gradient(145deg, #606060 0%, #707070 100%);
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.4);
@@ -603,8 +621,8 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 25% 25%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(255, 140, 66, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(0, 188, 212, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(38, 198, 218, 0.03) 0%, transparent 50%);
   z-index: 2;
 }
 
@@ -675,12 +693,9 @@ onMounted(() => {
 .stat-number {
   font-size: 2.5rem;
   font-weight: 900;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
   margin-bottom: 0.5rem;
-  text-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 188, 212, 0.3);
 }
 
 .stat-label {
@@ -790,8 +805,8 @@ onMounted(() => {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 
     0 40px 80px rgba(0, 0, 0, 0.8),
-    0 20px 40px rgba(255, 107, 53, 0.1),
-    0 0 0 1px rgba(255, 107, 53, 0.3) !important;
+    0 20px 40px rgba(0, 188, 212, 0.1),
+    0 0 0 1px rgba(0, 188, 212, 0.3) !important;
   border-color: var(--accent) !important;
 }
 
@@ -813,7 +828,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #ff6b35, transparent);
+  background: linear-gradient(90deg, transparent, #00bcd4, transparent);
   opacity: 0.3;
 }
 
@@ -841,7 +856,7 @@ onMounted(() => {
   position: absolute;
   inset: -2px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #ff6b35, #e55a2b);
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
   opacity: 0.3;
   z-index: -1;
   filter: blur(8px);
@@ -886,19 +901,19 @@ onMounted(() => {
 }
 
 .service-option:hover {
-  border-color: #ff6b35 !important;
+  border-color: #00bcd4 !important;
   transform: translateY(-4px) scale(1.02);
   box-shadow: 
-    0 12px 30px rgba(255, 107, 53, 0.2),
-    0 0 0 1px rgba(255, 107, 53, 0.1) !important;
+    0 12px 30px rgba(0, 188, 212, 0.2),
+    0 0 0 1px rgba(0, 188, 212, 0.1) !important;
 }
 
 .service-option.active {
-  border-color: #ff6b35 !important;
-  background: linear-gradient(145deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 107, 53, 0.05) 100%) !important;
+  border-color: #00bcd4 !important;
+  background: linear-gradient(145deg, rgba(0, 188, 212, 0.1) 0%, rgba(0, 188, 212, 0.05) 100%) !important;
   box-shadow: 
-    0 8px 25px rgba(255, 107, 53, 0.3),
-    0 0 0 1px rgba(255, 107, 53, 0.2) !important;
+    0 8px 25px rgba(0, 188, 212, 0.3),
+    0 0 0 1px rgba(0, 188, 212, 0.2) !important;
   transform: scale(1.02);
 }
 
@@ -909,7 +924,7 @@ onMounted(() => {
   right: 1.5rem;
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%);
+  background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -917,7 +932,7 @@ onMounted(() => {
   justify-content: center;
   font-size: 0.9rem;
   font-weight: 700;
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.4);
   animation: pulse 2s infinite;
 }
 
@@ -931,13 +946,13 @@ onMounted(() => {
     box-shadow: 
       var(--shadow-medium),
       inset 0 2px 4px rgba(255, 255, 255, 0.3),
-      0 0 20px rgba(255, 107, 53, 0.3);
+      0 0 20px rgba(0, 188, 212, 0.3);
   }
   50% { 
     box-shadow: 
       var(--shadow-medium),
       inset 0 2px 4px rgba(255, 255, 255, 0.3),
-      0 0 30px rgba(255, 107, 53, 0.5);
+      0 0 30px rgba(0, 188, 212, 0.5);
   }
 }
 
@@ -1043,7 +1058,7 @@ onMounted(() => {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
 }
 
 .form-group input::placeholder,
@@ -1107,7 +1122,7 @@ onMounted(() => {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 
     var(--shadow-strong),
-    0 0 30px rgba(255, 107, 53, 0.4);
+    0 0 30px rgba(0, 188, 212, 0.4);
 }
 
 .submit-btn:disabled {
@@ -1145,7 +1160,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(0, 188, 212, 0.3), transparent);
 }
 
 .summary-card:hover,
@@ -1154,8 +1169,8 @@ onMounted(() => {
   box-shadow: 
     0 25px 50px rgba(0, 0, 0, 0.7),
     0 12px 24px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(255, 107, 53, 0.2) !important;
-  border-color: #ff6b35 !important;
+    0 0 0 1px rgba(0, 188, 212, 0.2) !important;
+  border-color: #00bcd4 !important;
 }
 
 .summary-card h3,
@@ -1164,7 +1179,7 @@ onMounted(() => {
   font-weight: 800;
   margin-bottom: 2rem;
   color: #ffffff;
-  border-bottom: 2px solid #ff6b35;
+  border-bottom: 2px solid #00bcd4;
   padding-bottom: 0.75rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: -0.02em;
@@ -1218,7 +1233,7 @@ onMounted(() => {
 .terms-link:hover {
   color: var(--accent-light);
   border-bottom-color: var(--accent);
-  text-shadow: 0 0 8px rgba(255, 107, 53, 0.3);
+  text-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
 }
 
 /* Responsive Design */

@@ -33,7 +33,7 @@
             </ul>
             <div class="service-footer">
               <span class="price">R350</span>
-              <RouterLink to="/auto-detailing" class="btn btn-primary">Book Executive</RouterLink>
+              <RouterLink to="/bookings" class="btn btn-primary">Book Executive</RouterLink>
             </div>
           </div>
 
@@ -47,7 +47,7 @@
             </ul>
             <div class="service-footer">
               <span class="price">R100</span>
-              <RouterLink to="/auto-detailing" class="btn btn-secondary">Book Mini Valet</RouterLink>
+              <RouterLink to="/bookings" class="btn btn-secondary">Book Mini Valet</RouterLink>
             </div>
           </div>
 
@@ -61,7 +61,7 @@
             </ul>
             <div class="service-footer">
               <span class="price">R150</span>
-              <RouterLink to="/business-parks" class="btn btn-outline">View Parks</RouterLink>
+              <RouterLink to="/bookings" class="btn btn-outline">Book Service</RouterLink>
             </div>
           </div>
         </div>
@@ -128,25 +128,47 @@
         
         <div class="trust-grid">
           <div class="trust-card">
-            <div class="trust-icon">🧽</div>
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
             <h3>Premium Products Only</h3>
             <p>We use only high-quality, pH-balanced soaps and waxes that protect your paint and won't cause damage or fading.</p>
           </div>
           
           <div class="trust-card">
-            <div class="trust-icon">👨‍🔧</div>
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
             <h3>Expert Technicians</h3>
             <p>Our team is trained in proper washing techniques, using soft microfiber cloths and gentle methods to prevent scratches.</p>
           </div>
           
           <div class="trust-card">
-            <div class="trust-icon">🔒</div>
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <circle cx="12" cy="16" r="1"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
             <h3>Secure Process</h3>
             <p>We work with your keys safely, never leaving your vehicle unattended, and always return it exactly as we found it.</p>
           </div>
           
           <div class="trust-card">
-            <div class="trust-icon">📋</div>
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+            </div>
             <h3>Quality Checklist</h3>
             <p>Every wash includes a thorough inspection to ensure your vehicle meets our high standards before completion.</p>
           </div>
@@ -163,7 +185,11 @@
           </div>
           
           <div class="trust-card">
-            <div class="trust-icon">⭐</div>
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
             <h3>4+ Years Experience</h3>
             <p>Our proven track record of satisfied customers speaks to our commitment to excellence and vehicle care.</p>
           </div>
@@ -190,7 +216,12 @@
               <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Professional car wash service" />
             </div>
             <div class="benefit-content">
-              <div class="benefit-icon">🏢</div>
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+              </div>
               <h3>Enhanced Tenant Satisfaction</h3>
               <p>Provide convenient car wash services that save your tenants time and keep their vehicles looking professional. Happy tenants stay longer and pay on time.</p>
             </div>
@@ -201,7 +232,12 @@
               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Revenue generation" />
             </div>
             <div class="benefit-content">
-              <div class="benefit-icon">💰</div>
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="1" x2="12" y2="23"/>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
               <h3>Additional Revenue Stream</h3>
               <p>Generate passive income through our partnership model. We handle all operations while you earn from every wash service provided on your property.</p>
             </div>
@@ -212,7 +248,13 @@
               <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Business park advantage" />
             </div>
             <div class="benefit-content">
-              <div class="benefit-icon">🎯</div>
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="6"/>
+                  <circle cx="12" cy="12" r="2"/>
+                </svg>
+              </div>
               <h3>Competitive Advantage</h3>
               <p>Stand out from other business parks by offering premium amenities. Car wash services are a unique value proposition that attracts quality tenants.</p>
             </div>
@@ -223,7 +265,11 @@
               <img src="/download.jpg" alt="Zero maintenance service" />
             </div>
             <div class="benefit-content">
-              <div class="benefit-icon">🔧</div>
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
               <h3>Zero Maintenance for You</h3>
               <p>We handle all equipment, supplies, staffing, and operations. Your involvement is minimal - we just need access to a suitable location on your property.</p>
             </div>
@@ -234,7 +280,14 @@
               <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Flexible scheduling" />
             </div>
             <div class="benefit-content">
-              <div class="benefit-icon">📅</div>
+              <div class="benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
               <h3>Flexible Scheduling</h3>
               <p>We work around your business park's needs with flexible scheduling. Whether weekly, bi-weekly, or monthly visits, we adapt to your requirements.</p>
             </div>
@@ -266,10 +319,14 @@
       </div>
       <div class="container">
         <div class="cta-content">
-          <div class="cta-badge">
-            <span class="badge-icon">🏆</span>
-            <span>Premium Service</span>
-          </div>
+            <div class="cta-badge">
+              <span class="badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </span>
+              <span>Premium Service</span>
+            </div>
           <div class="cta-main">
             <h2>Experience Professional Car Care Excellence</h2>
             <p>Join hundreds of satisfied customers who trust The Car Bath for their premium vehicle care needs. Book your service today and discover why we're the preferred choice for discerning car owners.</p>
@@ -324,14 +381,17 @@
 </script>
 
 <style scoped>
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 /* CSS Variables */
 :root {
-  --bg: #0a0a0a;
+  --bg: #000000;
   --bg-secondary: #111111;
   --text: #ffffff;
   --text-secondary: #b3b3b3;
-  --accent: #ff6b35;
-  --accent-hover: #e55a2b;
+  --accent: #00bcd4;
+  --accent-hover: #0097a7;
   --border: #1c1c1c;
   --border-hover: #2a2a2a;
 }
@@ -973,6 +1033,12 @@
   display: block;
 }
 
+.trust-icon svg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--accent);
+}
+
 .trust-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -1171,6 +1237,12 @@
   display: block;
 }
 
+.benefit-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--accent);
+}
+
 .benefit-content h3 {
   font-size: 1.3rem;
   font-weight: 700;
@@ -1257,8 +1329,8 @@
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 25% 25%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(255, 140, 66, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 25% 25%, rgba(0, 188, 212, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(38, 198, 218, 0.03) 0%, transparent 50%);
   z-index: 2;
 }
 
@@ -1323,12 +1395,9 @@
 .stat-number {
   font-size: 2.5rem;
   font-weight: 900;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent);
   margin-bottom: 0.5rem;
-  text-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+  text-shadow: 0 2px 10px rgba(0, 188, 212, 0.3);
 }
 
 .stat-label {
@@ -1367,26 +1436,26 @@
   background: var(--gradient-primary);
   color: white;
   border: none;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
 }
 
 .cta-actions .btn-primary:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.4);
 }
 
 .cta-actions .btn-outline {
   background: transparent;
   color: var(--text);
   border: 2px solid var(--accent);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
 }
 
 .cta-actions .btn-outline:hover {
   background: var(--accent);
   color: white;
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
 }
 
 .btn-icon {

@@ -8,19 +8,27 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-badge">
-            <span class="badge-icon">✨</span>
+            <span class="badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </span>
             <span>Premium Auto Detailing</span>
           </div>
           <h1>Professional Auto Detailing Services</h1>
           <p>Transform your vehicle with our comprehensive detailing services. From showroom-quality finishes to quick touch-ups, we deliver excellence in every detail.</p>
-          <div class="hero-features">
-            <div class="feature-item">
-              <div class="feature-icon">🏆</div>
-              <div class="feature-text">
-                <strong>Showroom</strong>
-                <span>Quality Finish</span>
-              </div>
-            </div>
+           <div class="hero-features">
+             <div class="feature-item">
+               <div class="feature-icon">
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                 </svg>
+               </div>
+               <div class="feature-text">
+                 <strong>Showroom</strong>
+                 <span>Quality Finish</span>
+               </div>
+             </div>
             <div class="feature-item">
               <div class="feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -59,12 +67,24 @@
         </div>
         
         <div class="service-content">
-          <div class="service-image">
-            <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Executive Detail Service" />
-            <div class="image-overlay">
-              <div class="price-tag">
-                <span class="price">R350</span>
-                <span class="price-label">Complete Detail</span>
+          <div class="service-images">
+            <div class="service-image">
+              <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Executive Detail Service" />
+              <div class="image-overlay">
+                <div class="price-tag">
+                  <span class="price">R350</span>
+                  <span class="price-label">Complete Detail</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="service-image">
+              <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Professional Auto Detailing" />
+              <div class="image-overlay">
+                <div class="showcase-content">
+                  <h3>Professional Excellence</h3>
+                  <p>Every detail matters in our comprehensive auto detailing service</p>
+                </div>
               </div>
             </div>
           </div>
@@ -149,9 +169,9 @@
           </div>
         </div>
       </div>
-    </section>
+     </section>
 
-    <!-- Mini Valet Section -->
+     <!-- Mini Valet Section -->
     <section class="service-section mini-valet">
       <div class="container">
         <div class="section-header">
@@ -160,77 +180,112 @@
           <p class="section-subtitle">Perfect for regular maintenance and quick touch-ups between full details.</p>
         </div>
         
-        <div class="service-content reverse">
-          <div class="service-info">
-            <div class="service-features">
-              <h3>What's Included:</h3>
-              <div class="features-grid">
-                <div class="feature-card">
-                  <div class="feature-icon">🧹</div>
-                  <div class="feature-content">
-                    <h4>Vacuum & Wipe Down</h4>
-                    <p>Thorough interior cleaning and dust removal</p>
-                  </div>
-                </div>
-                <div class="feature-card">
-                  <div class="feature-icon">🪟</div>
-                  <div class="feature-content">
-                    <h4>Glass Cleaning</h4>
-                    <p>Crystal clear windows inside and out</p>
-                  </div>
-                </div>
-                <div class="feature-card">
-                  <div class="feature-icon">✨</div>
-                  <div class="feature-content">
-                    <h4>Dashboard Shine</h4>
-                    <p>Protective treatment for interior surfaces</p>
-                  </div>
-                </div>
-                <div class="feature-card">
-                  <div class="feature-icon">🚗</div>
-                  <div class="feature-content">
-                    <h4>Exterior Wash</h4>
-                    <p>Quick exterior clean and dry</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="service-benefits">
-              <h3>Perfect For:</h3>
-              <ul class="benefits-list">
-                <li>Weekly or bi-weekly maintenance</li>
-                <li>Pre-meeting or appointment prep</li>
-                <li>Keeping your car presentable daily</li>
-                <li>Private location services</li>
-              </ul>
-            </div>
-            
-            <div class="service-cta">
-              <RouterLink to="/bookings" class="btn btn-primary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14,2 14,8 20,8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10,9 9,9 8,9"/>
-                </svg>
-                Book Mini Valet
-              </RouterLink>
-              <span class="cta-note">Available for private call outs</span>
-            </div>
-          </div>
-          
-          <div class="service-image">
-            <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Mini Valet Service" />
-            <div class="image-overlay">
-              <div class="price-tag">
-                <span class="price">R180</span>
-                <span class="price-label">Quick Service</span>
-              </div>
-            </div>
-          </div>
-        </div>
+         <div class="service-content reverse">
+           <div class="service-info">
+             <div class="service-features">
+               <h3>What's Included:</h3>
+               <div class="features-grid">
+                 <div class="feature-card">
+                   <div class="feature-icon">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0"/>
+                       <path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/>
+                       <path d="M12 3v18"/>
+                     </svg>
+                   </div>
+                   <div class="feature-content">
+                     <h4>Vacuum & Wipe Down</h4>
+                     <p>Thorough interior cleaning and dust removal</p>
+                   </div>
+                 </div>
+                 <div class="feature-card">
+                   <div class="feature-icon">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                       <line x1="8" y1="21" x2="16" y2="21"/>
+                       <line x1="12" y1="17" x2="12" y2="21"/>
+                     </svg>
+                   </div>
+                   <div class="feature-content">
+                     <h4>Glass Cleaning</h4>
+                     <p>Crystal clear windows inside and out</p>
+                   </div>
+                 </div>
+                 <div class="feature-card">
+                   <div class="feature-icon">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                     </svg>
+                   </div>
+                   <div class="feature-content">
+                     <h4>Dashboard Shine</h4>
+                     <p>Protective treatment for interior surfaces</p>
+                   </div>
+                 </div>
+                 <div class="feature-card">
+                   <div class="feature-icon">
+                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                       <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                       <circle cx="7" cy="17" r="2"/>
+                       <path d="M9 17h6"/>
+                       <circle cx="17" cy="17" r="2"/>
+                     </svg>
+                   </div>
+                   <div class="feature-content">
+                     <h4>Exterior Wash</h4>
+                     <p>Quick exterior clean and dry</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+             <div class="service-benefits">
+               <h3>Perfect For:</h3>
+               <ul class="benefits-list">
+                 <li>Weekly or bi-weekly maintenance</li>
+                 <li>Pre-meeting or appointment prep</li>
+                 <li>Keeping your car presentable daily</li>
+                 <li>Private location services</li>
+               </ul>
+             </div>
+             
+             <div class="service-cta">
+               <RouterLink to="/bookings" class="btn btn-primary">
+                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                   <polyline points="14,2 14,8 20,8"/>
+                   <line x1="16" y1="13" x2="8" y2="13"/>
+                   <line x1="16" y1="17" x2="8" y2="17"/>
+                   <polyline points="10,9 9,9 8,9"/>
+                 </svg>
+                 Book Mini Valet
+               </RouterLink>
+               <span class="cta-note">Available for private call outs</span>
+             </div>
+           </div>
+           
+           <div class="service-images">
+             <div class="service-image">
+               <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Mini Valet Service" />
+               <div class="image-overlay">
+                 <div class="price-tag">
+                   <span class="price">R180</span>
+                   <span class="price-label">Quick Service</span>
+                 </div>
+               </div>
+             </div>
+             
+             <div class="service-image">
+               <img src="/download.jpg" alt="Mini Valet Interior Cleaning" />
+               <div class="image-overlay">
+                 <div class="showcase-content">
+                   <h3>Quick & Efficient</h3>
+                   <p>Professional interior cleaning in minutes</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
       </div>
     </section>
 
@@ -243,49 +298,93 @@
           <p class="section-subtitle">Convenient on-site services for your business location.</p>
         </div>
         
-        <div class="redirect-content">
-          <div class="redirect-info">
-            <div class="redirect-icon">🏢</div>
-            <h3>Business Park Services</h3>
-            <p>Our Business Park Wash service is designed specifically for corporate environments and business locations. This service includes:</p>
-            
-            <div class="service-highlights">
-              <div class="highlight-item">
-                <span class="highlight-icon">🚿</span>
-                <span>Hand wash + wheel clean</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-icon">🪟</span>
-                <span>Streak-free glass cleaning</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-icon">🧽</span>
-                <span>Light interior tidy</span>
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-icon">⏰</span>
-                <span>Quick turnaround time</span>
-              </div>
-            </div>
-            
-            <div class="redirect-note">
-              <p><strong>Note:</strong> Business Park Wash is only available at participating business park locations. Check if your business park is on our service list.</p>
-            </div>
-          </div>
-          
-          <div class="redirect-actions">
-            <RouterLink to="/business-parks" class="btn btn-primary">
-              <span class="btn-icon">🏢</span>
-              View Business Parks
-            </RouterLink>
-            <RouterLink to="/contact" class="btn btn-outline">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-              Contact Us
-            </RouterLink>
-          </div>
-        </div>
+         <div class="redirect-content">
+             <div class="redirect-info">
+               <div class="redirect-icon">
+                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                   <polyline points="9,22 9,12 15,12 15,22"/>
+                 </svg>
+               </div>
+               <h3>Business Park Services</h3>
+             <p>Our Business Park Wash service is designed specifically for corporate environments and business locations. This service includes:</p>
+             
+             <div class="service-highlights">
+               <div class="highlight-item">
+                 <span class="highlight-icon">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                     <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                     <circle cx="7" cy="17" r="2"/>
+                     <path d="M9 17h6"/>
+                     <circle cx="17" cy="17" r="2"/>
+                   </svg>
+                 </span>
+                 <span>Hand wash + wheel clean</span>
+               </div>
+               <div class="highlight-item">
+                 <span class="highlight-icon">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                     <line x1="8" y1="21" x2="16" y2="21"/>
+                     <line x1="12" y1="17" x2="12" y2="21"/>
+                   </svg>
+                 </span>
+                 <span>Streak-free glass cleaning</span>
+               </div>
+               <div class="highlight-item">
+                 <span class="highlight-icon">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                     <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0"/>
+                     <path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/>
+                     <path d="M12 3v18"/>
+                   </svg>
+                 </span>
+                 <span>Light interior tidy</span>
+               </div>
+               <div class="highlight-item">
+                 <span class="highlight-icon">
+                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                     <circle cx="12" cy="12" r="10"/>
+                     <polyline points="12,6 12,12 16,14"/>
+                   </svg>
+                 </span>
+                 <span>Quick turnaround time</span>
+               </div>
+             </div>
+             
+             <div class="redirect-note">
+               <p><strong>Note:</strong> Business Park Wash is only available at participating business park locations. Check if your business park is on our service list.</p>
+             </div>
+           </div>
+           
+           <div class="redirect-actions">
+             <div class="business-park-image">
+               <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Business Park Location" />
+               <div class="image-overlay">
+                 <div class="showcase-content">
+                   <h3>Convenient Locations</h3>
+                   <p>Professional service at your business park</p>
+                 </div>
+               </div>
+             </div>
+             
+             <div class="action-buttons">
+               <RouterLink to="/business-parks" class="btn btn-primary">
+                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                   <polyline points="9,22 9,12 15,12 15,22"/>
+                 </svg>
+                 View Business Parks
+               </RouterLink>
+               <RouterLink to="/contact" class="btn btn-outline">
+                   <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                   </svg>
+                 Contact Us
+               </RouterLink>
+             </div>
+           </div>
+         </div>
       </div>
     </section>
 
@@ -341,15 +440,23 @@
           <div class="cta-text">
             <h2>Ready to Transform Your Vehicle?</h2>
             <p>Book your auto detailing service today and experience the difference that professional attention makes. Your car deserves the best care.</p>
-            <div class="cta-features">
-              <div class="cta-feature">
-                <span class="feature-icon">📅</span>
-                <span>Flexible Scheduling</span>
-              </div>
-              <div class="cta-feature">
-                <span class="feature-icon">💯</span>
-                <span>Satisfaction Guaranteed</span>
-              </div>
+             <div class="cta-features">
+               <div class="cta-feature">
+                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                   <line x1="16" y1="2" x2="16" y2="6"/>
+                   <line x1="8" y1="2" x2="8" y2="6"/>
+                   <line x1="3" y1="10" x2="21" y2="10"/>
+                 </svg>
+                 <span>Flexible Scheduling</span>
+               </div>
+               <div class="cta-feature">
+                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                   <path d="M9 12l2 2 4-4"/>
+                 </svg>
+                 <span>Satisfaction Guaranteed</span>
+               </div>
               <div class="cta-feature">
                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -359,11 +466,17 @@
               </div>
             </div>
           </div>
-          <div class="cta-buttons">
-            <RouterLink to="/bookings" class="btn btn-primary">
-              <span class="btn-icon">📝</span>
-              Book Your Service
-            </RouterLink>
+           <div class="cta-buttons">
+             <RouterLink to="/bookings" class="btn btn-primary">
+               <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                 <polyline points="14,2 14,8 20,8"/>
+                 <line x1="16" y1="13" x2="8" y2="13"/>
+                 <line x1="16" y1="17" x2="8" y2="17"/>
+                 <polyline points="10,9 9,9 8,9"/>
+               </svg>
+               Book Your Service
+             </RouterLink>
             <RouterLink to="/contact" class="btn btn-outline">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
@@ -382,22 +495,25 @@
 </script>
 
 <style scoped>
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 /* CSS Variables - Consistent with site theme */
 :root {
-  --bg: #0a0a0a;
+  --bg: #000000;
   --bg-secondary: #1a1a1a;
   --card-bg: #1a1a1a;
   --card-bg-secondary: #2a2a2a;
   --text: #ffffff;
   --text-secondary: #b3b3b3;
-  --accent: #ff6b35;
-  --accent-hover: #ff8c42;
-  --accent-light: #ff9a5a;
+  --accent: #00bcd4;
+  --accent-hover: #0097a7;
+  --accent-light: #26c6da;
   --border: #333333;
   --border-hover: #444444;
   --success: #10b981;
   --warning: #f59e0b;
-  --gradient-primary: linear-gradient(135deg, #ff6b35 0%, #ff8c42 50%, #ff9a5a 100%);
+  --gradient-primary: linear-gradient(135deg, #00bcd4 0%, #0097a7 50%, #26c6da 100%);
   --gradient-card: linear-gradient(145deg, #1a1a1a 0%, #2a2a2a 100%);
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.4);
@@ -431,8 +547,8 @@
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 140, 66, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(0, 188, 212, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(38, 198, 218, 0.08) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -514,7 +630,7 @@
 
 .feature-item:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 107, 53, 0.3);
+  border-color: rgba(0, 188, 212, 0.3);
   transform: translateY(-2px);
 }
 
@@ -596,12 +712,18 @@
   background: var(--bg-secondary);
 }
 
-.service-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
+ .service-content {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 4rem;
+   align-items: start;
+ }
+ 
+ .service-images {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
 
 .service-content.reverse {
   direction: rtl;
@@ -667,12 +789,14 @@
   color: var(--text);
 }
 
+
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
+
 
 .feature-card {
   display: flex;
@@ -683,6 +807,7 @@
   border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
+
 
 .feature-card:hover {
   border-color: var(--accent);
@@ -702,6 +827,7 @@
   flex-shrink: 0;
 }
 
+
 .feature-content h4 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -719,6 +845,7 @@
 .service-benefits {
   margin-bottom: 2rem;
 }
+
 
 .benefits-list {
   list-style: none;
@@ -754,11 +881,42 @@
   align-items: flex-start;
 }
 
-.cta-note {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  font-style: italic;
-}
+
+ .cta-note {
+   font-size: 0.9rem;
+   color: var(--text-secondary);
+   font-style: italic;
+ }
+
+ /* Additional service image styling */
+ .service-images .service-image:nth-child(2) .image-overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+   padding: 1.5rem;
+   z-index: 2;
+ }
+
+ .showcase-content {
+   text-align: center;
+ }
+
+ .showcase-content h3 {
+   font-size: 1.4rem;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+   color: #ffffff;
+   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .showcase-content p {
+   font-size: 0.9rem;
+   color: rgba(255, 255, 255, 0.9);
+   margin: 0;
+   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+ }
 
 /* Business Park Section */
 .business-park-section {
@@ -778,9 +936,15 @@
 }
 
 .redirect-icon {
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
   display: block;
+}
+
+.redirect-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--accent);
 }
 
 .redirect-info h3 {
@@ -819,8 +983,8 @@
 }
 
 .redirect-note {
-  background: rgba(255, 107, 53, 0.1);
-  border: 1px solid rgba(255, 107, 53, 0.3);
+  background: rgba(0, 188, 212, 0.1);
+  border: 1px solid rgba(0, 188, 212, 0.3);
   border-radius: 8px;
   padding: 1.5rem;
   margin-top: 2rem;
@@ -831,11 +995,45 @@
   color: var(--text);
 }
 
-.redirect-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+ .redirect-actions {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+ 
+ .business-park-image {
+   position: relative;
+   border-radius: 1.5rem;
+   overflow: hidden;
+   box-shadow: var(--shadow-strong);
+ }
+ 
+ .business-park-image img {
+   width: 100%;
+   height: 250px;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+ }
+ 
+ .business-park-image:hover img {
+   transform: scale(1.05);
+ }
+ 
+ .business-park-image .image-overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+   padding: 1.5rem;
+   z-index: 5;
+ }
+ 
+ .action-buttons {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+ }
 
 /* Process Section */
 .process-section {
@@ -915,8 +1113,8 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 140, 66, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(0, 188, 212, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(38, 198, 218, 0.08) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -992,26 +1190,26 @@
 .btn-primary {
   background: var(--gradient-primary);
   color: white;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.4);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--text);
   border: 2px solid var(--accent);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.2);
 }
 
 .btn-outline:hover {
   background: var(--accent);
   color: white;
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
 }
 
 .btn-icon {
@@ -1044,22 +1242,68 @@
     font-size: 2.2rem;
   }
   
-  .service-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .service-content.reverse {
-    direction: ltr;
-  }
+   .service-content {
+     grid-template-columns: 1fr;
+     gap: 2rem;
+   }
+   
+   .service-images {
+     gap: 1.5rem;
+   }
+   
+   .service-content.reverse {
+     direction: ltr;
+   }
   
   .features-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
-  .redirect-content {
+  .service-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .feature-card .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  
+  .service-cta {
+    align-items: center;
+    text-align: center;
+  }
+  
+   .service-benefits {
+     margin-bottom: 1.5rem;
+   }
+   
+   .showcase-content h3 {
+     font-size: 1.2rem;
+   }
+   
+   .showcase-content p {
+     font-size: 0.8rem;
+   }
+   
+   .redirect-content {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .business-park-image img {
+    height: 200px;
+  }
+  
+  .action-buttons {
+    gap: 0.75rem;
   }
   
   .service-highlights {

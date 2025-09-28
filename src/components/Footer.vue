@@ -125,13 +125,16 @@
 
 <style scoped>
 /* Footer Variables */
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
   --bg: #0a0a0a;
   --bg-secondary: #111111;
   --text: #ffffff;
   --text-secondary: #b3b3b3;
-  --accent: #ff6b35;
-  --accent-hover: #e55a2b;
+  --accent: #00bcd4;
+  --accent-hover: #0097a7;
   --border: #1c1c1c;
   --border-hover: #2a2a2a;
 }
@@ -152,7 +155,7 @@
 }
 
 .footer .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
@@ -162,8 +165,8 @@
 /* Main Footer Layout */
 .footer-main {
   display: grid;
-  grid-template-columns: 2fr 1.5fr 1.5fr;
-  gap: 3rem;
+  grid-template-columns: 2.5fr 1.5fr 1.5fr;
+  gap: 4rem;
   margin-bottom: 2rem;
   align-items: start;
 }
@@ -287,7 +290,7 @@
 .footer-nav a:hover {
   color: var(--accent);
   padding-left: 0.5rem;
-  background: rgba(255, 107, 53, 0.05);
+  background: rgba(0, 188, 212, 0.05);
 }
 
 
@@ -312,7 +315,7 @@
 
 .social-link:hover {
   color: var(--accent);
-  background: rgba(255, 107, 53, 0.1);
+  background: rgba(0, 188, 212, 0.1);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   margin-left: -0.5rem;
@@ -387,7 +390,7 @@
   background: var(--accent-hover);
   border-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.3);
 }
 
 .btn-secondary {
@@ -529,7 +532,7 @@
 /* Large Desktop */
 @media (min-width: 1200px) {
   .footer-main {
-    gap: 3rem;
+    gap: 4rem;
   }
   
   .footer-links {

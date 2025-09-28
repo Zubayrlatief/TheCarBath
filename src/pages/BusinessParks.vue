@@ -87,7 +87,10 @@
           <div class="requirement-card">
             <div class="requirement-header">
               <div class="requirement-icon">
-                <span>📍</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
               </div>
               <h3>Parking Space</h3>
             </div>
@@ -102,7 +105,9 @@
           <div class="requirement-card">
             <div class="requirement-header">
               <div class="requirement-icon">
-                <span>🚰</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
               </div>
               <h3>Water Access</h3>
             </div>
@@ -117,7 +122,9 @@
           <div class="requirement-card">
             <div class="requirement-header">
               <div class="requirement-icon">
-                <span>⚡</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13,2 3,14 12,14 11,22 22,10 13,10"/>
+                </svg>
               </div>
               <h3>Power (Optional)</h3>
             </div>
@@ -132,7 +139,13 @@
           <div class="requirement-card">
             <div class="requirement-header">
               <div class="requirement-icon">
-                <span>📋</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10,9 9,9 8,9"/>
+                </svg>
               </div>
               <h3>Tenant Communication</h3>
             </div>
@@ -166,7 +179,14 @@
               </div>
               
               <div class="summary-item">
-                <div class="summary-icon">📅</div>
+                <div class="summary-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                  </svg>
+                </div>
                 <div class="summary-content">
                   <h4>Frequency</h4>
                   <span>Weekly/Bi-weekly</span>
@@ -174,7 +194,14 @@
               </div>
               
               <div class="summary-item">
-                <div class="summary-icon">🚛</div>
+                <div class="summary-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                    <circle cx="7" cy="17" r="2"/>
+                    <path d="M9 17h6"/>
+                    <circle cx="17" cy="17" r="2"/>
+                  </svg>
+                </div>
                 <div class="summary-content">
                   <h4>Equipment</h4>
                   <span>Compact mobile</span>
@@ -182,7 +209,12 @@
               </div>
               
               <div class="summary-item">
-                <div class="summary-icon">🌱</div>
+                <div class="summary-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                  </svg>
+                </div>
                 <div class="summary-content">
                   <h4>Eco-Friendly</h4>
                   <span>Minimal impact</span>
@@ -244,7 +276,9 @@
 
     <!-- CTA Section -->
     <section id="contact" class="cta-section">
-      <div class="hero-overlay"></div>
+      <div class="cta-background">
+        <div class="cta-overlay"></div>
+      </div>
       <div class="container">
         <div class="cta-content">
           <div class="cta-header">
@@ -320,14 +354,17 @@
 </script>
 
 <style scoped>
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 /* Page Variables */
 :root {
-  --bg: #0a0a0a;
+  --bg: #000000;
   --bg-secondary: #111111;
   --text: #ffffff;
   --text-secondary: #b3b3b3;
-  --accent: #ff6b35;
-  --accent-hover: #e55a2b;
+  --accent: #00bcd4;
+  --accent-hover: #0097a7;
   --border: #1c1c1c;
   --border-hover: #2a2a2a;
 }
@@ -701,7 +738,7 @@
   font-weight: 800;
   font-size: 1.2rem;
   z-index: 2;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
 }
 
 .step-content {
@@ -936,13 +973,25 @@
   overflow: hidden;
 }
 
-.hero-overlay {
+.cta-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45) !important;
+  z-index: 1;
+}
+
+.cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 188, 212, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(38, 198, 218, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%);
   z-index: 2;
 }
 
@@ -1016,7 +1065,7 @@
   background: var(--accent-hover);
   border-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
 }
 
 .cta-buttons .btn-secondary {
