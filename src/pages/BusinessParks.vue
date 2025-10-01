@@ -288,13 +288,13 @@
           
           <div class="cta-main">
             <div class="cta-buttons">
-              <a href="tel:+27821234567" class="btn btn-primary">
+              <a href="tel:+27685070088" class="btn btn-primary">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                 </svg>
                 <span>Call Us Now</span>
               </a>
-              <a href="mailto:partnerships@thecarbath.co.za" class="btn btn-secondary">
+              <a href="mailto:thecarsbath@gmail.com" class="btn btn-secondary">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                   <polyline points="22,6 12,13 2,6"/>
@@ -312,7 +312,7 @@
                 </div>
                 <div class="contact-details">
                   <h4>Phone</h4>
-                  <p>+27 82 123 4567</p>
+                  <p>068 507 0088</p>
                 </div>
               </div>
               
@@ -325,7 +325,7 @@
                 </div>
                 <div class="contact-details">
                   <h4>Email</h4>
-                  <p>partnerships@thecarbath.co.za</p>
+                  <p>thecarsbath@gmail.com</p>
                 </div>
               </div>
               
@@ -431,15 +431,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
+  padding: 0 20px;
 }
 
 .hero-content h1 {
@@ -453,10 +454,11 @@
 
 .hero-subtitle {
   font-size: 1.3rem;
-  color: var(--text-secondary);
+  color: rgba(255, 255, 255, 0.9);
   margin: 0 0 3rem 0;
   line-height: 1.6;
   font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-buttons {
@@ -765,6 +767,7 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto 3rem auto;
+  width: 100%;
 }
 
 .requirement-card {
@@ -1170,21 +1173,94 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .business-parks-page {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    margin-left: calc(-50vw + 50%);
+  }
+  
+  .hero-background {
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero-image {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    width: 100vw;
+  }
+  
+  .hero-content {
+    padding: 0 1.25rem;
+    max-width: 100%;
+  }
+  
+  .hero-content .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
   }
   
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
   
   .hero-buttons {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
   }
   
   .section-header h2 {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-eyebrow {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .benefits-section,
+  .requirements-section,
+  .how-it-works-section,
+  .testimonials-section {
+    padding: 3rem 0;
   }
   
   .benefits-grid,
@@ -1267,55 +1343,126 @@
   }
   
   .step-content {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+  
+  .requirements-section {
+    padding: 2.5rem 0;
+    overflow-x: hidden;
+  }
+  
+  .requirements-section .container {
+    max-width: 100%;
+    padding: 0 1rem;
   }
   
   .requirements-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    max-width: 100%;
   }
   
   .requirement-card {
-    padding: 2rem;
+    padding: 0.875rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .requirement-header {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
-    margin-bottom: 1.25rem;
+    flex-direction: row;
+    text-align: left;
+    gap: 0.625rem;
+    margin-bottom: 0.625rem;
+    align-items: center;
+  }
+  
+  .requirement-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+  
+  .requirement-icon svg {
+    width: 16px;
+    height: 16px;
   }
   
   .requirement-header h3 {
-    font-size: 1.4rem;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.3;
+  }
+  
+  .requirement-body {
+    text-align: left;
+    padding-left: 0;
   }
   
   .requirement-body p {
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.625rem;
+    line-height: 1.4;
   }
   
   .requirement-badge {
-    font-size: 0.85rem;
-    padding: 0.6rem 1rem;
+    font-size: 0.65rem;
+    padding: 0.35rem 0.625rem;
+    display: inline-block;
+  }
+  
+  .requirements-summary {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .summary-card {
+    padding: 1.25rem;
   }
   
   .summary-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .summary-item {
-    padding: 1.25rem;
+    padding: 0.875rem;
+  }
+  
+  .summary-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .summary-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .summary-content h4 {
+    font-size: 0.9rem;
+  }
+  
+  .summary-content span {
+    font-size: 0.8rem;
+  }
+  
+  .summary-header {
+    margin-bottom: 1rem;
   }
   
   .summary-header h3 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   
   .summary-header p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .summary-list li {
+    font-size: 0.85rem;
+    padding: 0.4rem 0 0.4rem 1.5rem;
   }
   
   .cta-content h2 {

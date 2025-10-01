@@ -363,10 +363,10 @@
               <h4>Need Help?</h4>
               <p>Contact us directly:</p>
               <div class="contact-item">
-                <strong>Phone:</strong> +27 82 123 4567
+                <strong>Phone:</strong> 068 507 0088
               </div>
               <div class="contact-item">
-                <strong>Email:</strong> hello@thecarbath.com
+                <strong>Email:</strong> thecarsbath@gmail.com
               </div>
             </div>
           </div>
@@ -437,8 +437,8 @@ const getServiceName = () => {
 const getServicePrice = () => {
   const prices = {
     'executive-detail': 'R350',
-    'mini-valet': 'R100',
-    'business-park-wash': 'R150'
+    'mini-valet': 'R180',
+    'business-park-wash': 'R120'
   }
   return prices[formData.value.service] || ''
 }
@@ -485,7 +485,7 @@ const handleSubmit = async () => {
     // Create mailto link
     const subject = `🔔 BOOKING REQUEST - ${getServiceName()} - ${formData.value.firstName} ${formData.value.lastName}`
     const body = encodeURIComponent(emailContent)
-    const mailtoLink = `mailto:hello@thecarbath.com?subject=${encodeURIComponent(subject)}&body=${body}`
+    const mailtoLink = `mailto:thecarsbath@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`
     
     // Open email client
     window.location.href = mailtoLink
@@ -1034,36 +1034,56 @@ onMounted(() => {
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--text);
-  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
   width: 100%;
-  padding: 0.875rem 1rem;
-  background: var(--card-bg) !important;
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
-  color: var(--text);
-  font-size: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(145deg, #2a2a2a 0%, #1f1f1f 100%) !important;
+  border: 2px solid #444444 !important;
+  border-radius: 12px;
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  font-weight: 500;
   transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+  border-color: #00bcd4 !important;
+  background: linear-gradient(145deg, #2f2f2f 0%, #242424 100%) !important;
+  box-shadow: 
+    0 0 0 4px rgba(0, 188, 212, 0.2),
+    0 6px 20px rgba(0, 188, 212, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: #666666 !important;
+  background: linear-gradient(145deg, #2d2d2d 0%, #222222 100%) !important;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: var(--text-secondary);
+  color: #999999 !important;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 .checkbox-group {

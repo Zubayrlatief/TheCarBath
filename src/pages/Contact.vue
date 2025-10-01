@@ -11,10 +11,10 @@
           <button class="cta" type="submit">Send</button>
         </div>
       </form>
-      <p style="margin-top:12px; color:#b3b3b3">Or email <a href="mailto:hello@eliteparkwash.com">hello@eliteparkwash.com</a></p>
+      <p style="margin-top:12px; color:#b3b3b3">Or email <a href="mailto:thecarsbath@gmail.com">thecarsbath@gmail.com</a></p>
     </div>
   </section>
 </template>
 <script setup>
-function onSubmit(){ window.location.href = "mailto:hello@eliteparkwash.com" }
+function onSubmit(){ window.location.href = "mailto:thecarsbath@gmail.com" }
 </script>

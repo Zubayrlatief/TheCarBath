@@ -46,7 +46,7 @@
               <li>Door panels and center console clean</li>
             </ul>
             <div class="service-footer">
-              <span class="price">R100</span>
+              <span class="price">R180</span>
               <RouterLink to="/bookings" class="btn btn-secondary">Book Mini Valet</RouterLink>
             </div>
           </div>
@@ -60,143 +60,10 @@
               <li>Flexible recurring schedules for teams</li>
             </ul>
             <div class="service-footer">
-              <span class="price">R150</span>
+              <span class="price">R120</span>
               <RouterLink to="/bookings" class="btn btn-outline">Book Service</RouterLink>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="business-parks-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">For Business Parks</span>
-          <h2>How We Cater to Business Parks</h2>
-        </div>
-        
-        <div class="business-content">
-          <div class="business-text">
-            <h3>Our Unique Booking Approach</h3>
-            <p class="business-intro">We offer dedicated service days for each business park, ensuring consistent, reliable car wash services for your tenants and employees. Every vehicle receives meticulous care with premium products and gentle techniques.</p>
-            
-            <div class="approach-grid">
-              <div class="approach-card">
-                <h4>Dedicated Service Days</h4>
-                <p>Each business park gets one dedicated day per week for maximum convenience and consistent scheduling.</p>
-              </div>
-              
-              <div class="approach-card">
-                <h4>On-Site Convenience</h4>
-                <p>We come directly to your business park - no need for tenants to leave the premises or find parking elsewhere.</p>
-              </div>
-              
-              <div class="approach-card">
-                <h4>Premium Care Standards</h4>
-                <p>Every vehicle receives meticulous attention with premium products and gentle techniques that protect your investment.</p>
-              </div>
-              
-              <div class="approach-card">
-                <h4>Reliable Scheduling</h4>
-                <p>Consistent weekly service that your tenants can count on, building trust and routine for your business community.</p>
-              </div>
-            </div>
-            
-            <div class="approach-cta">
-              <RouterLink to="/business-parks" class="btn btn-primary">Partner With Us</RouterLink>
-            </div>
-          </div>
-        </div>
-        
-        <div class="business-images">
-          <figure class="image-card">
-            <img class="image-media" src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Arden Grove Business Park, Milnerton" />
-            <figcaption>Arden Grove, Milnerton</figcaption>
-          </figure>
-          <figure class="image-card">
-            <img class="image-media" src="/download.jpg" alt="Partner Business Park" />
-            <figcaption>Partner Business Park</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-section">
-      <div class="container">
-        <h2>Your Car's Safety is Our Priority</h2>
-        <p class="trust-subtitle">We understand your vehicle is a significant investment. That's why we treat every car with the utmost care and respect.</p>
-        
-        <div class="trust-grid">
-          <div class="trust-card">
-            <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-            </div>
-            <h3>Premium Products Only</h3>
-            <p>We use only high-quality, pH-balanced soaps and waxes that protect your paint and won't cause damage or fading.</p>
-          </div>
-          
-          <div class="trust-card">
-            <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-              </svg>
-            </div>
-            <h3>Expert Technicians</h3>
-            <p>Our team is trained in proper washing techniques, using soft microfiber cloths and gentle methods to prevent scratches.</p>
-          </div>
-          
-          <div class="trust-card">
-            <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <circle cx="12" cy="16" r="1"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
-            </div>
-            <h3>Secure Process</h3>
-            <p>We work with your keys safely, never leaving your vehicle unattended, and always return it exactly as we found it.</p>
-          </div>
-          
-          <div class="trust-card">
-            <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14,2 14,8 20,8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-                <polyline points="10,9 9,9 8,9"/>
-              </svg>
-            </div>
-            <h3>Quality Checklist</h3>
-            <p>Every wash includes a thorough inspection to ensure your vehicle meets our high standards before completion.</p>
-          </div>
-          
-          <div class="trust-card">
-            <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path d="M9 12l2 2 4-4"/>
-              </svg>
-            </div>
-            <h3>Damage Protection</h3>
-            <p>We're fully insured and take every precaution to protect your vehicle's finish, wheels, and interior.</p>
-          </div>
-          
-          <div class="trust-card">
-            <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-            </div>
-            <h3>4+ Years Experience</h3>
-            <p>Our proven track record of satisfied customers speaks to our commitment to excellence and vehicle care.</p>
-          </div>
-        </div>
-        
-        <div class="trust-footer">
-          <p class="trust-guarantee"><strong>100% Satisfaction Guarantee</strong> - Your complete satisfaction is our commitment. We stand behind every service with our quality promise.</p>
         </div>
       </div>
     </section>
@@ -308,6 +175,139 @@
               <p>Complete peace of mind with full insurance coverage and all necessary licenses. We're a professional, established business with a proven track record.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section">
+      <div class="container">
+        <h2>Your Car's Safety is Our Priority</h2>
+        <p class="trust-subtitle">We understand your vehicle is a significant investment. That's why we treat every car with the utmost care and respect.</p>
+        
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3>Premium Products Only</h3>
+            <p>We use only high-quality, pH-balanced soaps and waxes that protect your paint and won't cause damage or fading.</p>
+          </div>
+          
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3>Expert Technicians</h3>
+            <p>Our team is trained in proper washing techniques, using soft microfiber cloths and gentle methods to prevent scratches.</p>
+          </div>
+          
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <circle cx="12" cy="16" r="1"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3>Secure Process</h3>
+            <p>We work with your keys safely, never leaving your vehicle unattended, and always return it exactly as we found it.</p>
+          </div>
+          
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10,9 9,9 8,9"/>
+              </svg>
+            </div>
+            <h3>Quality Checklist</h3>
+            <p>Every wash includes a thorough inspection to ensure your vehicle meets our high standards before completion.</p>
+          </div>
+          
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Damage Protection</h3>
+            <p>We're fully insured and take every precaution to protect your vehicle's finish, wheels, and interior.</p>
+          </div>
+          
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3>4+ Years Experience</h3>
+            <p>Our proven track record of satisfied customers speaks to our commitment to excellence and vehicle care.</p>
+          </div>
+        </div>
+        
+        <div class="trust-footer">
+          <p class="trust-guarantee"><strong>100% Satisfaction Guarantee</strong> - Your complete satisfaction is our commitment. We stand behind every service with our quality promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-parks-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">For Business Parks</span>
+          <h2>How We Cater to Business Parks</h2>
+        </div>
+        
+        <div class="business-content">
+          <div class="business-text">
+            <h3>Our Unique Booking Approach</h3>
+            <p class="business-intro">We offer dedicated service days for each business park, ensuring consistent, reliable car wash services for your tenants and employees. Every vehicle receives meticulous care with premium products and gentle techniques.</p>
+            
+            <div class="approach-grid">
+              <div class="approach-card">
+                <h4>Dedicated Service Days</h4>
+                <p>Each business park gets one dedicated day per week for maximum convenience and consistent scheduling.</p>
+              </div>
+              
+              <div class="approach-card">
+                <h4>On-Site Convenience</h4>
+                <p>We come directly to your business park - no need for tenants to leave the premises or find parking elsewhere.</p>
+              </div>
+              
+              <div class="approach-card">
+                <h4>Premium Care Standards</h4>
+                <p>Every vehicle receives meticulous attention with premium products and gentle techniques that protect your investment.</p>
+              </div>
+              
+              <div class="approach-card">
+                <h4>Reliable Scheduling</h4>
+                <p>Consistent weekly service that your tenants can count on, building trust and routine for your business community.</p>
+              </div>
+            </div>
+            
+            <div class="approach-cta">
+              <RouterLink to="/business-parks" class="btn btn-primary">Partner With Us</RouterLink>
+            </div>
+          </div>
+        </div>
+        
+        <div class="business-images">
+          <figure class="image-card">
+            <img class="image-media" src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Arden Grove Business Park, Milnerton" />
+            <figcaption>Arden Grove, Milnerton</figcaption>
+          </figure>
+          <figure class="image-card">
+            <img class="image-media" src="/download.jpg" alt="Partner Business Park" />
+            <figcaption>Partner Business Park</figcaption>
+          </figure>
         </div>
       </div>
     </section>

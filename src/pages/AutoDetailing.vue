@@ -57,6 +57,51 @@
       </div>
     </section>
 
+    <!-- Process Section -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">How It Works</span>
+          <h2>Our Auto Detailing Process</h2>
+          <p class="section-subtitle">Professional service delivered with precision and care.</p>
+        </div>
+        
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Assessment</h3>
+              <p>We evaluate your vehicle's condition and discuss your specific needs and preferences.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Preparation</h3>
+              <p>Proper setup with professional equipment and premium products suited to your vehicle.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Execution</h3>
+              <p>Meticulous detailing process following industry best practices for optimal results.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Quality Check</h3>
+              <p>Final inspection to ensure every detail meets our high standards before delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Executive Detail Section -->
     <section class="service-section executive-detail">
       <div class="container">
@@ -388,51 +433,6 @@
       </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-eyebrow">How It Works</span>
-          <h2>Our Auto Detailing Process</h2>
-          <p class="section-subtitle">Professional service delivered with precision and care.</p>
-        </div>
-        
-        <div class="process-steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Assessment</h3>
-              <p>We evaluate your vehicle's condition and discuss your specific needs and preferences.</p>
-            </div>
-          </div>
-          
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Preparation</h3>
-              <p>Proper setup with professional equipment and premium products suited to your vehicle.</p>
-            </div>
-          </div>
-          
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Execution</h3>
-              <p>Meticulous detailing process following industry best practices for optimal results.</p>
-            </div>
-          </div>
-          
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h3>Quality Check</h3>
-              <p>Final inspection to ensure every detail meets our high standards before delivery.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Call to Action -->
     <section class="cta-section">
       <div class="container">
@@ -524,12 +524,16 @@
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Hero Section */
@@ -538,6 +542,7 @@
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-background {
@@ -706,6 +711,8 @@
 .service-section {
   padding: 5rem 0;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .service-section:nth-child(even) {
@@ -759,26 +766,28 @@
 }
 
 .price-tag {
-  background: var(--gradient-primary);
+  background: rgba(0, 188, 212, 0.95);
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: var(--shadow-medium);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .price {
   display: block;
   font-size: 2rem;
-  font-weight: 800;
-  line-height: 1;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .price-label {
+  display: block;
   font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  margin-top: 0.25rem;
   opacity: 0.9;
 }
 
@@ -908,20 +917,21 @@
    font-weight: 700;
    margin-bottom: 0.5rem;
    color: #ffffff;
-   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
  }
 
  .showcase-content p {
    font-size: 0.9rem;
    color: rgba(255, 255, 255, 0.9);
    margin: 0;
-   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+   line-height: 1.5;
  }
 
 /* Business Park Section */
 .business-park-section {
   padding: 5rem 0;
   background: var(--bg-secondary);
+  width: 100%;
+  overflow: hidden;
 }
 
 .redirect-content {
@@ -1029,6 +1039,18 @@
    z-index: 5;
  }
  
+ .business-park-image .showcase-content h3 {
+   font-size: 1.4rem;
+   font-weight: 700;
+   margin-bottom: 0.5rem;
+   color: #00bcd4;
+ }
+ 
+ .business-park-image .showcase-content p {
+   color: rgba(255, 255, 255, 0.9);
+   font-size: 0.9rem;
+ }
+ 
  .action-buttons {
    display: flex;
    flex-direction: column;
@@ -1038,6 +1060,8 @@
 /* Process Section */
 .process-section {
   padding: 5rem 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .process-steps {
@@ -1103,6 +1127,7 @@
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .cta-section::before {
@@ -1218,131 +1243,462 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .auto-detailing-page {
+    overflow-x: hidden;
+  }
+  
   .container {
     padding: 0 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section - Mobile Optimized */
+  .hero-section {
+    padding: 2.5rem 0 3rem;
+    overflow-x: hidden;
+  }
+  
+  .hero-badge {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
   }
   
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
   }
   
   .hero-features {
     flex-direction: column;
-    gap: 1rem;
-    align-items: center;
+    gap: 0.75rem;
+    align-items: stretch;
   }
   
   .feature-item {
     width: 100%;
-    max-width: 280px;
-    justify-content: flex-start;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0.875rem 1rem;
+  }
+  
+  .feature-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+  }
+  
+  .feature-text strong {
+    font-size: 0.95rem;
+  }
+  
+  .feature-text span {
+    font-size: 0.75rem;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-eyebrow {
+    font-size: 0.8rem;
+    padding: 0.4rem 1.25rem;
   }
   
   .section-header h2 {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
+    margin-bottom: 0.75rem;
   }
   
-   .service-content {
-     grid-template-columns: 1fr;
-     gap: 2rem;
-   }
-   
-   .service-images {
-     gap: 1.5rem;
-   }
-   
-   .service-content.reverse {
-     direction: ltr;
-   }
+  .section-subtitle {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+  
+  /* Service Sections */
+  .service-section {
+    padding: 3rem 0;
+  }
+  
+  .service-content {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .service-images {
+    gap: 1.25rem;
+  }
+  
+  .service-image {
+    width: 100%;
+    margin: 0;
+    border-radius: 1rem;
+  }
+  
+  .service-image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .service-content.reverse {
+    direction: ltr;
+  }
+  
+  .image-overlay {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .price-tag {
+    padding: 0.875rem 1.25rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+  }
+  
+  .price-label {
+    font-size: 0.75rem;
+  }
+  
+  /* Service Info */
+  .service-info {
+    text-align: center;
+  }
+  
+  .service-info h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+  }
   
   .features-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
   
-  .service-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
   .feature-card {
-    padding: 1rem;
-    gap: 0.75rem;
+    padding: 1.125rem;
+    gap: 0.875rem;
+    text-align: left;
   }
   
   .feature-card .feature-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.4rem;
   }
   
-  .service-cta {
-    align-items: center;
+  .feature-content h4 {
+    font-size: 1rem;
+  }
+  
+  .feature-content p {
+    font-size: 0.85rem;
+  }
+  
+  .service-benefits {
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-benefits h3 {
     text-align: center;
   }
   
-   .service-benefits {
-     margin-bottom: 1.5rem;
-   }
-   
-   .showcase-content h3 {
-     font-size: 1.2rem;
-   }
-   
-   .showcase-content p {
-     font-size: 0.8rem;
-   }
-   
-   .redirect-content {
+  .benefits-list {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .benefits-list li {
+    padding: 0.625rem 0;
+    padding-left: 1.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .benefits-list li::before {
+    font-size: 1rem;
+  }
+  
+  .service-cta {
+    align-items: stretch;
+    width: 100%;
+  }
+  
+  .service-cta .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 1.125rem 1.5rem;
+  }
+  
+  .cta-note {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .service-images .service-image:nth-child(2) .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    padding: 1rem;
+  }
+  
+  .showcase-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .showcase-content h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .showcase-content p {
+    font-size: 0.85rem;
+  }
+  
+  /* Business Park Section */
+  .business-park-section {
+    padding: 3rem 0;
+  }
+  
+  .redirect-content {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   
-  .business-park-image img {
-    height: 200px;
+  .redirect-info {
+    text-align: center;
   }
   
-  .action-buttons {
-    gap: 0.75rem;
+  .redirect-icon {
+    font-size: 2rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redirect-icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .redirect-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .redirect-info p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
   }
   
   .service-highlights {
     grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .highlight-item {
+    padding: 0.875rem;
+    justify-content: center;
+  }
+  
+  .redirect-note {
+    padding: 1.25rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .redirect-note p {
+    font-size: 0.9rem;
+  }
+  
+  .business-park-image {
+    border-radius: 1rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .business-park-image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .business-park-image .image-overlay {
+    padding: 1rem;
+  }
+  
+  .action-buttons {
+    gap: 0.875rem;
+  }
+  
+  .action-buttons .btn {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Process Section */
+  .process-section {
+    padding: 3rem 0;
   }
   
   .process-steps {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+  
+  .step {
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: 1rem;
+    border: 1px solid var(--border);
+    text-align: center;
   }
   
   .step::after {
     display: none;
   }
   
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+    margin: 0 auto 1rem;
+  }
+  
+  .step-content h3 {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+  
+  .step-content p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 3rem 0;
+  }
+  
   .cta-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
     text-align: center;
   }
   
   .cta-text h2 {
-    font-size: 2rem;
+    font-size: 1.85rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-text p {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
   }
   
   .cta-features {
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+  
+  .cta-feature {
+    justify-content: center;
   }
   
   .cta-buttons {
-    flex-direction: row;
-    justify-content: center;
+    width: 100%;
     min-width: auto;
   }
   
   .cta-buttons .btn {
-    flex: 1;
-    max-width: 200px;
+    width: 100%;
+    padding: 1.125rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Button Icon Sizing */
+  .btn-icon {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 375px) {
+  .container {
+    padding: 0 0.875rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.95rem;
+  }
+  
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+  
+  .feature-item {
+    padding: 0.75rem 0.875rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.65rem;
+  }
+  
+  .service-image img {
+    height: 220px;
+  }
+  
+  .price-tag {
+    padding: 0.75rem 1rem;
+  }
+  
+  .price {
+    font-size: 1.35rem;
+  }
+  
+  .price-label {
+    font-size: 0.7rem;
+  }
+  
+  .showcase-content h3 {
+    font-size: 1rem;
+  }
+  
+  .showcase-content p {
+    font-size: 0.8rem;
+  }
+  
+  .feature-card {
+    padding: 1rem;
+  }
+  
+  .btn {
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  
+  .cta-text h2 {
+    font-size: 1.65rem;
   }
 }
 
