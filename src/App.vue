@@ -14,7 +14,7 @@
           <li><RouterLink to="/business-parks" @click="isOpen = false">Business Parks</RouterLink></li>
           <li><RouterLink to="/auto-detailing" @click="isOpen = false">Auto Detailing</RouterLink></li>
           <li><RouterLink to="/bookings" @click="isOpen = false">Bookings</RouterLink></li>
-          <li><a href="tel:+27685070088" class="nav-cta" @click="isOpen = false">Call Us</a></li>
+          <li><a href="tel:+27685070088" class="nav-cta" @click="isOpen = false">+27 68 507 0088</a></li>
         </ul>
       </nav>
     </header>

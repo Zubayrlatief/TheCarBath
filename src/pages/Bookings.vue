@@ -319,15 +319,29 @@
                   />
                   <span class="checkmark"></span>
                   I agree to The Car Bath's 
-                  <a href="/terms-of-service.pdf" target="_blank" class="terms-link">Terms of Service</a> 
+                  <a href="/terms-of-service.html" target="_blank" class="terms-link">Terms of Service</a> 
                   and 
-                  <a href="/privacy-policy.pdf" target="_blank" class="terms-link">Privacy Policy</a>
+                  <a href="/privacy-policy.html" target="_blank" class="terms-link">Privacy Policy</a>
                 </label>
               </div>
 
               <!-- Submit Button -->
-              <button type="submit" class="submit-btn" :disabled="!isFormValid" @click="handleSubmit">
-                {{ isSubmitting ? 'Submitting...' : 'Complete Booking' }}
+              <button type="submit" class="submit-btn" :class="{ 'ready': isFormValid, 'submitting': isSubmitting }" :disabled="!isFormValid" @click="handleSubmit">
+                <span class="btn-content">
+                  <svg v-if="!isSubmitting" class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4"/>
+                    <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                    <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                    <path d="M13 12h3"/>
+                    <path d="M8 12H5"/>
+                  </svg>
+                  <svg v-else class="btn-icon btn-spinning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12a9 9 0 11-6.219-8.56"/>
+                  </svg>
+                  <span class="btn-text">{{ isSubmitting ? 'Submitting...' : 'Complete Booking' }}</span>
+                </span>
+                <div class="btn-ripple" v-if="!isSubmitting && isFormValid"></div>
+                <div class="btn-pulse" v-if="isFormValid && !isSubmitting"></div>
               </button>
             </div>
           </div>
@@ -479,26 +493,31 @@ const handleSubmit = async () => {
   isSubmitting.value = true
   
   try {
-    // Create email content
-    const emailContent = createEmailContent()
+    // Submit booking to API
+    const response = await fetch('http://localhost:3001/api/bookings', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData.value)
+    })
     
-    // Create mailto link
-    const subject = `🔔 BOOKING REQUEST - ${getServiceName()} - ${formData.value.firstName} ${formData.value.lastName}`
-    const body = encodeURIComponent(emailContent)
-    const mailtoLink = `mailto:thecarsbath@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`
+    const result = await response.json()
     
-    // Open email client
-    window.location.href = mailtoLink
-    
-    // Show success message
-    alert('Thank you for your booking request! Your email client should open with the booking details.')
-    
-    // Reset form
-    resetForm()
+    if (result.success) {
+      // Show success message
+      alert(result.message)
+      
+      // Reset form
+      resetForm()
+    } else {
+      // Show error message
+      alert(result.message || 'There was an error submitting your booking. Please try again.')
+    }
     
   } catch (error) {
     console.error('Error submitting booking:', error)
-    alert('There was an error submitting your booking. Please try again or contact us directly.')
+    alert('There was an error submitting your booking. Please try again or contact us directly at 068 507 0088.')
   } finally {
     isSubmitting.value = false
   }
@@ -768,9 +787,9 @@ onMounted(() => {
 
 .booking-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 2rem;
-  max-width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -812,7 +831,7 @@ onMounted(() => {
 
 .card-header {
   background: linear-gradient(145deg, #505050 0%, #404040 100%) !important;
-  padding: 2rem 2rem 1.5rem 2rem;
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
   border-bottom: 1px solid #666666 !important;
   display: flex;
   align-items: center;
@@ -872,7 +891,7 @@ onMounted(() => {
 }
 
 .card-content {
-  padding: 2rem;
+  padding: 2.5rem;
   position: relative;
   background: linear-gradient(145deg, #111111 0%, #0c0c0c 100%) !important;
   background-color: #505050 !important;
@@ -1029,7 +1048,7 @@ onMounted(() => {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .form-group label {
@@ -1057,6 +1076,12 @@ onMounted(() => {
   box-shadow: 
     0 4px 12px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Fix dropdown text color */
+.form-group select option {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
 }
 
 .form-group input:focus,
@@ -1109,18 +1134,47 @@ onMounted(() => {
 .submit-btn {
   width: 100%;
   padding: 1.25rem 2rem;
-  background: var(--gradient-primary);
+  background: linear-gradient(135deg, #666666 0%, #555555 100%);
   color: white;
   border: none;
   border-radius: 1rem;
   font-size: 1.2rem;
   font-weight: 800;
-  cursor: pointer;
+  cursor: not-allowed;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 1.5rem;
   box-shadow: var(--shadow-medium);
   position: relative;
   overflow: hidden;
+  opacity: 0.6;
+}
+
+/* Ready state - when form is valid */
+.submit-btn.ready {
+  background: var(--gradient-primary);
+  cursor: pointer;
+  opacity: 1;
+  animation: ready-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes ready-glow {
+  0% {
+    box-shadow: 
+      var(--shadow-medium),
+      0 0 20px rgba(0, 188, 212, 0.3);
+  }
+  100% {
+    box-shadow: 
+      var(--shadow-medium),
+      0 0 30px rgba(0, 188, 212, 0.5);
+  }
+}
+
+/* Submitting state */
+.submit-btn.submitting {
+  background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 
 .submit-btn::before {
@@ -1138,17 +1192,117 @@ onMounted(() => {
   left: 100%;
 }
 
-.submit-btn:hover:not(:disabled) {
+.submit-btn.ready:hover {
   transform: translateY(-4px) scale(1.03);
   box-shadow: 
     var(--shadow-strong),
-    0 0 30px rgba(0, 188, 212, 0.4);
+    0 0 40px rgba(0, 188, 212, 0.6);
+  animation: none;
 }
 
 .submit-btn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
+}
+
+/* Button Content */
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.btn-text {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Button Ripple Effect */
+.btn-ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  animation: ripple 2s infinite;
+  z-index: 1;
+}
+
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+/* Button Pulse Effect for Ready State */
+.btn-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.1) 0%, rgba(0, 188, 212, 0.05) 100%);
+  animation: pulse-border 2s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.8;
+  }
+}
+
+/* Click Animation */
+.submit-btn.ready:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+/* Success State */
+.submit-btn.success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  animation: success-pulse 0.6s ease-out;
+}
+
+@keyframes success-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 
 /* Booking Summary - Consistent with site cards */
@@ -1320,6 +1474,24 @@ onMounted(() => {
   
   .section-header h2 {
     font-size: 3.5rem;
+  }
+  
+  .booking-grid {
+    max-width: 1600px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 3rem;
+  }
+  
+  .card-header {
+    padding: 3rem 3rem 2rem 3rem;
+  }
+  
+  .card-content {
+    padding: 3rem;
+  }
+  
+  .form-row {
+    gap: 2rem;
   }
 }
 </style>

@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-background">
-        <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Business Park Aerial View" class="hero-image" />
+        <img src="/69e770_351601d876764a06b5ac57606c971ac7~mv2 (2).avif" alt="Business Park Aerial View" class="hero-image" />
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -12,14 +12,14 @@
           <p class="hero-subtitle">Enhance your business park's value proposition with professional car wash services that keep your tenants' vehicles pristine while they work.</p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Partner With Us</a>
-            <a href="#benefits" class="btn btn-secondary">Learn More</a>
+            <a href="https://wa.me/27685070088" target="_blank" rel="noopener" class="btn btn-secondary">Learn More</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- How It Works Section -->
-    <section class="how-it-works-section">
+    <section id="benefits" class="how-it-works-section">
       <div class="container">
         <div class="section-header">
           <h2>How Our Business Park Partnership Works</h2>
@@ -30,7 +30,14 @@
           <div class="step">
             <div class="step-visual">
               <div class="step-number">1</div>
-              <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Initial consultation" />
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
             </div>
             <div class="step-content">
               <h3>Initial Consultation</h3>
@@ -41,7 +48,15 @@
           <div class="step">
             <div class="step-visual">
               <div class="step-number">2</div>
-              <img src="/download.jpg" alt="Partnership agreement" />
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14,2 14,8 20,8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10,9 9,9 8,9"/>
+                </svg>
+              </div>
             </div>
             <div class="step-content">
               <h3>Partnership Agreement</h3>
@@ -52,7 +67,14 @@
           <div class="step">
             <div class="step-visual">
               <div class="step-number">3</div>
-              <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Service launch" />
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                  <path d="M22 9H2"/>
+                </svg>
+              </div>
             </div>
             <div class="step-content">
               <h3>Service Launch</h3>
@@ -63,7 +85,12 @@
           <div class="step">
             <div class="step-visual">
               <div class="step-number">4</div>
-              <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Ongoing partnership" />
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
             </div>
             <div class="step-content">
               <h3>Ongoing Partnership</h3>
@@ -88,14 +115,18 @@
             <div class="requirement-header">
               <div class="requirement-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <path d="M9 9h6v6H9z"/>
+                  <path d="M9 3v6"/>
+                  <path d="M15 3v6"/>
+                  <path d="M9 15v6"/>
+                  <path d="M15 15v6"/>
                 </svg>
               </div>
               <h3>Parking Space</h3>
             </div>
             <div class="requirement-body">
-              <p>3-4 parking spots for equipment and vehicles.</p>
+              <p>2 parking spots or small free space for operation.</p>
               <div class="requirement-badge">
                 <span>Easy access required</span>
               </div>
@@ -106,15 +137,18 @@
             <div class="requirement-header">
               <div class="requirement-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                  <path d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
+                  <path d="M8 8h8"/>
+                  <path d="M12 4v8"/>
                 </svg>
               </div>
-              <h3>Water Access</h3>
+              <h3>Water Provided</h3>
             </div>
             <div class="requirement-body">
-              <p>Standard garden hose connection for eco-friendly cleaning.</p>
+              <p>We bring our own water supply for eco-friendly cleaning.</p>
               <div class="requirement-badge">
-                <span>Minimal water usage</span>
+                <span>No water connection needed</span>
               </div>
             </div>
           </div>
@@ -123,7 +157,11 @@
             <div class="requirement-header">
               <div class="requirement-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="13,2 3,14 12,14 11,22 22,10 13,10"/>
+                  <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+                  <path d="M6 8h12"/>
+                  <path d="M6 12h8"/>
+                  <path d="M6 16h4"/>
+                  <circle cx="18" cy="6" r="2"/>
                 </svg>
               </div>
               <h3>Power (Optional)</h3>
@@ -174,7 +212,7 @@
                 </div>
                 <div class="summary-content">
                   <h4>Duration</h4>
-                  <span>4-6 hours</span>
+                  <span>6-8 hours</span>
                 </div>
               </div>
               
@@ -241,8 +279,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-info">
-                <h4>Sarah Mitchell</h4>
-                <span>Property Manager, Greenfield Business Park</span>
+                <h4>Gerard Umegbolu</h4>
               </div>
             </div>
           </div>
@@ -253,8 +290,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-info">
-                <h4>David Chen</h4>
-                <span>Owner, Tech Hub Business Centre</span>
+                <h4>Mohamed Zubair Kazie</h4>
               </div>
             </div>
           </div>
@@ -265,8 +301,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-info">
-                <h4>Maria Rodriguez</h4>
-                <span>Operations Director, Metro Business District</span>
+                <h4>Abubakr Marcus</h4>
               </div>
             </div>
           </div>
@@ -374,6 +409,12 @@
   padding: 0;
 }
 
+/* Override global container constraints for hero section */
+.hero-section .container {
+  max-width: none;
+  padding: 0;
+}
+
 /* Global Styles */
 .business-parks-page {
   background: var(--bg);
@@ -407,32 +448,48 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  left: 0;
+  right: 0;
 }
 
 .hero-background {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: 1;
+  right: 0;
 }
 
 .hero-image {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  filter: brightness(1.05) contrast(1.1) saturate(1.1);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+  right: 0;
 }
 
 .hero-content {
@@ -708,21 +765,38 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
+.step:hover .step-icon {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(0, 188, 212, 0.4);
+}
+
+.step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
 .step-visual {
   position: relative;
   height: 200px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111 !important;
+  border-radius: 1rem 1rem 0 0;
 }
 
-.step-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.step:hover .step-visual img {
-  transform: scale(1.05);
+.step-icon svg {
+  width: 40px;
+  height: 40px;
+  color: white;
 }
 
 .step-number {
@@ -745,6 +819,7 @@
 
 .step-content {
   padding: 2rem;
+  background: #111111 !important;
 }
 
 .step-content h3 {
@@ -795,15 +870,27 @@
 }
 
 .requirement-icon {
-  width: 3rem;
-  height: 3rem;
-  background: var(--bg);
-  border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  border: 1px solid var(--border);
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+.requirement-icon svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: white;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.requirement-card:hover .requirement-icon {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(0, 188, 212, 0.4);
 }
 
 .requirement-header h3 {
@@ -1185,6 +1272,9 @@
     width: 100vw;
     margin: 0;
     margin-left: calc(-50vw + 50%);
+    position: relative;
+    left: 0;
+    right: 0;
   }
   
   .hero-background {
@@ -1192,6 +1282,7 @@
     height: 100%;
     left: 0;
     right: 0;
+    position: absolute;
   }
   
   .hero-image {
@@ -1199,21 +1290,32 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   
   .hero-overlay {
     background: rgba(0, 0, 0, 0.55);
     width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   
   .hero-content {
     padding: 0 1.25rem;
     max-width: 100%;
+    width: 100vw;
+    position: relative;
+    left: 0;
+    right: 0;
   }
   
   .hero-content .container {
     max-width: 100%;
     padding: 0 1rem;
+    width: 100%;
   }
   
   .hero-content h1 {
@@ -1267,6 +1369,35 @@
   .process-steps,
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .requirements-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+  }
+  
+  .requirement-card {
+    width: 100%;
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  .summary-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .summary-item {
+    width: 100%;
+    flex: 1;
+    padding: 1rem;
   }
   
   .benefit-card,

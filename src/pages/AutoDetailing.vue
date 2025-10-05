@@ -114,23 +114,11 @@
         <div class="service-content">
           <div class="service-images">
             <div class="service-image">
-              <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Executive Detail Service" />
-              <div class="image-overlay">
-                <div class="price-tag">
-                  <span class="price">R350</span>
-                  <span class="price-label">Complete Detail</span>
-                </div>
-              </div>
+              <img src="/20220502_175038.jpg" alt="Executive Detail Service" />
             </div>
             
             <div class="service-image">
-              <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Professional Auto Detailing" />
-              <div class="image-overlay">
-                <div class="showcase-content">
-                  <h3>Professional Excellence</h3>
-                  <p>Every detail matters in our comprehensive auto detailing service</p>
-                </div>
-              </div>
+              <img src="/MicrosoftTeams-image-10-1bd9880a-768x511.webp" alt="Professional Auto Detailing" />
             </div>
           </div>
           
@@ -311,23 +299,11 @@
            
            <div class="service-images">
              <div class="service-image">
-               <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Mini Valet Service" />
-               <div class="image-overlay">
-                 <div class="price-tag">
-                   <span class="price">R180</span>
-                   <span class="price-label">Quick Service</span>
-                 </div>
-               </div>
+               <img src="/20220430_134432.jpg" alt="Mini Valet Service" />
              </div>
              
              <div class="service-image">
-               <img src="/download.jpg" alt="Mini Valet Interior Cleaning" />
-               <div class="image-overlay">
-                 <div class="showcase-content">
-                   <h3>Quick & Efficient</h3>
-                   <p>Professional interior cleaning in minutes</p>
-                 </div>
-               </div>
+               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Mini Valet Interior Cleaning" />
              </div>
            </div>
          </div>
@@ -404,13 +380,7 @@
            
            <div class="redirect-actions">
              <div class="business-park-image">
-               <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Business Park Location" />
-               <div class="image-overlay">
-                 <div class="showcase-content">
-                   <h3>Convenient Locations</h3>
-                   <p>Professional service at your business park</p>
-                 </div>
-               </div>
+               <img src="/carwash-1024x768.jpg" alt="Business Park Location" />
              </div>
              
              <div class="action-buttons">
@@ -752,44 +722,19 @@
   height: 400px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  filter: brightness(1.05) contrast(1.1) saturate(1.1);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .service-image:hover img {
   transform: scale(1.05);
 }
 
-.image-overlay {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  z-index: 2;
-}
-
-.price-tag {
-  background: rgba(0, 188, 212, 0.95);
-  color: white;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.price {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.price-label {
-  display: block;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 0.25rem;
-  opacity: 0.9;
-}
 
 .service-info h3 {
   font-size: 1.8rem;
@@ -897,34 +842,6 @@
    font-style: italic;
  }
 
- /* Additional service image styling */
- .service-images .service-image:nth-child(2) .image-overlay {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-   padding: 1.5rem;
-   z-index: 2;
- }
-
- .showcase-content {
-   text-align: center;
- }
-
- .showcase-content h3 {
-   font-size: 1.4rem;
-   font-weight: 700;
-   margin-bottom: 0.5rem;
-   color: #ffffff;
- }
-
- .showcase-content p {
-   font-size: 0.9rem;
-   color: rgba(255, 255, 255, 0.9);
-   margin: 0;
-   line-height: 1.5;
- }
 
 /* Business Park Section */
 .business-park-section {
@@ -1018,38 +935,24 @@
    box-shadow: var(--shadow-strong);
  }
  
- .business-park-image img {
-   width: 100%;
-   height: 250px;
-   object-fit: cover;
-   transition: transform 0.3s ease;
- }
+.business-park-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: brightness(1.05) contrast(1.1) saturate(1.1);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
  
  .business-park-image:hover img {
    transform: scale(1.05);
  }
  
- .business-park-image .image-overlay {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-   padding: 1.5rem;
-   z-index: 5;
- }
- 
- .business-park-image .showcase-content h3 {
-   font-size: 1.4rem;
-   font-weight: 700;
-   margin-bottom: 0.5rem;
-   color: #00bcd4;
- }
- 
- .business-park-image .showcase-content p {
-   color: rgba(255, 255, 255, 0.9);
-   font-size: 0.9rem;
- }
  
  .action-buttons {
    display: flex;
@@ -1241,6 +1144,45 @@
   font-size: 1.1rem;
 }
 
+/* Tablet Design */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .service-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    min-height: 600px;
+  }
+  
+  .service-content.reverse {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    min-height: 600px;
+  }
+  
+  .service-content .service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .service-content .service-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .service-content.reverse .service-info {
+    order: 1;
+  }
+  
+  .service-content.reverse .service-images {
+    order: 2;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .auto-detailing-page {
@@ -1354,22 +1296,6 @@
     direction: ltr;
   }
   
-  .image-overlay {
-    top: 1rem;
-    right: 1rem;
-  }
-  
-  .price-tag {
-    padding: 0.875rem 1.25rem;
-  }
-  
-  .price {
-    font-size: 1.5rem;
-  }
-  
-  .price-label {
-    font-size: 0.75rem;
-  }
   
   /* Service Info */
   .service-info {
@@ -1446,28 +1372,6 @@
     font-size: 0.85rem;
   }
   
-  .service-images .service-image:nth-child(2) .image-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: auto;
-    padding: 1rem;
-  }
-  
-  .showcase-content {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .showcase-content h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .showcase-content p {
-    font-size: 0.85rem;
-  }
   
   /* Business Park Section */
   .business-park-section {
@@ -1541,9 +1445,6 @@
     object-fit: cover;
   }
   
-  .business-park-image .image-overlay {
-    padding: 1rem;
-  }
   
   .action-buttons {
     gap: 0.875rem;
@@ -1668,25 +1569,6 @@
     height: 220px;
   }
   
-  .price-tag {
-    padding: 0.75rem 1rem;
-  }
-  
-  .price {
-    font-size: 1.35rem;
-  }
-  
-  .price-label {
-    font-size: 0.7rem;
-  }
-  
-  .showcase-content h3 {
-    font-size: 1rem;
-  }
-  
-  .showcase-content p {
-    font-size: 0.8rem;
-  }
   
   .feature-card {
     padding: 1rem;

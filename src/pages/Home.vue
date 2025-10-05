@@ -3,8 +3,8 @@
     <section class="hero">
       <div class="hero-background">
         <div class="hero-images">
-          <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Professional car wash service" class="hero-image-left" />
-          <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Professional car wash service" class="hero-image-right" />
+          <img src="/20220430_115624.jpg" alt="Professional car wash service" class="hero-image-left" />
+          <img src="/20220430_134409.jpg" alt="Professional car wash service" class="hero-image-right" />
         </div>
         <div class="hero-overlay"></div>
       </div>
@@ -27,9 +27,9 @@
             <h3>Executive Detail</h3>
             <p>Showroom-level finish inside and out with protection that lasts.</p>
             <ul class="service-list">
-              <li>Ceramic-safe hand wash + blow dry</li>
+              <li>Ceramic-safe hand wash + dry</li>
               <li>Decontamination, clay, and machine polish</li>
-              <li>Full interior reset: deep vacuum, steam, leather treatment</li>
+              <li>Full interior reset: deep vacuum, interior detail treatment</li>
             </ul>
             <div class="service-footer">
               <span class="price">R350</span>
@@ -39,11 +39,11 @@
 
           <div class="service-card">
             <h3>Mini Valet</h3>
-            <p>Quick and thorough interior cleaning for busy professionals on the go.</p>
+            <p>Quick and thorough interior & exterior cleaning for busy professionals on the go.</p>
             <ul class="service-list">
+              <li>Ceramic-safe hand wash + dry</li>
               <li>Vacuum and wipe down all surfaces</li>
               <li>Glass cleaning and dashboard shine</li>
-              <li>Door panels and center console clean</li>
             </ul>
             <div class="service-footer">
               <span class="price">R180</span>
@@ -55,9 +55,9 @@
             <h3>Business Park Wash</h3>
             <p>On‑site, zero‑hassle washes while you work at participating parks.</p>
             <ul class="service-list">
-              <li>Hand wash, wheel clean, tire shine</li>
-              <li>Streak‑free glass and light interior tidy</li>
-              <li>Flexible recurring schedules for teams</li>
+              <li>Ceramic-safe hand wash + dry</li>
+              <li>Streak‑free glass and interior detail</li>
+              <li>Flexible recurring 1 day/week schedules for teams</li>
             </ul>
             <div class="service-footer">
               <span class="price">R120</span>
@@ -80,29 +80,16 @@
         <div class="benefits-grid">
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Professional car wash service" />
+              <img src="/20220430_134422.jpg" alt="Revenue generation" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                  <polyline points="9,22 9,12 15,12 15,22"/>
-                </svg>
-              </div>
-              <h3>Enhanced Tenant Satisfaction</h3>
-              <p>Provide convenient car wash services that save your tenants time and keep their vehicles looking professional. Happy tenants stay longer and pay on time.</p>
-            </div>
-          </div>
-          
-          <div class="benefit-card">
-            <div class="benefit-image">
-              <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Revenue generation" />
-            </div>
-            <div class="benefit-content">
-              <div class="benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="12" y1="1" x2="12" y2="23"/>
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                  <line x1="1" y1="10" x2="23" y2="10"/>
+                  <circle cx="12" cy="16" r="2"/>
+                  <path d="M8 2v4"/>
+                  <path d="M16 2v4"/>
                 </svg>
               </div>
               <h3>Additional Revenue Stream</h3>
@@ -112,14 +99,14 @@
           
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Business park advantage" />
+              <img src="/20220430_142652.jpg" alt="Business park advantage" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <circle cx="12" cy="12" r="6"/>
-                  <circle cx="12" cy="12" r="2"/>
+                  <path d="M9 12l2 2 4-4"/>
+                  <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c1.3 0 2.5.28 3.6.8"/>
+                  <path d="M12 3v6l4 2"/>
                 </svg>
               </div>
               <h3>Competitive Advantage</h3>
@@ -129,12 +116,15 @@
           
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/download.jpg" alt="Zero maintenance service" />
+              <img src="/20220502_175038.jpg" alt="Zero maintenance service" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="9" cy="9" r="2"/>
+                  <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                 </svg>
               </div>
               <h3>Zero Maintenance for You</h3>
@@ -144,15 +134,15 @@
           
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/dd86365ba5169a74a2a0c5dede7b308d.jpg" alt="Flexible scheduling" />
+              <img src="/20220430_134432.jpg" alt="Flexible scheduling" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                  <line x1="16" y1="2" x2="16" y2="6"/>
-                  <line x1="8" y1="2" x2="8" y2="6"/>
-                  <line x1="3" y1="10" x2="21" y2="10"/>
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12,6 12,12 16,14"/>
+                  <path d="M8 12h8"/>
+                  <path d="M12 8v8"/>
                 </svg>
               </div>
               <h3>Flexible Scheduling</h3>
@@ -160,21 +150,6 @@
             </div>
           </div>
           
-          <div class="benefit-card">
-            <div class="benefit-image">
-              <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Insurance and licensing" />
-            </div>
-            <div class="benefit-content">
-              <div class="benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <path d="M9 12l2 2 4-4"/>
-                </svg>
-              </div>
-              <h3>Fully Insured & Licensed</h3>
-              <p>Complete peace of mind with full insurance coverage and all necessary licenses. We're a professional, established business with a proven track record.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -252,10 +227,6 @@
             <p>Our proven track record of satisfied customers speaks to our commitment to excellence and vehicle care.</p>
           </div>
         </div>
-        
-        <div class="trust-footer">
-          <p class="trust-guarantee"><strong>100% Satisfaction Guarantee</strong> - Your complete satisfaction is our commitment. We stand behind every service with our quality promise.</p>
-        </div>
       </div>
     </section>
 
@@ -263,7 +234,6 @@
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">For Business Parks</span>
-          <h2>How We Cater to Business Parks</h2>
         </div>
         
         <div class="business-content">
@@ -305,8 +275,8 @@
             <figcaption>Arden Grove, Milnerton</figcaption>
           </figure>
           <figure class="image-card">
-            <img class="image-media" src="/download.jpg" alt="Partner Business Park" />
-            <figcaption>Partner Business Park</figcaption>
+            <img class="image-media" src="/Lovemore_02-1-scaled (1).jpg" alt="Partner Business Park" />
+            <figcaption>Brickfield Canvas, Woodstock</figcaption>
           </figure>
         </div>
       </div>
@@ -398,8 +368,8 @@
 
 .hero {
   position: relative;
-  min-height: calc(100svh - 80px);
-  height: calc(100svh - 80px);
+  min-height: 100vh;
+  height: 100vh;
   color: white;
   display: flex;
   align-items: center;
@@ -408,6 +378,8 @@
   overflow: hidden;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  margin-top: -80px;
+  padding-top: 80px;
 }
 
 .hero-background {
@@ -415,7 +387,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   z-index: 1;
 }
 
@@ -445,8 +417,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.45);
   z-index: 2;
 }
@@ -572,6 +544,23 @@
   color: #eaeaea;
 }
 
+.service-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid #1c1c1c;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
 .service-card.premium {
   padding: 2rem;
 }
@@ -580,6 +569,10 @@
   transform: translateY(-6px) scale(1.015);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   border-color: #2a2a2a;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.05);
 }
 
 .service-card h3 {
@@ -684,7 +677,7 @@
   }
   
   .business-parks-section h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
   
   .business-text h3 {
@@ -811,12 +804,14 @@
 
 .section-eyebrow {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 10px 20px;
   border: 1px solid #2a2a2a;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   color: #b3b3b3;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 
@@ -830,10 +825,15 @@
 }
 
 .business-parks-section h2 {
-  font-size: 3rem;
+  font-size: 4.5rem;
   margin: 0;
   color: #fff;
   font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .business-content {
@@ -952,7 +952,7 @@
   }
   
   .business-parks-section h2 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
   
   .business-text h3 {
@@ -974,10 +974,24 @@
 
 /* Trust Section */
 .trust-section {
-  padding: 4rem 0;
-  background: #0a0a0a;
+  padding: 5rem 0 3rem 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
+  position: relative;
+  overflow: hidden;
+}
+
+.trust-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 40%, rgba(0, 188, 212, 0.04) 0%, transparent 50%),
+              radial-gradient(circle at 70% 60%, rgba(0, 188, 212, 0.03) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .trust-section .container {
@@ -988,81 +1002,156 @@
 
 .trust-section h2 {
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
   color: #fff;
   font-weight: 800;
+  position: relative;
+  z-index: 1;
 }
 
 .trust-subtitle {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #b3b3b3;
-  margin-bottom: 4rem;
-  max-width: 800px;
+  margin-bottom: 5rem;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
 }
 
 .trust-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .trust-card {
   background: #111111;
-  padding: 2.5rem;
-  border-radius: 1.25rem;
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
   border: 1px solid #1c1c1c;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.trust-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.02) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
 }
 
 .trust-card:hover {
-  transform: translateY(-4px);
-  border-color: #2a2a2a;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 25px 50px rgba(0, 188, 212, 0.15), 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.trust-card:hover::before {
+  opacity: 1;
 }
 
 .trust-icon {
   font-size: 3rem;
-  margin-bottom: 1.5rem;
-  display: block;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 2rem auto;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .trust-icon svg {
-  width: 3rem;
-  height: 3rem;
-  color: var(--accent);
+  width: 2.8rem;
+  height: 2.8rem;
+  color: white;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.trust-card:hover .trust-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 15px 40px rgba(0, 188, 212, 0.4);
 }
 
 .trust-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
   color: #fff;
   font-weight: 700;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.trust-card:hover .trust-card h3 {
+  color: var(--accent);
 }
 
 .trust-card p {
   color: #b3b3b3;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.trust-card:hover .trust-card p {
+  color: #fff;
 }
 
 .trust-footer {
   text-align: center;
-  padding: 3rem 0;
-  border-top: 1px solid #1c1c1c;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(0, 188, 212, 0.2);
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.02) 0%, transparent 50%);
+  border-radius: 1rem;
+  margin-top: 2rem;
 }
 
 .trust-guarantee {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
   margin: 0;
   font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid var(--accent);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -1146,7 +1235,21 @@
   padding: 0.5rem 0;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  background: var(--bg-secondary);
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 188, 212, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(0, 188, 212, 0.02) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .benefits-section .container {
@@ -1157,25 +1260,32 @@
 
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .section-eyebrow {
   display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid var(--border);
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   border-radius: 999px;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: white;
+  margin: 2rem auto 20px auto;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+  text-align: center;
 }
 
 .section-header h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 800;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
   color: var(--text);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .section-subtitle {
@@ -1188,37 +1298,70 @@
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  max-width: 1300px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .benefit-card {
   background: var(--bg);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border: 1px solid var(--border);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.02) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
 }
 
 .benefit-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-hover);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 25px 50px rgba(0, 188, 212, 0.15), 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
 }
 
 .benefit-image {
-  height: 200px;
+  height: 320px;
   overflow: hidden;
   position: relative;
+  z-index: 2;
+}
+
+.benefit-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  z-index: 1;
 }
 
 .benefit-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center bottom;
   transition: transform 0.3s ease;
 }
 
@@ -1226,35 +1369,71 @@
   transform: scale(1.05);
 }
 
+/* Enhanced quality for the flexible scheduling image */
+.benefit-card:nth-child(4) .benefit-image img {
+  filter: brightness(1.08) contrast(1.15) saturate(1.15);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+}
+
 .benefit-content {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   text-align: center;
+  position: relative;
+  z-index: 2;
+  background: var(--bg);
 }
 
 .benefit-icon {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem auto;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+  transition: all 0.4s ease;
 }
 
 .benefit-icon svg {
-  width: 2.5rem;
-  height: 2.5rem;
-  color: var(--accent);
+  width: 2.2rem;
+  height: 2.2rem;
+  color: white;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 35px rgba(0, 188, 212, 0.4);
 }
 
 .benefit-content h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.25rem 0;
   color: var(--text);
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.benefit-card:hover .benefit-content h3 {
+  color: var(--accent);
 }
 
 .benefit-content p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
+  transition: color 0.3s ease;
+}
+
+.benefit-card:hover .benefit-content p {
+  color: var(--text);
 }
 
 /* Responsive Design for Benefits Section */
@@ -1296,7 +1475,7 @@
   }
   
   .benefits-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
   }
 }
@@ -1345,13 +1524,13 @@
 .cta-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 2rem;
   background: var(--gradient-primary);
   border: none;
-  padding: 0.875rem 2rem;
+  padding: 2rem 4rem;
   border-radius: 50px;
   margin-bottom: 2.5rem;
-  font-size: 0.95rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: white;
   box-shadow: var(--shadow-soft);
@@ -1359,7 +1538,7 @@
 }
 
 .badge-icon {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .cta-main h2 {
