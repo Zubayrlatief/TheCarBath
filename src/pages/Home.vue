@@ -32,7 +32,7 @@
               <li>Full interior reset: deep vacuum, interior detail treatment</li>
             </ul>
             <div class="service-footer">
-              <span class="price">R350</span>
+              <span class="price">R2000</span>
               <RouterLink to="/bookings" class="btn btn-primary">Book Executive</RouterLink>
             </div>
           </div>
@@ -46,7 +46,7 @@
               <li>Glass cleaning and dashboard shine</li>
             </ul>
             <div class="service-footer">
-              <span class="price">R180</span>
+              <span class="price">R200</span>
               <RouterLink to="/bookings" class="btn btn-secondary">Book Mini Valet</RouterLink>
             </div>
           </div>
@@ -60,7 +60,7 @@
               <li>Flexible recurring 1 day/week schedules for teams</li>
             </ul>
             <div class="service-footer">
-              <span class="price">R120</span>
+              <span class="price">R150</span>
               <RouterLink to="/bookings" class="btn btn-outline">Book Service</RouterLink>
             </div>
           </div>

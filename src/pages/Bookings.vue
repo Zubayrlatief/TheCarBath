@@ -5,7 +5,7 @@
         <div class="section-header">
           <span class="section-eyebrow">Quick & Easy Booking</span>
           <h2>Get Started in 3 Simple Steps</h2>
-          <p class="section-subtitle">Fill out the form below and we'll confirm your appointment within 24 hours.</p>
+          <p class="section-subtitle">Fill out the form below and we'll confirm your appointment within 4 hours.</p>
         </div>
         
         <div class="booking-grid">
@@ -32,7 +32,7 @@
                       <li>Full interior reset</li>
                     </ul>
                   </div>
-                  <div class="service-price">R350</div>
+                  <div class="service-price">R2000</div>
                 </div>
                 
                 <div class="service-option" :class="{ active: formData.service === 'mini-valet' }" @click="formData.service = 'mini-valet'">
@@ -52,7 +52,7 @@
                       <li>Dashboard shine</li>
                     </ul>
                   </div>
-                  <div class="service-price">R180</div>
+                  <div class="service-price">R200</div>
                 </div>
                 
                 <div class="service-option" :class="{ active: formData.service === 'business-park-wash' }" @click="formData.service = 'business-park-wash'">
@@ -71,7 +71,7 @@
                       <li>Light interior tidy</li>
                     </ul>
                   </div>
-                  <div class="service-price">R120</div>
+                  <div class="service-price">R150</div>
                 </div>
               </div>
             </div>
@@ -503,9 +503,9 @@ const getServiceName = () => {
 
 const getServicePrice = () => {
   const prices = {
-    'executive-detail': 'R350',
-    'mini-valet': 'R180',
-    'business-park-wash': 'R120'
+    'executive-detail': 'R2000',
+    'mini-valet': 'R200',
+    'business-park-wash': 'R150'
   }
   return prices[formData.value.service] || ''
 }
