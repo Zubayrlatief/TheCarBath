@@ -589,26 +589,36 @@ const handleSubmit = async () => {
   isSubmitting.value = true
   
   try {
+    // Prepare booking data - map privateLocation to customBusinessPark for the API
+    const bookingData = {
+      ...formData.value,
+      // API expects customBusinessPark for both 'other' and 'private'
+      customBusinessPark: formData.value.businessPark === 'private' 
+        ? formData.value.privateLocation 
+        : formData.value.customBusinessPark
+    }
+    
     // Submit booking to backend API
     const response = await fetch('https://thecarbath-mail.vercel.app/api/bookings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData.value)
+      body: JSON.stringify(bookingData)
     })
     
     const result = await response.json()
     
-    if (result.success) {
+    if (response.ok) {
       // Show success message
-      alert(result.message)
+      alert(result.message || 'Booking submitted successfully!')
       
       // Reset form
       resetForm()
     } else {
-      // Show error message
-      alert(result.message || 'There was an error submitting your booking. Please try again.')
+      // Show error message with details
+      alert(result.error || result.message || 'There was an error submitting your booking. Please try again.')
+      console.error('Booking error:', result)
     }
     
   } catch (error) {
