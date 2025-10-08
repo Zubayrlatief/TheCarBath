@@ -3,8 +3,8 @@
     <section class="hero">
       <div class="hero-background">
         <div class="hero-images">
-          <img src="/20220430_115624.jpg" alt="Professional car wash service" class="hero-image-left" />
-          <img src="/20220430_134409.jpg" alt="Professional car wash service" class="hero-image-right" />
+          <img src="/20220430_115624.jpg" alt="Professional car wash service" class="hero-image-left" loading="eager" />
+          <img src="/20220430_134409.jpg" alt="Professional car wash service" class="hero-image-right" loading="eager" />
         </div>
         <div class="hero-overlay"></div>
       </div>
@@ -80,7 +80,7 @@
         <div class="benefits-grid">
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/20220430_134422.jpg" alt="Revenue generation" />
+              <img src="/20220430_134422.jpg" alt="Revenue generation" loading="lazy" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
@@ -99,7 +99,7 @@
           
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/20220430_142652.jpg" alt="Business park advantage" />
+              <img src="/20220430_142652.jpg" alt="Business park advantage" loading="lazy" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
@@ -116,7 +116,7 @@
           
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/20220502_175038.jpg" alt="Zero maintenance service" />
+              <img src="/20220502_175038.jpg" alt="Zero maintenance service" loading="lazy" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
@@ -134,7 +134,7 @@
           
           <div class="benefit-card">
             <div class="benefit-image">
-              <img src="/20220430_134432.jpg" alt="Flexible scheduling" />
+              <img src="/20220430_134432.jpg" alt="Flexible scheduling" loading="lazy" />
             </div>
             <div class="benefit-content">
               <div class="benefit-icon">
@@ -271,11 +271,11 @@
         
         <div class="business-images">
           <figure class="image-card">
-            <img class="image-media" src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Arden Grove Business Park, Milnerton" />
+            <img class="image-media" src="/Arden-Grove-Milnerton-aerial-view-1.jpg" alt="Arden Grove Business Park, Milnerton" loading="lazy" />
             <figcaption>Arden Grove, Milnerton</figcaption>
           </figure>
           <figure class="image-card">
-            <img class="image-media" src="/Lovemore_02-1-scaled (1).jpg" alt="Partner Business Park" />
+            <img class="image-media" src="/Lovemore_02-1-scaled (1).jpg" alt="Partner Business Park" loading="lazy" />
             <figcaption>Brickfield Canvas, Woodstock</figcaption>
           </figure>
         </div>

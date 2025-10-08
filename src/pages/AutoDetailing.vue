@@ -114,11 +114,11 @@
         <div class="service-content">
           <div class="service-images">
             <div class="service-image">
-              <img src="/20220502_175038.jpg" alt="Executive Detail Service" />
+              <img src="/20220502_175038.jpg" alt="Executive Detail Service" loading="lazy" />
             </div>
             
             <div class="service-image">
-              <img src="/MicrosoftTeams-image-10-1bd9880a-768x511.webp" alt="Professional Auto Detailing" />
+              <img src="/MicrosoftTeams-image-10-1bd9880a-768x511.webp" alt="Professional Auto Detailing" loading="lazy" />
             </div>
           </div>
           
@@ -291,11 +291,11 @@
            
            <div class="service-images">
              <div class="service-image">
-               <img src="/20220430_134432.jpg" alt="Mini Valet Service" />
+               <img src="/20220430_134432.jpg" alt="Mini Valet Service" loading="lazy" />
              </div>
              
              <div class="service-image">
-               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Mini Valet Interior Cleaning" />
+               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Mini Valet Interior Cleaning" loading="lazy" />
              </div>
            </div>
          </div>
@@ -365,7 +365,7 @@
            
            <div class="redirect-actions">
              <div class="business-park-image">
-               <img src="/carwash-1024x768.jpg" alt="Business Park Location" />
+               <img src="/carwash-1024x768.jpg" alt="Business Park Location" loading="lazy" />
              </div>
              
              <div class="action-buttons">

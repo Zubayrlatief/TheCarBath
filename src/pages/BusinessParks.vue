@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-background">
-        <img src="/69e770_351601d876764a06b5ac57606c971ac7~mv2 (2).avif" alt="Business Park Aerial View" class="hero-image" />
+        <img src="/69e770_351601d876764a06b5ac57606c971ac7~mv2 (2).avif" alt="Business Park Aerial View" class="hero-image" loading="eager" />
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
