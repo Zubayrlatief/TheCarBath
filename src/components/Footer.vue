@@ -472,8 +472,8 @@
   }
   
   .footer-links {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
   }
   
   .links-column {
@@ -486,6 +486,25 @@
   
   .social-link {
     justify-content: center;
+  }
+  
+  /* Additional mobile optimizations for side-by-side footer links */
+  .footer-nav {
+    gap: 0.5rem;
+  }
+  
+  .footer-nav a {
+    font-size: 0.85rem;
+    padding: 0.2rem 0;
+  }
+  
+  .social-links {
+    gap: 0.5rem;
+  }
+  
+  .social-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0;
   }
   
   .footer-cta {
@@ -509,6 +528,32 @@
   
   .container {
     padding: 0 16px;
+  }
+}
+
+/* Very small screens - ensure footer links stay side by side */
+@media (max-width: 480px) {
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .links-column h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-nav a {
+    font-size: 0.8rem;
+  }
+  
+  .social-link {
+    font-size: 0.8rem;
+  }
+  
+  .social-icon {
+    width: 18px;
+    height: 18px;
   }
 }
 

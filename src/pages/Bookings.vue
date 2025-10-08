@@ -1,48 +1,5 @@
 ﻿<template>
   <div class="bookings-page">
-    <section class="booking-hero">
-      <div class="hero-background">
-        <div class="hero-pattern"></div>
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14,2 14,8 20,8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10,9 9,9 8,9"/>
-            </svg>
-            <span>Easy Booking</span>
-          </div>
-          <h1>Schedule Your Premium Car Care</h1>
-          <p>Experience the convenience of professional car care at your fingertips. Our streamlined booking process makes it simple to schedule your next service with just a few clicks.</p>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-number">500+</div>
-              <div class="stat-label">Happy Customers</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">4.9★</div>
-              <div class="stat-label">Average Rating</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number">24hr</div>
-              <div class="stat-label">Response Time</div>
-            </div>
-          </div>
-          <div class="hero-guarantee">
-            <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              <path d="M9 12l2 2 4-4"/>
-            </svg>
-            <span>100% Satisfaction Guaranteed - Book with Confidence</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="booking-form-section">
       <div class="container">
         <div class="section-header">
@@ -128,20 +85,45 @@
             </div>
             <div class="card-content">
               <form @submit.prevent="handleSubmit" class="booking-form">
+                <!-- Required Fields Notice -->
+                <div class="required-notice">
+                  <svg class="notice-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4"/>
+                    <path d="M12 8h.01"/>
+                  </svg>
+                  <span>Fields marked with <span class="required-asterisk">*</span> are required</span>
+                </div>
+
                 <!-- Location Selection -->
                 <div class="form-group">
-                  <label for="businessPark">Business Park / Location</label>
-                  <select id="businessPark" v-model="formData.businessPark" required>
-                    <option value="">Select your location</option>
-                    <option value="arden-grove">Arden Grove, Milnerton</option>
-                    <option value="other">Other Business Park</option>
-                    <option value="private">Private Location</option>
-                  </select>
+                  <label for="businessPark">
+                    <span class="label-text">Business Park / Location</span>
+                    <span class="required-asterisk">*</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <select id="businessPark" v-model="formData.businessPark" required>
+                      <option value="">Select your location</option>
+                      <option value="arden-grove">Arden Grove, Milnerton</option>
+                      <option value="other">Other Business Park</option>
+                      <option value="private">Private Location</option>
+                    </select>
+                    <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="6 9 12 15 18 9"/>
+                    </svg>
+                  </div>
                 </div>
 
                 <!-- Custom Business Park -->
                 <div v-if="formData.businessPark === 'other'" class="form-group">
-                  <label for="customBusinessPark">Business Park Name</label>
+                  <label for="customBusinessPark">
+                    <span class="label-text">Business Park Name</span>
+                    <span class="required-asterisk">*</span>
+                  </label>
                   <input 
                     id="customBusinessPark"
                     type="text" 
@@ -151,12 +133,30 @@
                   />
                 </div>
 
+                <!-- Private Location Details -->
+                <div v-if="formData.businessPark === 'private'" class="form-group">
+                  <label for="privateLocation">
+                    <span class="label-text">Your Location</span>
+                    <span class="required-asterisk">*</span>
+                  </label>
+                  <input 
+                    id="privateLocation"
+                    type="text" 
+                    v-model="formData.privateLocation"
+                    placeholder="e.g., Your home address, office address, etc."
+                    required
+                  />
+                </div>
+
                 <!-- Personal Information -->
                 <div class="form-section">
                   <h4>Contact Information</h4>
                   <div class="form-row">
                     <div class="form-group">
-                      <label for="firstName">First Name</label>
+                      <label for="firstName">
+                        <span class="label-text">First Name</span>
+                        <span class="required-asterisk">*</span>
+                      </label>
                       <input 
                         id="firstName"
                         type="text" 
@@ -166,7 +166,10 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label for="lastName">Last Name</label>
+                      <label for="lastName">
+                        <span class="label-text">Last Name</span>
+                        <span class="required-asterisk">*</span>
+                      </label>
                       <input 
                         id="lastName"
                         type="text" 
@@ -179,7 +182,10 @@
 
                   <div class="form-row">
                     <div class="form-group">
-                      <label for="email">Email Address</label>
+                      <label for="email">
+                        <span class="label-text">Email Address</span>
+                        <span class="required-asterisk">*</span>
+                      </label>
                       <input 
                         id="email"
                         type="email" 
@@ -189,7 +195,10 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label for="phone">Phone Number</label>
+                      <label for="phone">
+                        <span class="label-text">Phone Number</span>
+                        <span class="required-asterisk">*</span>
+                      </label>
                       <input 
                         id="phone"
                         type="tel" 
@@ -206,47 +215,15 @@
                   <h4>Vehicle Information</h4>
                   <div class="form-row">
                     <div class="form-group">
-                      <label for="vehicleMake">Vehicle Make</label>
+                      <label for="vehicleMake">
+                        <span class="label-text">Vehicle Make</span>
+                        <span class="required-asterisk">*</span>
+                      </label>
                       <input 
                         id="vehicleMake"
                         type="text" 
                         v-model="formData.vehicleMake"
                         placeholder="Toyota, BMW, etc."
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="vehicleModel">Model</label>
-                      <input 
-                        id="vehicleModel"
-                        type="text" 
-                        v-model="formData.vehicleModel"
-                        placeholder="Camry, X3, etc."
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="vehicleYear">Year</label>
-                      <input 
-                        id="vehicleYear"
-                        type="number" 
-                        v-model="formData.vehicleYear"
-                        placeholder="2020"
-                        min="1990"
-                        :max="new Date().getFullYear() + 1"
-                        required
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="vehicleColor">Color</label>
-                      <input 
-                        id="vehicleColor"
-                        type="text" 
-                        v-model="formData.vehicleColor"
-                        placeholder="White, Black, Silver, etc."
                         required
                       />
                     </div>
@@ -268,7 +245,10 @@
                 <h4>Preferred Schedule</h4>
                 <div class="form-row">
                   <div class="form-group">
-                    <label for="preferredDate">Preferred Date</label>
+                    <label for="preferredDate">
+                      <span class="label-text">Preferred Date</span>
+                      <span class="required-asterisk">*</span>
+                    </label>
                     <input 
                       id="preferredDate"
                       type="date" 
@@ -278,19 +258,46 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="preferredTime">Preferred Time</label>
-                    <select id="preferredTime" v-model="formData.preferredTime" required>
-                      <option value="">Select time</option>
-                      <option value="08:00">8:00 AM</option>
-                      <option value="09:00">9:00 AM</option>
-                      <option value="10:00">10:00 AM</option>
-                      <option value="11:00">11:00 AM</option>
-                      <option value="12:00">12:00 PM</option>
-                      <option value="13:00">1:00 PM</option>
-                      <option value="14:00">2:00 PM</option>
-                      <option value="15:00">3:00 PM</option>
-                      <option value="16:00">4:00 PM</option>
-                    </select>
+                    <label for="preferredTime">
+                      <span class="label-text">Preferred Time</span>
+                      <span class="required-asterisk">*</span>
+                    </label>
+                    <div class="select-wrapper">
+                      <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                      </svg>
+                      <select id="preferredTime" v-model="formData.preferredTime" required>
+                        <option value="">Select time</option>
+                        <option value="08:00">8:00 AM</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                      </select>
+                      <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                      </svg>
+                    </div>
+                    <!-- Time slot availability indicator -->
+                    <div v-if="checkingAvailability" class="availability-checking">
+                      <svg class="checking-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12a9 9 0 11-6.219-8.56"/>
+                      </svg>
+                      <span>Checking availability...</span>
+                    </div>
+                    <div v-if="timeSlotError" class="time-slot-error">
+                      <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="15" y1="9" x2="9" y2="15"/>
+                        <line x1="9" y1="9" x2="15" y2="15"/>
+                      </svg>
+                      <span>{{ timeSlotError }}</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -318,10 +325,13 @@
                     required
                   />
                   <span class="checkmark"></span>
-                  I agree to The Car Bath's 
-                  <a href="/terms-of-service.html" target="_blank" class="terms-link">Terms of Service</a> 
-                  and 
-                  <a href="/privacy-policy.html" target="_blank" class="terms-link">Privacy Policy</a>
+                  <span>
+                    I agree to The Car Bath's 
+                    <a href="/terms-of-service.html" target="_blank" class="terms-link">Terms of Service</a> 
+                    and 
+                    <a href="/privacy-policy.html" target="_blank" class="terms-link">Privacy Policy</a>
+                    <span class="required-asterisk">*</span>
+                  </span>
                 </label>
               </div>
 
@@ -387,25 +397,67 @@
         </div>
     </div>
   </section>
+
+  <!-- Hero Content Section -->
+  <section class="booking-hero">
+    <div class="hero-background">
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14,2 14,8 20,8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10,9 9,9 8,9"/>
+          </svg>
+          <span>Easy Booking</span>
+        </div>
+        <h1>Schedule Your Premium Car Care</h1>
+        <p>Experience the convenience of professional car care at your fingertips. Our streamlined booking process makes it simple to schedule your next service with just a few clicks.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4.9★</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24hr</div>
+            <div class="stat-label">Response Time</div>
+          </div>
+        </div>
+        <div class="hero-guarantee">
+          <svg class="guarantee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+          <span>100% Satisfaction Guaranteed - Book with Confidence</span>
+        </div>
+      </div>
+    </div>
+  </section>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 
 // Form data
 const formData = ref({
   service: '',
   businessPark: '',
   customBusinessPark: '',
+  privateLocation: '',
   firstName: '',
   lastName: '',
   email: '',
   phone: '',
   vehicleMake: '',
-  vehicleModel: '',
-  vehicleYear: '',
-  vehicleColor: '',
   preferredDate: '',
   preferredTime: '',
   notes: '',
@@ -413,6 +465,9 @@ const formData = ref({
 })
 
 const isSubmitting = ref(false)
+const availableTimeSlots = ref([])
+const checkingAvailability = ref(false)
+const timeSlotError = ref('')
 
 // Computed properties
 const minDate = computed(() => {
@@ -425,14 +480,12 @@ const isFormValid = computed(() => {
   return formData.value.service && 
          formData.value.businessPark && 
          (formData.value.businessPark !== 'other' || formData.value.customBusinessPark) &&
+         (formData.value.businessPark !== 'private' || formData.value.privateLocation) &&
          formData.value.firstName && 
          formData.value.lastName && 
          formData.value.email && 
          formData.value.phone && 
          formData.value.vehicleMake && 
-         formData.value.vehicleModel && 
-         formData.value.vehicleYear && 
-         formData.value.vehicleColor && 
          formData.value.preferredDate && 
          formData.value.preferredTime && 
          formData.value.agreedToTerms
@@ -463,7 +516,7 @@ const getLocationName = () => {
   } else if (formData.value.businessPark === 'other') {
     return formData.value.customBusinessPark || 'Custom Location'
   } else if (formData.value.businessPark === 'private') {
-    return 'Private Location'
+    return formData.value.privateLocation || 'Private Location'
   }
   return 'Select location'
 }
@@ -487,14 +540,57 @@ const formatTime = (time) => {
   return `${displayHour}:${minutes} ${ampm}`
 }
 
+// Check time slot availability
+const checkTimeSlotAvailability = async (date, time) => {
+  if (!date || !time) return true
+  
+  checkingAvailability.value = true
+  timeSlotError.value = ''
+  
+  try {
+    const response = await fetch('https://thecarbath-mail.vercel.app/api/check-availability', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        date: date,
+        time: time,
+        location: getLocationName()
+      })
+    })
+    
+    const result = await response.json()
+    
+    if (result.available) {
+      return true
+    } else {
+      timeSlotError.value = `This time slot is already booked. Please choose another time.`
+      return false
+    }
+  } catch (error) {
+    console.error('Error checking availability:', error)
+    timeSlotError.value = 'Unable to check availability. Please try again.'
+    return false
+  } finally {
+    checkingAvailability.value = false
+  }
+}
+
 const handleSubmit = async () => {
   if (!isFormValid.value) return
+  
+  // Check time slot availability before submitting
+  const isAvailable = await checkTimeSlotAvailability(formData.value.preferredDate, formData.value.preferredTime)
+  if (!isAvailable) {
+    return // Don't submit if time slot is not available
+  }
   
   isSubmitting.value = true
   
   try {
-    // Submit booking to API
-    const response = await fetch('http://localhost:3001/api/bookings', {
+    // Submit booking to backend API
+    const response = await fetch('https://thecarbath-mail.vercel.app/api/bookings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -523,35 +619,6 @@ const handleSubmit = async () => {
   }
 }
 
-const createEmailContent = () => {
-  return `
-BOOKING REQUEST DETAILS
-
-Service: ${getServiceName()} - ${getServicePrice()}
-Location: ${getLocationName()}
-Date: ${formatDate(formData.value.preferredDate)}
-Time: ${formatTime(formData.value.preferredTime)}
-
-CONTACT INFORMATION
-Name: ${formData.value.firstName} ${formData.value.lastName}
-Email: ${formData.value.email}
-Phone: ${formData.value.phone}
-
-VEHICLE INFORMATION
-Make: ${formData.value.vehicleMake}
-Model: ${formData.value.vehicleModel}
-Year: ${formData.value.vehicleYear}
-Color: ${formData.value.vehicleColor}
-
-ADDITIONAL NOTES
-${formData.value.notes || 'None'}
-
----
-This booking request was submitted through The Car Bath website.
-Please confirm availability and contact the customer to finalize the booking.
-  `.trim()
-}
-
 const resetForm = () => {
   Object.keys(formData.value).forEach(key => {
     if (key === 'agreedToTerms') {
@@ -561,6 +628,13 @@ const resetForm = () => {
     }
   })
 }
+
+// Watch for time changes to check availability
+watch([() => formData.value.preferredDate, () => formData.value.preferredTime], async ([newDate, newTime]) => {
+  if (newDate && newTime) {
+    await checkTimeSlotAvailability(newDate, newTime)
+  }
+}, { debounce: 500 })
 
 onMounted(() => {
   // Set minimum date to tomorrow
@@ -1410,6 +1484,241 @@ onMounted(() => {
   text-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
 }
 
+/* Required Field Styling */
+.required-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(145deg, rgba(0, 188, 212, 0.15) 0%, rgba(0, 188, 212, 0.08) 100%);
+  border: 2px solid rgba(0, 188, 212, 0.3);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  color: #ffffff !important;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notice-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #00bcd4 !important;
+  stroke: #00bcd4;
+}
+
+.required-asterisk {
+  color: #ff4757 !important;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-left: 0.25rem;
+  text-shadow: 0 0 8px rgba(255, 71, 87, 0.5);
+  animation: pulse-asterisk 2s ease-in-out infinite;
+}
+
+@keyframes pulse-asterisk {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 71, 87, 0.5);
+  }
+  50% {
+    opacity: 0.7;
+    text-shadow: 0 0 12px rgba(255, 71, 87, 0.8);
+  }
+}
+
+.label-text {
+  display: inline;
+}
+
+/* Enhanced Select Dropdown Styling */
+.select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-icon {
+  position: absolute;
+  left: 1.25rem;
+  width: 20px;
+  height: 20px;
+  color: #00bcd4 !important;
+  stroke: #00bcd4;
+  pointer-events: none;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.select-wrapper:hover .select-icon {
+  color: #26c6da !important;
+  stroke: #26c6da;
+  transform: scale(1.1);
+}
+
+.select-wrapper:focus-within .select-icon {
+  color: #26c6da !important;
+  stroke: #26c6da;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(0, 188, 212, 0.6));
+}
+
+.select-arrow {
+  position: absolute;
+  right: 1.25rem;
+  width: 18px;
+  height: 18px;
+  color: #888888 !important;
+  stroke: #888888;
+  pointer-events: none;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.select-wrapper:hover .select-arrow {
+  color: #00bcd4 !important;
+  stroke: #00bcd4;
+  transform: translateY(2px);
+}
+
+.select-wrapper:focus-within .select-arrow {
+  color: #00bcd4 !important;
+  stroke: #00bcd4;
+  transform: translateY(3px) rotate(180deg);
+}
+
+.select-wrapper select {
+  padding-left: 3.5rem !important;
+  padding-right: 3rem !important;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none !important;
+  position: relative;
+}
+
+.select-wrapper select::-ms-expand {
+  display: none;
+}
+
+/* Enhanced dropdown hover and focus states */
+.select-wrapper select:hover {
+  border-color: #00bcd4 !important;
+  box-shadow: 
+    0 0 0 2px rgba(0, 188, 212, 0.1),
+    0 4px 12px rgba(0, 188, 212, 0.15);
+}
+
+.select-wrapper select:focus {
+  padding-left: 3.5rem !important;
+  padding-right: 3rem !important;
+}
+
+/* Improved dropdown option styling */
+.select-wrapper select option {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  padding: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.select-wrapper select option:hover {
+  background: #00bcd4 !important;
+  color: #ffffff !important;
+}
+
+.select-wrapper select option:checked {
+  background: linear-gradient(145deg, #00bcd4 0%, #0097a7 100%) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Empty option (placeholder) styling */
+.select-wrapper select option[value=""] {
+  color: #999999 !important;
+  font-style: italic;
+}
+
+/* Checkbox group improvements */
+.checkbox-group .required-asterisk {
+  margin-left: 0.5rem;
+}
+
+/* Label improvements */
+.form-group label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+/* Time slot availability indicators */
+.availability-checking {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 188, 212, 0.1);
+  border: 1px solid rgba(0, 188, 212, 0.3);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #00bcd4;
+  animation: pulse-checking 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-checking {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.checking-icon {
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+.time-slot-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 71, 87, 0.1);
+  border: 1px solid rgba(255, 71, 87, 0.3);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #ff4757;
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.error-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content h1 {
@@ -1456,6 +1765,28 @@ onMounted(() => {
   .hero-badge {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
+  }
+
+  .select-wrapper select {
+    padding-left: 3rem !important;
+    padding-right: 2.5rem !important;
+  }
+
+  .select-icon {
+    left: 1rem;
+    width: 18px;
+    height: 18px;
+  }
+
+  .select-arrow {
+    right: 1rem;
+    width: 16px;
+    height: 16px;
+  }
+
+  .required-notice {
+    font-size: 0.85rem;
+    padding: 0.875rem 1.25rem;
   }
 }
 

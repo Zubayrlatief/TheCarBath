@@ -454,6 +454,34 @@
   right: 0;
 }
 
+/* Ensure full width on all devices */
+@media (max-width: 1024px) {
+  .hero-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    left: 0;
+    right: 0;
+  }
+  
+  .hero-background {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero-image {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero-overlay {
+    width: 100vw;
+    left: 0;
+    right: 0;
+  }
+}
+
 .hero-background {
   position: absolute;
   top: 0;
@@ -1255,6 +1283,18 @@
   
   .contact-item {
     padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .contact-icon {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-details {
+    text-align: center;
   }
 }
 
@@ -1275,6 +1315,7 @@
     position: relative;
     left: 0;
     right: 0;
+    overflow: hidden;
   }
   
   .hero-background {
@@ -1283,6 +1324,8 @@
     left: 0;
     right: 0;
     position: absolute;
+    top: 0;
+    overflow: hidden;
   }
   
   .hero-image {
@@ -1293,14 +1336,21 @@
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
   }
   
   .hero-overlay {
     background: rgba(0, 0, 0, 0.55);
     width: 100vw;
+    height: 100%;
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
   }
   
   .hero-content {
@@ -1310,6 +1360,7 @@
     position: relative;
     left: 0;
     right: 0;
+    z-index: 3;
   }
   
   .hero-content .container {
@@ -1338,6 +1389,24 @@
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+  }
+  
+  /* Additional mobile optimizations for hero image */
+  .hero-image {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Ensure no horizontal scroll on mobile */
+  body {
+    overflow-x: hidden;
+  }
+  
+  .business-parks-page {
+    overflow-x: hidden;
   }
   
   .section-header {
@@ -1384,6 +1453,37 @@
     width: 100%;
     flex: 1;
     padding: 1.5rem;
+  }
+  
+  .requirement-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .requirement-icon {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .requirement-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .requirement-header h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.3;
+    text-align: center;
+  }
+  
+  .requirement-body {
+    text-align: center;
   }
   
   .summary-grid {
@@ -1502,28 +1602,30 @@
   }
   
   .requirement-header {
-    flex-direction: row;
-    text-align: left;
-    gap: 0.625rem;
-    margin-bottom: 0.625rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
     align-items: center;
   }
   
   .requirement-icon {
-    width: 32px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
     flex-shrink: 0;
+    margin-bottom: 0.5rem;
   }
   
   .requirement-icon svg {
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
   }
   
   .requirement-header h3 {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     margin: 0;
     line-height: 1.3;
+    text-align: center;
   }
   
   .requirement-body {

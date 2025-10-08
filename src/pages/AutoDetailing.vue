@@ -129,8 +129,7 @@
                 <div class="feature-card">
                   <div class="feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M3 12h18l-1.5-1.5M3 12l1.5-1.5M3 12v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6"/>
-                      <path d="M8 12h8"/>
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   </div>
                   <div class="feature-content">
@@ -141,7 +140,8 @@
                 <div class="feature-card">
                   <div class="feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M12 6v6l4 2"/>
                     </svg>
                   </div>
                   <div class="feature-content">
@@ -152,8 +152,7 @@
                 <div class="feature-card">
                   <div class="feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                      <path d="M9 9h6v6H9z"/>
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   </div>
                   <div class="feature-content">
@@ -165,7 +164,6 @@
                   <div class="feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                      <path d="M9 12l2 2 4-4"/>
                     </svg>
                   </div>
                   <div class="feature-content">
@@ -221,9 +219,7 @@
                  <div class="feature-card">
                    <div class="feature-icon">
                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                       <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0"/>
-                       <path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/>
-                       <path d="M12 3v18"/>
+                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                      </svg>
                    </div>
                    <div class="feature-content">
@@ -234,9 +230,8 @@
                  <div class="feature-card">
                    <div class="feature-icon">
                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                       <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                       <line x1="8" y1="21" x2="16" y2="21"/>
-                       <line x1="12" y1="17" x2="12" y2="21"/>
+                       <circle cx="12" cy="12" r="10"/>
+                       <path d="M12 6v6l4 2"/>
                      </svg>
                    </div>
                    <div class="feature-content">
@@ -247,7 +242,7 @@
                  <div class="feature-card">
                    <div class="feature-icon">
                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                      </svg>
                    </div>
                    <div class="feature-content">
@@ -258,10 +253,7 @@
                  <div class="feature-card">
                    <div class="feature-icon">
                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                       <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
-                       <circle cx="7" cy="17" r="2"/>
-                       <path d="M9 17h6"/>
-                       <circle cx="17" cy="17" r="2"/>
+                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                      </svg>
                    </div>
                    <div class="feature-content">
@@ -334,10 +326,7 @@
                <div class="highlight-item">
                  <span class="highlight-icon">
                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                     <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
-                     <circle cx="7" cy="17" r="2"/>
-                     <path d="M9 17h6"/>
-                     <circle cx="17" cy="17" r="2"/>
+                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                    </svg>
                  </span>
                  <span>Hand wash + wheel clean</span>
@@ -345,9 +334,8 @@
                <div class="highlight-item">
                  <span class="highlight-icon">
                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                     <line x1="8" y1="21" x2="16" y2="21"/>
-                     <line x1="12" y1="17" x2="12" y2="21"/>
+                     <circle cx="12" cy="12" r="10"/>
+                     <path d="M12 6v6l4 2"/>
                    </svg>
                  </span>
                  <span>Streak-free glass cleaning</span>
@@ -355,9 +343,7 @@
                <div class="highlight-item">
                  <span class="highlight-icon">
                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                     <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0"/>
-                     <path d="M8 21v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4"/>
-                     <path d="M12 3v18"/>
+                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                    </svg>
                  </span>
                  <span>Light interior tidy</span>
@@ -365,8 +351,7 @@
                <div class="highlight-item">
                  <span class="highlight-icon">
                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                     <circle cx="12" cy="12" r="10"/>
-                     <polyline points="12,6 12,12 16,14"/>
+                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                    </svg>
                  </span>
                  <span>Quick turnaround time</span>
@@ -413,24 +398,20 @@
              <div class="cta-features">
                <div class="cta-feature">
                  <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                   <line x1="16" y1="2" x2="16" y2="6"/>
-                   <line x1="8" y1="2" x2="8" y2="6"/>
-                   <line x1="3" y1="10" x2="21" y2="10"/>
+                   <circle cx="12" cy="12" r="10"/>
+                   <path d="M12 6v6l4 2"/>
                  </svg>
                  <span>Flexible Scheduling</span>
                </div>
                <div class="cta-feature">
                  <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                   <path d="M9 12l2 2 4-4"/>
                  </svg>
                  <span>Satisfaction Guaranteed</span>
                </div>
               <div class="cta-feature">
                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <path d="M9 12l2 2 4-4"/>
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
                 <span>Premium Products</span>
               </div>
