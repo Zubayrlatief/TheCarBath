@@ -25,17 +25,18 @@
                   </div>
                   <div class="service-info">
                     <h4>Executive Detail</h4>
-                    <p>Showroom-level finish inside and out</p>
+                    <p>Premium service for thorough interior and exterior clean</p>
                     <ul class="service-features">
-                      <li>Ceramic-safe hand wash</li>
-                      <li>Machine polish</li>
-                      <li>Full interior reset</li>
+                      <li>Full interior & exterior deep clean</li>
+                      <li>Clay bar treatment & polish</li>
+                      <li>Leather/fabric conditioning</li>
+                      <li>Engine bay detailing</li>
                     </ul>
                   </div>
-                  <div class="service-price">R2000</div>
+                  <div class="service-price">R1200</div>
                 </div>
                 
-                <div class="service-option" :class="{ active: formData.service === 'mini-valet' }" @click="formData.service = 'mini-valet'">
+                <div class="service-option" :class="{ active: formData.service === 'signature-valet' }" @click="formData.service = 'signature-valet'">
                   <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v0"/>
@@ -44,18 +45,20 @@
                     </svg>
                   </div>
                   <div class="service-info">
-                    <h4>Mini Valet</h4>
-                    <p>Quick and thorough interior cleaning for private call outs</p>
+                    <h4>Signature Valet</h4>
+                    <p>Complete clean without premium detailing for biweekly/monthly bookings</p>
                     <ul class="service-features">
-                      <li>Vacuum and wipe down</li>
-                      <li>Glass cleaning</li>
-                      <li>Dashboard shine</li>
+                      <li>Exterior wash & dry</li>
+                      <li>Tyre shine & window cleaning</li>
+                      <li>Interior vacuum & surfaces wiped</li>
+                      <li>Engine bay clean</li>
+                      <li>Upholstery spot clean</li>
                     </ul>
                   </div>
                   <div class="service-price">R200</div>
                 </div>
                 
-                <div class="service-option" :class="{ active: formData.service === 'business-park-wash' }" @click="formData.service = 'business-park-wash'">
+                <div class="service-option" :class="{ active: formData.service === 'essential-wash' }" @click="formData.service = 'essential-wash'">
                   <div class="service-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -63,15 +66,16 @@
                     </svg>
                   </div>
                   <div class="service-info">
-                    <h4>Business Park Wash</h4>
-                    <p>On-site, zero-hassle washes</p>
+                    <h4>Essential Wash</h4>
+                    <p>Quick, affordable, and convenient for weekly/biweekly bookings</p>
                     <ul class="service-features">
-                      <li>Hand wash + wheel clean</li>
-                      <li>Streak-free glass</li>
-                      <li>Light interior tidy</li>
+                      <li>Exterior wash & dry</li>
+                      <li>Tyre shine & window cleaning</li>
+                      <li>Interior vacuum</li>
+                      <li>Dashboard and surfaces wiped</li>
                     </ul>
                   </div>
-                  <div class="service-price">R150</div>
+                  <div class="service-price">R120</div>
                 </div>
               </div>
             </div>
@@ -98,7 +102,7 @@
                 <!-- Location Selection -->
                 <div class="form-group">
                   <label for="businessPark">
-                    <span class="label-text">Business Park / Location</span>
+                    <span class="label-text">Business Park / Apartment Block / Location</span>
                     <span class="required-asterisk">*</span>
                   </label>
                   <div class="select-wrapper">
@@ -109,7 +113,7 @@
                     <select id="businessPark" v-model="formData.businessPark" required>
                       <option value="">Select your location</option>
                       <option value="arden-grove">Arden Grove, Milnerton</option>
-                      <option value="other">Other Business Park</option>
+                      <option value="other">Other Business Park / Apartment Block</option>
                       <option value="private">Private Location</option>
                     </select>
                     <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -121,14 +125,14 @@
                 <!-- Custom Business Park -->
                 <div v-if="formData.businessPark === 'other'" class="form-group">
                   <label for="customBusinessPark">
-                    <span class="label-text">Business Park Name</span>
+                    <span class="label-text">Business Park / Apartment Block Name</span>
                     <span class="required-asterisk">*</span>
                   </label>
                   <input 
                     id="customBusinessPark"
                     type="text" 
                     v-model="formData.customBusinessPark"
-                    placeholder="Enter your business park name"
+                    placeholder="Enter your business park or apartment block name"
                     required
                   />
                 </div>
@@ -495,17 +499,17 @@ const isFormValid = computed(() => {
 const getServiceName = () => {
   const services = {
     'executive-detail': 'Executive Detail',
-    'mini-valet': 'Mini Valet',
-    'business-park-wash': 'Business Park Wash'
+    'signature-valet': 'Signature Valet',
+    'essential-wash': 'Essential Wash'
   }
   return services[formData.value.service] || 'Select a service'
 }
 
 const getServicePrice = () => {
   const prices = {
-    'executive-detail': 'R2000',
-    'mini-valet': 'R200',
-    'business-park-wash': 'R150'
+    'executive-detail': 'R1200',
+    'signature-valet': 'R200',
+    'essential-wash': 'R120'
   }
   return prices[formData.value.service] || ''
 }

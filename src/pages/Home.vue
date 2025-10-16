@@ -9,10 +9,10 @@
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <h1>Professional Car Wash Services for Business Parks</h1>
+        <h1>Professional Car Wash Services for Business Parks & Apartment Blocks</h1>
         <p>4+ years providing excellent customer care.</p>
         <div class="hero-buttons">
-          <RouterLink to="/business-parks" class="btn btn-primary">Business Parks</RouterLink>
+          <RouterLink to="/business-parks" class="btn btn-primary">Business Parks & Apartment Blocks</RouterLink>
           <RouterLink to="/auto-detailing" class="btn btn-secondary">Auto Detailing</RouterLink>
         </div>
       </div>
@@ -23,45 +23,62 @@
         <h2>Premium Services</h2>
         <div class="services-grid">
           <div class="service-card premium">
-            <div class="service-label">Most Popular</div>
-            <h3>Executive Detail</h3>
-            <p>Showroom-level finish inside and out with protection that lasts.</p>
-            <ul class="service-list">
-              <li>Ceramic-safe hand wash + dry</li>
-              <li>Decontamination, clay, and machine polish</li>
-              <li>Full interior reset: deep vacuum, interior detail treatment</li>
-            </ul>
-            <div class="service-footer">
-              <span class="price">R2000</span>
-              <RouterLink to="/bookings" class="btn btn-primary">Book Executive</RouterLink>
+            <div class="service-card-content">
+              <div>
+                <h3>Executive Detail</h3>
+                <p>Premium service for those who want a thorough interior and exterior clean, ideal for monthly or occasional use.</p>
+                <ul class="service-list">
+                  <li>Full interior & exterior deep clean</li>
+                  <li>Clay bar treatment & polish (for shine only, no paint protection)</li>
+                  <li>Leather/fabric conditioning</li>
+                  <li>Engine bay detailing</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <span class="price">R1200</span>
+                <RouterLink to="/bookings" class="btn btn-primary">Book Executive</RouterLink>
+              </div>
             </div>
           </div>
 
           <div class="service-card">
-            <h3>Mini Valet</h3>
-            <p>Quick and thorough interior & exterior cleaning for busy professionals on the go.</p>
-            <ul class="service-list">
-              <li>Ceramic-safe hand wash + dry</li>
-              <li>Vacuum and wipe down all surfaces</li>
-              <li>Glass cleaning and dashboard shine</li>
-            </ul>
-            <div class="service-footer">
-              <span class="price">R200</span>
-              <RouterLink to="/bookings" class="btn btn-secondary">Book Mini Valet</RouterLink>
+            <div class="service-card-content">
+              <div>
+                <h3>Signature Valet</h3>
+                <p>Mid-tier service for clients who want a complete clean without premium detailing. Suitable for biweekly or monthly recurring bookings.</p>
+                <ul class="service-list">
+                  <li>Exterior wash & dry</li>
+                  <li>Tyre shine</li>
+                  <li>Window cleaning</li>
+                  <li>Interior vacuum</li>
+                  <li>Dashboard and surfaces wiped</li>
+                  <li>Engine bay clean</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <span class="price">R200</span>
+                <RouterLink to="/bookings" class="btn btn-secondary">Book Signature Valet</RouterLink>
+              </div>
             </div>
           </div>
 
           <div class="service-card">
-            <h3>Business Park Wash</h3>
-            <p>On‑site, zero‑hassle washes while you work at participating parks.</p>
-            <ul class="service-list">
-              <li>Ceramic-safe hand wash + dry</li>
-              <li>Streak‑free glass and interior detail</li>
-              <li>Flexible recurring 1 day/week schedules for teams</li>
-            </ul>
-            <div class="service-footer">
-              <span class="price">R150</span>
-              <RouterLink to="/bookings" class="btn btn-outline">Book Service</RouterLink>
+            <div class="service-card-content">
+              <div>
+                <h3>Essential Wash</h3>
+                <p>Quick, affordable, and convenient. Perfect for weekly or biweekly bookings.</p>
+                <ul class="service-list">
+                  <li>Exterior wash & dry</li>
+                  <li>Tyre shine</li>
+                  <li>Window cleaning</li>
+                  <li>Interior vacuum</li>
+                  <li>Dashboard and surfaces wiped</li>
+                </ul>
+              </div>
+              <div class="service-footer">
+                <span class="price">R120</span>
+                <RouterLink to="/bookings" class="btn btn-outline">Book Essential Wash</RouterLink>
+              </div>
             </div>
           </div>
         </div>
@@ -73,8 +90,8 @@
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">Why Partner With The Car Bath</span>
-          <h2>Transform Your Business Park Into a Premium Destination</h2>
-          <p class="section-subtitle">We help business park owners provide exceptional value to their tenants while generating additional revenue streams.</p>
+          <h2>Transform Your Business Park or Apartment Block Into a Premium Destination</h2>
+          <p class="section-subtitle">We help business park owners and apartment block managers provide exceptional value to their tenants while generating additional revenue streams.</p>
         </div>
         
         <div class="benefits-grid">
@@ -93,7 +110,7 @@
                 </svg>
               </div>
               <h3>Additional Revenue Stream</h3>
-              <p>Generate passive income through our partnership model. We handle all operations while you earn from every wash service provided on your property.</p>
+              <p>Generate passive income through our partnership model. We handle all operations while you earn from every wash service provided on your business park or apartment block.</p>
             </div>
           </div>
           
@@ -110,7 +127,7 @@
                 </svg>
               </div>
               <h3>Competitive Advantage</h3>
-              <p>Stand out from other business parks by offering premium amenities. Car wash services are a unique value proposition that attracts quality tenants.</p>
+              <p>Stand out from other business parks and apartment blocks by offering premium amenities. Car wash services are a unique value proposition that attracts quality tenants and residents.</p>
             </div>
           </div>
           
@@ -128,7 +145,7 @@
                 </svg>
               </div>
               <h3>Zero Maintenance for You</h3>
-              <p>We handle all equipment, supplies, staffing, and operations. Your involvement is minimal - we just need access to a suitable location on your property.</p>
+              <p>We handle all equipment, supplies, staffing, and operations. Your involvement is minimal - we just need access to a suitable location on your business park or apartment block property.</p>
             </div>
           </div>
           
@@ -146,7 +163,7 @@
                 </svg>
               </div>
               <h3>Flexible Scheduling</h3>
-              <p>We work around your business park's needs with flexible scheduling. Whether weekly, bi-weekly, or monthly visits, we adapt to your requirements.</p>
+              <p>We work around your business park or apartment block's needs with flexible scheduling. Whether weekly, bi-weekly, or monthly visits, we adapt to your requirements.</p>
             </div>
           </div>
           
@@ -233,23 +250,23 @@
     <section class="business-parks-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">For Business Parks</span>
+          <span class="section-eyebrow">For Business Parks & Apartment Blocks</span>
         </div>
         
         <div class="business-content">
           <div class="business-text">
             <h3>Our Unique Booking Approach</h3>
-            <p class="business-intro">We offer dedicated service days for each business park, ensuring consistent, reliable car wash services for your tenants and employees. Every vehicle receives meticulous care with premium products and gentle techniques.</p>
+            <p class="business-intro">We offer dedicated service days for each business park and apartment block, ensuring consistent, reliable car wash services for your tenants, residents, and employees. Every vehicle receives meticulous care with premium products and gentle techniques.</p>
             
             <div class="approach-grid">
               <div class="approach-card">
                 <h4>Dedicated Service Days</h4>
-                <p>Each business park gets one dedicated day per week for maximum convenience and consistent scheduling.</p>
+                <p>Each business park and apartment block gets one dedicated day per week for maximum convenience and consistent scheduling.</p>
               </div>
               
               <div class="approach-card">
                 <h4>On-Site Convenience</h4>
-                <p>We come directly to your business park - no need for tenants to leave the premises or find parking elsewhere.</p>
+                <p>We come directly to your business park or apartment block - no need for tenants and residents to leave the premises or find parking elsewhere.</p>
               </div>
               
               <div class="approach-card">
@@ -259,7 +276,7 @@
               
               <div class="approach-card">
                 <h4>Reliable Scheduling</h4>
-                <p>Consistent weekly service that your tenants can count on, building trust and routine for your business community.</p>
+                <p>Consistent weekly service that your tenants and residents can count on, building trust and routine for your business community.</p>
               </div>
             </div>
             
@@ -427,7 +444,7 @@
   position: relative;
   z-index: 3;
   max-width: 800px;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .hero-content h1 {
@@ -441,7 +458,7 @@
 
 .hero-content p {
   font-size: 1.4rem;
-  margin-bottom: 3rem;
+    margin-bottom: 2rem;
   opacity: 0.95;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   line-height: 1.6;
@@ -458,11 +475,11 @@
 }
 
 .btn {
-  padding: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.75rem;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   position: relative;
@@ -498,7 +515,7 @@
 }
 
 .services-preview {
-  padding: 4rem 0;
+  padding: 0;
   background: var(--bg);
   position: relative;
   width: 100vw;
@@ -509,7 +526,7 @@
 
 .services-preview .container{
   max-width: none;
-  padding: 0 20px;
+  padding: 0.7rem 10px 2rem 10px;
 }
 
 .services-preview h2 {
@@ -524,9 +541,9 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -535,13 +552,19 @@
 
 .service-card {
   background: #111111;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1.25rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #1c1c1c;
   color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 380px;
+  position: relative;
+  overflow: hidden;
 }
 
 .service-image {
@@ -586,6 +609,7 @@
   color: #b3b3b3;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  flex-grow: 0;
 }
 
 .btn-outline {
@@ -601,6 +625,89 @@
   color: white;
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+}
+
+/* Tablet screens */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+  }
+  
+  .service-card {
+    min-height: 420px;
+    padding: 1.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+  }
+  
+  .service-list {
+    font-size: 0.9rem;
+  }
+  
+  .service-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Laptop screens */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+  }
+  
+  .service-card {
+    min-height: 450px;
+    padding: 1.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.6rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-list {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-list li {
+    margin: 0.5rem 0;
+  }
+  
+  .service-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-top: 1.5rem;
+  }
+  
+  .price {
+    font-size: 1.3rem;
+  }
+  
+  .service-footer .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -628,6 +735,7 @@
   
   .service-card {
     padding: 1.25rem;
+    min-height: auto;
   }
   
   .services-grid {
@@ -641,6 +749,12 @@
     align-items: center;
     text-align: center;
   }
+  
+  .service-footer .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
   
   .services-preview .container {
     padding: 0 16px;
@@ -706,8 +820,8 @@
   }
 }
 
-/* Large screens for Services */
-@media (min-width: 1200px) {
+/* Desktop screens (1200px - 1439px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
   .services-preview {
     padding: 6rem 0;
   }
@@ -718,28 +832,139 @@
   
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     max-width: 1400px;
   }
   
   .service-card {
-    padding: 2.5rem;
+    padding: 2rem;
+    min-height: 480px;
   }
   
   .service-card h3 {
     font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
   
   .service-card p {
     font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
   
   .service-list {
     font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-list li {
+    margin: 0.75rem 0;
+    font-size: 0.95rem;
   }
   
   .price {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+  
+  .service-footer {
+    padding-top: 2rem;
+  }
+}
+
+/* Extra large screens (1440px - 1919px) */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .services-preview {
+    padding: 7rem 0;
+  }
+  
+  .services-preview h2 {
+    font-size: 4rem;
+  }
+  
+  .services-grid {
+    max-width: 1600px;
+    gap: 3rem;
+  }
+  
+  .service-card {
+    padding: 2.5rem;
+    min-height: 520px;
+  }
+  
+  .service-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-list {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-list li {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  
+  .price {
+    font-size: 1.6rem;
+  }
+  
+  .service-footer {
+    padding-top: 2.5rem;
+  }
+}
+
+/* Ultra-wide screens (1920px+) */
+@media (min-width: 1920px) {
+  .services-preview {
+    padding: 8rem 0;
+  }
+  
+  .services-preview h2 {
+    font-size: 4.5rem;
+  }
+  
+  .services-grid {
+    max-width: 2000px;
+    gap: 4rem;
+  }
+  
+  .service-card {
+    padding: 2.5rem;
+    min-height: 550px;
+  }
+  
+  .service-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-card p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .service-list {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .service-list li {
+    margin: 1.2rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+  }
+  
+  .service-footer {
+    padding-top: 3rem;
   }
 }
 
@@ -754,8 +979,8 @@
   }
   
   .btn {
-    padding: 1.2rem 2.5rem;
-    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -1201,11 +1426,26 @@
   top: 0;
   color: #90ee90;
 }
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
 .service-footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.service-footer .btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 .price{
   font-weight: 800;
@@ -1217,18 +1457,7 @@
   border: 1px solid #2a2a2a;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
 }
-.premium .service-label{
-  position: absolute;
-  top: -12px;
-  left: 16px;
-  background: #000000;
-  color: #ffffff;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: .85rem;
-  font-weight: 700;
-  border: 1px solid #2a2a2a;
-}
+
 
 /* Transform Your Business Park Section */
 .benefits-section {

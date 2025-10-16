@@ -202,13 +202,13 @@
       </div>
      </section>
 
-     <!-- Mini Valet Section -->
+     <!-- Signature Valet Section -->
     <section class="service-section mini-valet">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Quick Service</span>
-          <h2>Mini Valet</h2>
-          <p class="section-subtitle">Perfect for regular maintenance and quick touch-ups between full details.</p>
+          <span class="section-eyebrow">Mid-Tier Service</span>
+          <h2>Signature Valet</h2>
+          <p class="section-subtitle">Mid-tier service for clients who want a complete clean without premium detailing. Suitable for biweekly or monthly recurring bookings.</p>
         </div>
         
          <div class="service-content reverse">
@@ -223,8 +223,8 @@
                      </svg>
                    </div>
                    <div class="feature-content">
-                     <h4>Vacuum & Wipe Down</h4>
-                     <p>Thorough interior cleaning and dust removal</p>
+                     <h4>Exterior Wash & Dry</h4>
+                     <p>Complete exterior cleaning with tyre shine</p>
                    </div>
                  </div>
                  <div class="feature-card">
@@ -235,7 +235,7 @@
                      </svg>
                    </div>
                    <div class="feature-content">
-                     <h4>Glass Cleaning</h4>
+                     <h4>Window Cleaning</h4>
                      <p>Crystal clear windows inside and out</p>
                    </div>
                  </div>
@@ -246,8 +246,8 @@
                      </svg>
                    </div>
                    <div class="feature-content">
-                     <h4>Dashboard Shine</h4>
-                     <p>Protective treatment for interior surfaces</p>
+                     <h4>Interior Vacuum & Wipe</h4>
+                     <p>Dashboard and surfaces wiped down</p>
                    </div>
                  </div>
                  <div class="feature-card">
@@ -257,8 +257,8 @@
                      </svg>
                    </div>
                    <div class="feature-content">
-                     <h4>Exterior Wash</h4>
-                     <p>Quick exterior clean and dry</p>
+                     <h4>Engine Bay Clean</h4>
+                     <p>Engine bay cleaning and detailing</p>
                    </div>
                  </div>
                </div>
@@ -267,10 +267,10 @@
              <div class="service-benefits">
                <h3>Perfect For:</h3>
                <ul class="benefits-list">
-                 <li>Weekly or bi-weekly maintenance</li>
-                 <li>Pre-meeting or appointment prep</li>
-                 <li>Keeping your car presentable daily</li>
-                 <li>Private location services</li>
+                 <li>Biweekly or monthly recurring bookings</li>
+                 <li>Complete clean without premium detailing</li>
+                 <li>Regular maintenance and upkeep</li>
+                 <li>Light interior wipe-down & upholstery spot clean</li>
                </ul>
              </div>
              
@@ -283,32 +283,32 @@
                    <line x1="16" y1="17" x2="8" y2="17"/>
                    <polyline points="10,9 9,9 8,9"/>
                  </svg>
-                 Book Mini Valet
+                 Book Signature Valet
                </RouterLink>
-               <span class="cta-note">Available for private call outs</span>
+               <span class="cta-note">Perfect for biweekly or monthly bookings</span>
              </div>
            </div>
            
            <div class="service-images">
              <div class="service-image">
-               <img src="/20220430_134432.jpg" alt="Mini Valet Service" loading="lazy" />
+               <img src="/20220430_134432.jpg" alt="Signature Valet Service" loading="lazy" />
              </div>
              
              <div class="service-image">
-               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Mini Valet Interior Cleaning" loading="lazy" />
+               <img src="/37a6bd2321404def31b29951d5f26b2e.jpg" alt="Signature Valet Interior Cleaning" loading="lazy" />
              </div>
            </div>
          </div>
       </div>
     </section>
 
-    <!-- Business Park Wash Redirect -->
+    <!-- Essential Wash Redirect -->
     <section class="business-park-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-eyebrow">Business Solutions</span>
-          <h2>Business Park Wash</h2>
-          <p class="section-subtitle">Convenient on-site services for your business location.</p>
+          <span class="section-eyebrow">Essential Service</span>
+          <h2>Essential Wash</h2>
+          <p class="section-subtitle">Quick, affordable, and convenient. Perfect for weekly or biweekly bookings.</p>
         </div>
         
          <div class="redirect-content">
@@ -319,8 +319,8 @@
                    <polyline points="9,22 9,12 15,12 15,22"/>
                  </svg>
                </div>
-               <h3>Business Park Services</h3>
-             <p>Our Business Park Wash service is designed specifically for corporate environments and business locations. This service includes:</p>
+               <h3>Essential Wash Services</h3>
+             <p>Our Essential Wash service is designed for quick, affordable, and convenient car care. Perfect for weekly or biweekly bookings. This service includes:</p>
              
              <div class="service-highlights">
                <div class="highlight-item">
@@ -329,7 +329,7 @@
                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                    </svg>
                  </span>
-                 <span>Hand wash + wheel clean</span>
+                 <span>Exterior wash & dry</span>
                </div>
                <div class="highlight-item">
                  <span class="highlight-icon">
@@ -338,7 +338,7 @@
                      <path d="M12 6v6l4 2"/>
                    </svg>
                  </span>
-                 <span>Streak-free glass cleaning</span>
+                 <span>Tyre shine</span>
                </div>
                <div class="highlight-item">
                  <span class="highlight-icon">
@@ -346,7 +346,7 @@
                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                    </svg>
                  </span>
-                 <span>Light interior tidy</span>
+                 <span>Window cleaning</span>
                </div>
                <div class="highlight-item">
                  <span class="highlight-icon">
@@ -354,18 +354,18 @@
                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                    </svg>
                  </span>
-                 <span>Quick turnaround time</span>
+                 <span>Interior vacuum & dashboard wipe</span>
                </div>
              </div>
              
              <div class="redirect-note">
-               <p><strong>Note:</strong> Business Park Wash is only available at participating business park locations. Check if your business park is on our service list.</p>
+               <p><strong>Note:</strong> Essential Wash is available at participating business park locations and for private call outs. Perfect for regular maintenance.</p>
              </div>
            </div>
            
            <div class="redirect-actions">
              <div class="business-park-image">
-               <img src="/carwash-1024x768.jpg" alt="Business Park Location" loading="lazy" />
+               <img src="/carwash-1024x768.jpg" alt="Essential Wash Service" loading="lazy" />
              </div>
              
              <div class="action-buttons">
@@ -374,7 +374,7 @@
                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                    <polyline points="9,22 9,12 15,12 15,22"/>
                  </svg>
-                 View Business Parks
+                 View Locations
                </RouterLink>
                <RouterLink to="/contact" class="btn btn-outline">
                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

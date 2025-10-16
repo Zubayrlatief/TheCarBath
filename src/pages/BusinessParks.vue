@@ -8,8 +8,8 @@
       </div>
       <div class="hero-content">
         <div class="container">
-          <h1>Premium Car Wash Services for Business Parks</h1>
-          <p class="hero-subtitle">Enhance your business park's value proposition with professional car wash services that keep your tenants' vehicles pristine while they work.</p>
+          <h1>Premium Car Wash Services for Business Parks & Apartment Blocks</h1>
+          <p class="hero-subtitle">Enhance your business park or apartment block's value proposition with professional car wash services that keep your tenants' and residents' vehicles pristine while they work.</p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Partner With Us</a>
             <a href="https://wa.me/27685070088" target="_blank" rel="noopener" class="btn btn-secondary">Learn More</a>
@@ -22,7 +22,7 @@
     <section id="benefits" class="how-it-works-section">
       <div class="container">
         <div class="section-header">
-          <h2>How Our Business Park Partnership Works</h2>
+          <h2>How Our Business Park & Apartment Block Partnership Works</h2>
           <p class="section-subtitle">Simple, professional, and profitable for everyone involved.</p>
         </div>
         
@@ -41,7 +41,7 @@
             </div>
             <div class="step-content">
               <h3>Initial Consultation</h3>
-              <p>We visit your business park to assess the best location for our mobile car wash service. We'll discuss scheduling, access requirements, and partnership terms.</p>
+              <p>We visit your business park or apartment block to assess the best location for our mobile car wash service. We'll discuss scheduling, access requirements, and partnership terms.</p>
             </div>
           </div>
           
@@ -78,7 +78,7 @@
             </div>
             <div class="step-content">
               <h3>Service Launch</h3>
-              <p>We begin providing car wash services to your tenants on the agreed schedule. Our professional team handles everything while you enjoy the benefits.</p>
+              <p>We begin providing car wash services to your tenants and residents on the agreed schedule. Our professional team handles everything while you enjoy the benefits.</p>
             </div>
           </div>
           
@@ -106,7 +106,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">Simple Requirements</span>
-          <h2>What We Need From Your Business Park</h2>
+          <h2>What We Need From Your Business Park or Apartment Block</h2>
           <p class="section-subtitle">Minimal requirements for maximum value.</p>
         </div>
         
@@ -268,7 +268,7 @@
     <section class="testimonials-section">
       <div class="container">
         <div class="section-header">
-          <h2>What Business Park Owners Say</h2>
+          <h2>What Business Park & Apartment Block Owners Say</h2>
           <p class="section-subtitle">Real feedback from our valued partners.</p>
         </div>
         
@@ -317,8 +317,8 @@
       <div class="container">
         <div class="cta-content">
           <div class="cta-header">
-            <h2>Ready to Enhance Your Business Park?</h2>
-            <p class="cta-subtitle">Join the growing number of business parks that offer premium car wash services to their tenants. Let's discuss how we can partner together.</p>
+            <h2>Ready to Enhance Your Business Park or Apartment Block?</h2>
+            <p class="cta-subtitle">Join the growing number of business parks and apartment blocks that offer premium car wash services to their tenants and residents. Let's discuss how we can partner together.</p>
           </div>
           
           <div class="cta-main">

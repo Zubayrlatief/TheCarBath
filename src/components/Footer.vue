@@ -10,7 +10,7 @@
             <h3>The Car Bath</h3>
           </div>
           <p class="footer-description">
-            Premium mobile car wash services for business parks and corporate clients across South Africa.
+            Premium mobile car wash services for business parks, apartment blocks, and corporate clients across South Africa.
           </p>
           
           <!-- Contact Quick Info -->
@@ -44,7 +44,7 @@
             <h4>Navigate</h4>
             <ul class="footer-nav">
               <li><RouterLink to="/">Home</RouterLink></li>
-              <li><RouterLink to="/business-parks">Business Parks</RouterLink></li>
+              <li><RouterLink to="/business-parks">Business Parks & Apartment Blocks</RouterLink></li>
               <li><RouterLink to="/services">Services</RouterLink></li>
               <li><RouterLink to="/auto-detailing">Auto Detailing</RouterLink></li>
               <li><RouterLink to="/contact">Contact</RouterLink></li>
@@ -55,7 +55,7 @@
           <div class="links-column">
             <h4>Connect</h4>
             <div class="social-links">
-              <a href="https://facebook.com/thecarbath" target="_blank" rel="noopener" class="social-link">
+              <a href="https://www.facebook.com/profile.php?id=61581993734031" target="_blank" rel="noopener" class="social-link">
                 <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
@@ -86,7 +86,7 @@
         <!-- Call to Action -->
         <div class="footer-cta">
           <h4>Ready to Get Started?</h4>
-          <p>Partner with us for professional car wash services at your business park.</p>
+          <p>Partner with us for professional car wash services at your business park or apartment block.</p>
           <div class="cta-buttons">
             <a href="tel:+27685070088" class="btn btn-primary">
               <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
