@@ -1,16 +1,17 @@
-﻿import { createRouter, createWebHistory } from "vue-router"
-import Home from "../pages/Home.vue"
-import BusinessParks from "../pages/BusinessParks.vue"
-import AutoDetailing from "../pages/AutoDetailing.vue"
-import Bookings from "../pages/Bookings.vue"
 
-const routes = [
-  { path: "/", name: "Home", component: Home, meta: { title: "Home - Elite ParkWash" } },
-  { path: "/business-parks", name: "BusinessParks", component: BusinessParks, meta: { title: "Business Parks - Elite ParkWash" } },
-  { path: "/auto-detailing", name: "AutoDetailing", component: AutoDetailing, meta: { title: "Auto Detailing - Elite ParkWash" } },
-  { path: "/bookings", name: "Bookings", component: Bookings, meta: { title: "Bookings - Elite ParkWash" } },
+export const routes = [
+  { path: '/', name: 'Home', component: () => import('../pages/Home.vue') },
+  { path: '/auto-detailing', name: 'AutoDetailing', component: () => import('../pages/AutoDetailing.vue') },
+  { path: '/mobile-car-wash-cape-town', name: 'MobileCarWash', component: () => import('../pages/MobileCarWash.vue') },
+  { path: '/paint-correction-cape-town', name: 'PaintCorrection', component: () => import('../pages/PaintCorrection.vue') },
+  { path: '/headlight-restoration-cape-town', name: 'HeadlightRestoration', component: () => import('../pages/HeadlightRestoration.vue') },
+  { path: '/business-parks', name: 'BusinessParks', component: () => import('../pages/BusinessParks.vue') },
+  { path: '/prices', name: 'Prices', component: () => import('../pages/Prices.vue') },
+  { path: '/faq', name: 'Faq', component: () => import('../pages/Faq.vue') },
+  { path: '/about', name: 'About', component: () => import('../pages/About.vue') },
+  { path: '/bookings', name: 'Bookings', component: () => import('../pages/Bookings.vue') },
+  { path: '/404', name: 'NotFound', component: () => import('../pages/NotFound.vue') },
+  { path: '/:pathMatch(.*)*', component: () => import('../pages/NotFound.vue') },
 ]
 
-const router = createRouter({ history: createWebHistory(), routes, scrollBehavior(){ return { top: 0 } } })
-router.afterEach((to)=>{ if(to.meta && to.meta.title){ document.title = String(to.meta.title) } })
-export default router
+export const scrollBehavior = (to) => (to.hash ? { el: to.hash, top: 80 } : { top: 0 })

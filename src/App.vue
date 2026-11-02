@@ -1,74 +1,36 @@
-﻿<template>
-  <div class="app">
-    <header class="site-header">
-      <nav class="container nav">
-        <RouterLink class="brand" to="/" aria-label="The Car Bath home" @click="isOpen = false">
-          <img class="brand-logo" src="/The_Car-removebg-preview.png" alt="The Car Bath logo" />
-        </RouterLink>
-        <button class="menu" @click="isOpen = !isOpen" :class="{ active: isOpen }" aria-label="Toggle menu">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </button>
-        <ul :class="['links', { open: isOpen }]">
-          <li><RouterLink to="/business-parks" @click="isOpen = false">Business Parks & Apartment Blocks</RouterLink></li>
-          <li><RouterLink to="/auto-detailing" @click="isOpen = false">Auto Detailing</RouterLink></li>
-          <li><RouterLink to="/bookings" @click="isOpen = false">Bookings</RouterLink></li>
-          <li><a href="tel:+27685070088" class="nav-cta" @click="isOpen = false">+27 68 507 0088</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <RouterView />
-    </main>
-    <Footer />
+<template>
+  <SiteHeader />
+  <main id="main">
+    <RouterView />
+  </main>
+  <SiteFooter />
+  <a class="wa-box" :href="contact.whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp The Car Bath">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.2.2 1.9 2.9 4.5 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.3-.3-.3-.6-.4Z"/></svg>
+    <FlipLabel text="WhatsApp" />
+  </a>
+  <div ref="sheet" class="page-sheet" aria-hidden="true">
+    <span ref="word" class="page-sheet__word">The Car Bath</span>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Footer from './components/Footer.vue'
+import { useHead } from '@unhead/vue'
+import { onMounted, ref } from 'vue'
+import archivoLatin from '@fontsource-variable/archivo/files/archivo-latin-wdth-normal.woff2?url'
+import SiteHeader from './components/SiteHeader.vue'
+import SiteFooter from './components/SiteFooter.vue'
+import FlipLabel from './components/FlipLabel.vue'
+import { contact } from './data/site'
+import { registerCurtain } from './lib/curtain'
+import { startSmoothScroll, whenIdle } from './lib/motion'
 
-const isOpen = ref(false)
+useHead({ link: [{ rel: 'preload', as: 'font', type: 'font/woff2', href: archivoLatin, crossorigin: 'anonymous' }] })
+
+const sheet = ref(null)
+const word = ref(null)
+
+onMounted(() => {
+  registerCurtain(sheet.value, word.value)
+  whenIdle(startSmoothScroll)
+})
 </script>
-
-<style scoped>
-/* Hamburger Menu Icon */
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  position: relative;
-}
-
-.hamburger {
-  width: 100%;
-  height: 2px;
-  background: white;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  transform-origin: center;
-}
-
-.menu.active .hamburger:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.menu.active .hamburger:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-
-.menu.active .hamburger:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
-}
-
-@media (min-width: 769px) {
-  .menu {
-    display: none;
-  }
-}
-</style>

@@ -1,0 +1,77 @@
+export const contact = {
+  phone: '068 507 0088',
+  phoneHref: 'tel:+27685070088',
+  email: 'thecarsbath@gmail.com',
+  whatsapp: 'https://wa.me/27685070088',
+  address: '27 Honeyside Rd W, Frere Estate, Cape Town',
+  hours: 'By appointment only',
+  facebook: 'https://www.facebook.com/profile.php?id=61581993734031',
+  instagram: 'https://www.instagram.com/thecar.bath/',
+  tiktok: 'https://www.tiktok.com/@thecarbath',
+  linkedin: 'https://www.linkedin.com/company/the-car-bath/',
+  google: 'https://www.google.com/maps/place/The+Car+Bath/data=!4m2!3m1!1s0x1dcc43832d05cf6b:0x15664932bc784450',
+}
+
+export const rating = { score: '5.0', count: 21 }
+
+export const services = [
+  {
+    id: 'essential-wash',
+    tab: 'Essential',
+    name: 'Essential Wash',
+    price: 'R180',
+    priceLabel: 'R180',
+    amount: 180,
+    image: '/img/blue-doors.webp',
+    alt: 'Side of a clean blue sedan with water still on the paving',
+    line: 'Quick and affordable, for weekly or biweekly bookings.',
+    includes: ['Exterior wash and dry', 'Tyre shine', 'Window cleaning', 'Interior vacuum', 'Dashboard and surfaces wiped'],
+  },
+  {
+    id: 'signature-valet',
+    tab: 'Signature',
+    name: 'Signature Valet',
+    price: 'R450',
+    priceLabel: 'R450',
+    amount: 450,
+    image: '/img/interior.webp',
+    alt: 'Clean black leather interior and dashboard of a BMW',
+    line: 'A complete clean, for biweekly or monthly bookings.',
+    includes: ['Everything in the Essential Wash', 'Engine bay clean', 'Upholstery spot clean'],
+  },
+  {
+    id: 'executive-detail',
+    tab: 'Executive',
+    name: 'Executive Detail',
+    price: 'R2000',
+    priceLabel: 'R2000',
+    amount: 2000,
+    image: '/img/white-headlight.webp',
+    alt: 'Polished white BMW bonnet and headlight up close',
+    line: 'A thorough clean inside and out, for monthly or occasional use.',
+    includes: ['Everything in the Signature Valet', 'Full interior and exterior deep clean', 'Clay bar treatment and polish, for shine only, no paint protection', 'Leather and fabric conditioning', 'Engine bay detailing'],
+  },
+]
+
+// Verbatim from the Google listing, read 1 Nov 2026.
+export const reviews = [
+  { text: 'Best ever, my car literally looked brand new!!!', name: 'Siddiq C.' },
+  { text: 'Super friendly staff, fast service, and flawless results. They don’t miss a spot.', name: 'Liam Z.' },
+  { text: 'Amazing service with an amazing crew. The work ethic is admirable.', name: 'Trey S.' },
+  { text: 'I’ve never seen my car this clean before', name: 'Naledi A.' },
+  { text: 'On time with the wash best experience', name: 'Dayaan I.' },
+  { text: 'Great service. Quick and easy', name: 'Mohamed K.' },
+  { text: 'Professional and effective', name: 'Taulgah R.' },
+]
+
+export const care = [
+  { title: 'The right products', text: 'pH-balanced soaps and waxes that protect your paint and won’t cause damage or fading.' },
+  { title: 'Trained hands', text: 'Proper washing technique, soft microfibre cloths and gentle methods that prevent scratches.' },
+  { title: 'Your keys stay safe', text: 'We never leave your vehicle unattended, and it comes back exactly as we found it.' },
+  { title: 'A check before handover', text: 'Every wash ends with an inspection against our checklist.' },
+  { title: 'Covered', text: 'We carry public liability insurance and take every precaution with your finish, wheels and interior.' },
+]
+
+/** A service's inclusions as one readable sentence. */
+export const includesSentence = (service) =>
+  service.includes.map((item, i) => (i === 0 || item.startsWith('Essential') ? item : item.charAt(0).toLowerCase() + item.slice(1))).join(', ')
