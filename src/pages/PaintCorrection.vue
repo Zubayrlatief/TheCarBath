@@ -16,7 +16,7 @@
         <h2 class="quiet" data-snap>Correction or polish?</h2>
         <ul class="ring-list" data-rows>
           <li><RingBullet /><span><strong>Paint correction</strong> Quoted per car. The aim is to take swirl marks and light scratches out of the paint.</span></li>
-          <li><RingBullet /><span><strong>Executive Detail polish</strong> Included in the R2000 detail. It is for shine only and doesn’t add paint protection.</span></li>
+          <li><RingBullet /><span><strong>Executive Detail polish</strong> Included in the R1500 detail. It is for shine only and doesn’t add paint protection.</span></li>
           <li><RingBullet /><span><strong>Not sure?</strong> Send us a photo of the paint in direct sun, where swirl marks show most, and we’ll tell you which you need.</span></li>
         </ul>
       </div>

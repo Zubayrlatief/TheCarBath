@@ -19,7 +19,7 @@ export const pages = {
   },
   '/auto-detailing': {
     title: 'Car Detailing in Cape Town, Mobile or On Site | The Car Bath',
-    description: 'Car detailing in Cape Town, at your home, office or business park. Essential Wash R180, Signature Valet R450, Executive Detail R2000. One price for every car.',
+    description: 'Car detailing in Cape Town, at your home, office or business park. Essential Wash R180, Signature Valet R450, Executive Detail R1500. One price for every car.',
     crumb: 'Auto detailing',
   },
   '/mobile-car-wash-cape-town': {
@@ -44,7 +44,7 @@ export const pages = {
   },
   '/prices': {
     title: 'Car Wash & Detailing Prices in Cape Town | The Car Bath',
-    description: 'Essential Wash R180, Signature Valet R450, Executive Detail R2000, the same for cars, bakkies and SUVs, mobile or on site. Prices include VAT where applicable.',
+    description: 'Essential Wash R180, Signature Valet R450, Executive Detail R1500, the same for cars, bakkies and SUVs, mobile or on site. Prices include VAT where applicable.',
     crumb: 'Prices',
   },
   '/faq': {
@@ -94,7 +94,7 @@ export const business = {
   email: contact.email,
   image: OG_IMAGE,
   logo: `${SITE}/img/logo-512.png`,
-  priceRange: 'R180 to R2000',
+  priceRange: 'R180 to R1500',
   currenciesAccepted: 'ZAR',
   paymentAccepted: 'Cash, Card, EFT',
   address: {

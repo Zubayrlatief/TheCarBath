@@ -111,7 +111,7 @@ const root = useChoreography()
 const faq = [faqPricing[1], faqPricing[2], faqPricing[4], faqService[0], faqCare[1], faqCare[4]]
 useSeo('/auto-detailing', {
   schema: [
-    serviceSchema({ path: '/auto-detailing', name: 'Car detailing in Cape Town', serviceType: 'Car detailing', description: pages['/auto-detailing'].description, amount: 2000 }),
+    serviceSchema({ path: '/auto-detailing', name: 'Car detailing in Cape Town', serviceType: 'Car detailing', description: pages['/auto-detailing'].description, amount: 1500 }),
     faqSchema(faq),
   ],
 })

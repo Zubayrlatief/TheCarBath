@@ -5,7 +5,7 @@
         <div>
         <nav class="crumbs" aria-label="Breadcrumb"><RouterLink to="/">Home</RouterLink> <span aria-hidden="true">/</span> <span aria-current="page">Prices</span></nav>
         <h1 class="quiet svc-head__title" data-snap>Car wash and detailing prices in Cape Town.</h1>
-        <p class="lead svc-head__answer" data-rise>An Essential Wash costs R180, a Signature Valet costs R450, and an Executive Detail costs R2000. Those prices are the same for cars, bakkies and SUVs, mobile or on site. They include VAT where applicable, and you pay when the work is done.</p>
+        <p class="lead svc-head__answer" data-rise>An Essential Wash costs R180, a Signature Valet costs R450, and an Executive Detail costs R1500. Those prices are the same for cars, bakkies and SUVs, mobile or on site. They include VAT where applicable, and you pay when the work is done.</p>
       </div>
         <figure class="svc-head__pic"><img src="/img/interior.webp" alt="Clean black leather interior and dashboard of a BMW" width="1000" height="750" fetchpriority="high" /></figure>
       </div>
@@ -53,7 +53,7 @@
             </tbody>
           </table>
         </div>
-        <p class="prices__why">Signature adds the engine bay and upholstery to a full clean. Executive is a different job: a deep clean, clay bar and polish on the paint, and conditioned leather and fabric. That’s where the step up to R2000 goes.</p>
+        <p class="prices__why">Signature adds the engine bay and upholstery to a full clean. Executive is a different job: a deep clean, clay bar and polish on the paint, and conditioned leather and fabric. That’s where the step up to R1500 goes.</p>
         <p class="prices__note">Extra charges may apply for added services, difficult conditions, or travel beyond our standard 15km radius from Arden Grove, Milnerton. We’ll tell you before we start. Business parks and apartment blocks: <RouterLink to="/business-parks">see how hosting works</RouterLink>.</p>
         <RouterLink class="btn btn--ink" to="/bookings"><FlipLabel text="Book now" /></RouterLink>
       </div>

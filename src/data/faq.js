@@ -5,8 +5,8 @@
  */
 export const faqPricing = [
   { q: 'How much does a car wash cost at The Car Bath?', a: 'An Essential Wash costs R180. It covers an exterior wash and dry, tyre shine, window cleaning, an interior vacuum and a wipe of the dashboard and surfaces.' },
-  { q: 'How much does car detailing cost in Cape Town at The Car Bath?', a: 'The Executive Detail costs R2000, the same for cars, bakkies and SUVs. It includes a full interior and exterior deep clean, clay bar treatment and polish, leather and fabric conditioning, and engine bay detailing.' },
-  { q: 'What is the difference between a valet and a detail?', a: 'A valet cleans the car, and a detail restores it. Our Signature Valet (R450) is a complete clean with an engine bay clean and upholstery spot clean. Our Executive Detail (R2000) adds a deep clean, clay bar treatment, polish and leather and fabric conditioning.' },
+  { q: 'How much does car detailing cost in Cape Town at The Car Bath?', a: 'The Executive Detail costs R1500, the same for cars, bakkies and SUVs. It includes a full interior and exterior deep clean, clay bar treatment and polish, leather and fabric conditioning, and engine bay detailing.' },
+  { q: 'What is the difference between a valet and a detail?', a: 'A valet cleans the car, and a detail restores it. Our Signature Valet (R450) is a complete clean with an engine bay clean and upholstery spot clean. Our Executive Detail (R1500) adds a deep clean, clay bar treatment, polish and leather and fabric conditioning.' },
   { q: 'Do your prices include VAT?', a: 'Yes, all prices include VAT where applicable. Extra charges may apply for added services, difficult conditions or travel outside our standard service area.' },
   { q: 'Do bakkies and SUVs cost more?', a: 'No. Cars, bakkies and SUVs all pay the same price, for every service. Mobile and on-site bookings cost the same too.' },
   { q: 'How do I pay?', a: 'Payment is due when the service is finished. We accept cash, card and electronic transfer. Corporate accounts may qualify for credit terms, subject to approval.' },
