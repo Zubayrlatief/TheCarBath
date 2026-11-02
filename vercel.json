@@ -3,8 +3,24 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.thecarbath.co.za"
+        }
+      ],
+      "destination": "https://thecarbath.co.za/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.thecarbath.co.za" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.thecarbath.co.za"
+        }
+      ],
       "destination": "https://thecarbath.co.za/:path*",
       "permanent": true
     }
@@ -12,11 +28,21 @@
   "headers": [
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/img/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
     }
   ]
 }
