@@ -111,6 +111,7 @@
           <button class="btn btn--teal book__submit" type="submit" :disabled="submitting">
             <FlipLabel :text="submitting ? 'Sending…' : 'Complete booking'" />
           </button>
+          <p class="book__help">{{ highEndNote }}</p>
           <p class="book__help">Rather talk? <a :href="contact.phoneHref">{{ contact.phone }}</a> or <a :href="contact.whatsapp" target="_blank" rel="noopener">WhatsApp</a>.</p>
         </aside>
       </form>
@@ -126,7 +127,7 @@ import FlipLabel from '../components/FlipLabel.vue'
 import FlipPrice from '../components/FlipPrice.vue'
 import { useChoreography } from '../composables/useChoreography'
 import { useSeo } from '../composables/useSeo'
-import { contact, services } from '../data/site'
+import { contact, services, highEndNote } from '../data/site'
 
 const API = 'https://thecarbath-mail.vercel.app/api'
 

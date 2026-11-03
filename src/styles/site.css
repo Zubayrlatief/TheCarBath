@@ -454,7 +454,9 @@ html { scrollbar-color: var(--teal) var(--ink); }
 .price-table--facts { margin-top: var(--head-gap); }
 .price-table--facts td { text-align: right; padding-right: 0; font-size: var(--size-lead); }
 @media (max-width: 640px) {
-  .price-table:not(.price-table--facts) td:not(.price-table__price) { display: none; }
+  .price-table:not(.price-table--facts) tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; column-gap: 16px; padding-block: 22px; }
+  .price-table:not(.price-table--facts) th, .price-table:not(.price-table--facts) td { padding: 0; }
+  .price-table:not(.price-table--facts) td:not(.price-table__price) { grid-column: 1 / -1; grid-row: 2; margin-top: 8px; font-size: 16px; line-height: 1.4; }
   .price-table tbody th { white-space: normal; }
 }
 

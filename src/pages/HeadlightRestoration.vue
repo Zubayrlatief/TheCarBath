@@ -42,7 +42,7 @@ import { services } from '../data/site'
 const faq = [
   faqCare[3],
   { q: 'Why do headlights go cloudy?', a: 'Most modern headlight lenses are plastic. Sun and weather wear the lens surface over time, which makes it look cloudy or yellow.' },
-  { q: 'How much does headlight restoration cost?', a: 'We quote headlight restoration per car, based on the condition of the lenses. Send a photo on WhatsApp to 068 507 0088 for a quote.' },
+  { q: 'How much does headlight restoration cost?', a: 'We quote headlight restoration per car, based on the condition of the lenses. Send a photo on WhatsApp to 076 077 7055 for a quote.' },
   faqService[1],
   faqService[3],
 ]

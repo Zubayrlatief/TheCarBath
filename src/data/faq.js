@@ -4,11 +4,11 @@
  * service or the Google listing. Do not add a claim here that has no source.
  */
 export const faqPricing = [
-  { q: 'How much does a car wash cost at The Car Bath?', a: 'An Essential Wash costs R180. It covers an exterior wash and dry, tyre shine, window cleaning, an interior vacuum and a wipe of the dashboard and surfaces.' },
-  { q: 'How much does car detailing cost in Cape Town at The Car Bath?', a: 'The Executive Detail costs R1500, the same for cars, bakkies and SUVs. It includes a full interior and exterior deep clean, clay bar treatment and polish, leather and fabric conditioning, and engine bay detailing.' },
-  { q: 'What is the difference between a valet and a detail?', a: 'A valet cleans the car, and a detail restores it. Our Signature Valet (R450) is a complete clean with an engine bay clean and upholstery spot clean. Our Executive Detail (R1500) adds a deep clean, clay bar treatment, polish and leather and fabric conditioning.' },
+  { q: 'How much does a car wash cost at The Car Bath?', a: 'An Essential Wash costs R180. It covers an exterior wash and dry, tyre shine, window cleaning and a full interior detail: a vacuum, all surfaces wiped, an upholstery spot clean, and leather and fabric conditioning.' },
+  { q: 'How much does car detailing cost in Cape Town at The Car Bath?', a: 'The Executive Detail costs R1500, the same for cars, bakkies and SUVs. It includes everything in the Signature Valet, plus an exterior deep clean, clay bar treatment and polish, and engine bay detailing.' },
+  { q: 'What is the difference between a valet and a detail?', a: 'A valet cleans the car, and a detail restores it. Our Signature Valet (R450) is a complete clean, with a full interior detail and an engine bay clean. Our Executive Detail (R1500) adds an exterior deep clean, clay bar treatment and polish.' },
   { q: 'Do your prices include VAT?', a: 'Yes, all prices include VAT where applicable. Extra charges may apply for added services, difficult conditions or travel outside our standard service area.' },
-  { q: 'Do bakkies and SUVs cost more?', a: 'No. Cars, bakkies and SUVs all pay the same price, for every service. Mobile and on-site bookings cost the same too.' },
+  { q: 'Do bakkies and SUVs cost more?', a: 'No. Cars, bakkies and SUVs all pay the same price, for every service. Mobile and on-site bookings cost the same too. The exception is high-end cars: prices for high-end cars may go up after we inspect the car, because of the extra care they need. We’ll tell you the new price before we start.' },
   { q: 'How do I pay?', a: 'Payment is due when the service is finished. We accept cash, card and electronic transfer. Corporate accounts may qualify for credit terms, subject to approval.' },
 ]
 
@@ -17,7 +17,7 @@ export const faqService = [
   { q: 'Do you come to my home or office?', a: 'Yes. Our mobile service comes to your home or office in Cape Town, and you do not need to move your car.' },
   { q: 'Which areas of Cape Town do you cover?', a: 'Our standard service radius is 15km from Arden Grove in Milnerton. We also work in Woodstock and Frere Estate, and further areas may be possible with a travel charge.' },
   { q: 'Can I bring my car to you instead?', a: 'Yes, by appointment. You can drop your car at our bay at 27 Honeyside Rd W, Frere Estate, Cape Town. Book first, because we do not take walk-ins.' },
-  { q: 'What are your opening hours?', a: 'We work by appointment only. Book online, phone 068 507 0088 or send a WhatsApp, and we will agree a time that suits you.' },
+  { q: 'What are your opening hours?', a: 'We work by appointment only. Book online, phone 076 077 7055 or send a WhatsApp, and we will agree a time that suits you.' },
   { q: 'Do you need my water or electricity?', a: 'No water is needed, because we bring our own supply. Power is optional: we can use a standard 220V outlet or bring our own generator.' },
   { q: 'How much notice do you need?', a: 'We ask for at least 24 hours’ notice. Same-day bookings may be possible, depending on availability, and can carry an extra charge.' },
   { q: 'How quickly do you confirm a booking?', a: 'We confirm every booking within 4 hours, by email or SMS.' },
@@ -39,7 +39,7 @@ export const faqParks = [
   { q: 'What do you need from a business park or apartment block?', a: 'We need 2 parking bays or a small free space, easy access, and help telling tenants through your usual channels. We bring our own water, and power is optional.' },
   { q: 'How often do you come to a business park?', a: 'Each property gets one dedicated day, weekly or bi-weekly. We are on site for 6 to 8 hours on that day.' },
   { q: 'What does it cost a business park to host you?', a: 'Hosting needs only the parking space. We handle equipment, supplies, staffing and operations, and we agree revenue sharing with you in a clear written agreement with no hidden fees.' },
-  { q: 'How do we start?', a: 'Call 068 507 0088 or email thecarsbath@gmail.com. We visit your property, find the best spot, and talk through scheduling, access and terms.' },
+  { q: 'How do we start?', a: 'Call 076 077 7055 or email thecarsbath@gmail.com. We visit your property, find the best spot, and talk through scheduling, access and terms.' },
 ]
 
 export const faqGroups = [

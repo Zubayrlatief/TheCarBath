@@ -5,7 +5,7 @@
         <div>
         <nav class="crumbs" aria-label="Breadcrumb"><RouterLink to="/">Home</RouterLink> <span aria-hidden="true">/</span> <span aria-current="page">Prices</span></nav>
         <h1 class="quiet svc-head__title" data-snap>Car wash and detailing prices in Cape Town.</h1>
-        <p class="lead svc-head__answer" data-rise>An Essential Wash costs R180, a Signature Valet costs R450, and an Executive Detail costs R1500. Those prices are the same for cars, bakkies and SUVs, mobile or on site. They include VAT where applicable, and you pay when the work is done.</p>
+        <p class="lead svc-head__answer" data-rise>An Essential Wash costs R180, a Signature Valet costs R450, and an Executive Detail costs R1500. Those prices are the same for cars, bakkies and SUVs, mobile or on site, though high-end cars may cost more after inspection. They include VAT where applicable, and you pay when the work is done.</p>
       </div>
         <figure class="svc-head__pic"><img src="/img/interior.webp" alt="Clean black leather interior and dashboard of a BMW" width="1000" height="750" fetchpriority="high" /></figure>
       </div>
@@ -35,6 +35,7 @@
             </tr>
           </tbody>
         </table>
+        <p class="prices__note">{{ highEndNote }}</p>
         <h2 class="quiet prices__compare-title" data-snap>What each step up adds.</h2>
         <div class="compare-wrap">
           <table class="compare">
@@ -53,7 +54,7 @@
             </tbody>
           </table>
         </div>
-        <p class="prices__why">Signature adds the engine bay and upholstery to a full clean. Executive is a different job: a deep clean, clay bar and polish on the paint, and conditioned leather and fabric. That’s where the step up to R1500 goes.</p>
+        <p class="prices__why">Every service includes a full interior detail. Signature adds the engine bay. Executive is a different job for the paint: an exterior deep clean, then clay bar and polish. That’s where the step up to R1500 goes.</p>
         <p class="prices__note">Extra charges may apply for added services, difficult conditions, or travel beyond our standard 15km radius from Arden Grove, Milnerton. We’ll tell you before we start. Business parks and apartment blocks: <RouterLink to="/business-parks">see how hosting works</RouterLink>.</p>
         <RouterLink class="btn btn--ink" to="/bookings"><FlipLabel text="Book now" /></RouterLink>
       </div>
@@ -80,7 +81,7 @@ import { useChoreography } from '../composables/useChoreography'
 import { useSeo } from '../composables/useSeo'
 import { faqPricing } from '../data/faq'
 import { faqSchema } from '../data/seo'
-import { includesSentence, services } from '../data/site'
+import { includesSentence, services, highEndNote } from '../data/site'
 
 const root = useChoreography()
 
@@ -88,12 +89,12 @@ const root = useChoreography()
 const compare = [
   { label: 'Exterior wash and dry', tiers: [true, true, true] },
   { label: 'Tyre shine and window cleaning', tiers: [true, true, true] },
-  { label: 'Interior vacuum, surfaces wiped', tiers: [true, true, true] },
+  { label: 'Full interior detail: vacuum and surfaces wiped', tiers: [true, true, true] },
+  { label: 'Upholstery spot clean', tiers: [true, true, true] },
+  { label: 'Leather and fabric conditioning', tiers: [true, true, true] },
   { label: 'Engine bay clean', tiers: [false, true, true] },
-  { label: 'Upholstery spot clean', tiers: [false, true, true] },
-  { label: 'Full interior and exterior deep clean', tiers: [false, false, true] },
+  { label: 'Exterior deep clean', tiers: [false, false, true] },
   { label: 'Clay bar treatment and polish', tiers: [false, false, true] },
-  { label: 'Leather and fabric conditioning', tiers: [false, false, true] },
   { label: 'Engine bay detailing', tiers: [false, false, true] },
 ]
 useSeo('/prices', { schema: [faqSchema(faqPricing)] })

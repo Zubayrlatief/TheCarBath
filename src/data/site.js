@@ -1,8 +1,8 @@
 export const contact = {
-  phone: '068 507 0088',
-  phoneHref: 'tel:+27685070088',
+  phone: '076 077 7055',
+  phoneHref: 'tel:+27760777055',
   email: 'thecarsbath@gmail.com',
-  whatsapp: 'https://wa.me/27685070088',
+  whatsapp: 'https://wa.me/27760777055',
   address: '27 Honeyside Rd W, Frere Estate, Cape Town',
   hours: 'By appointment only',
   facebook: 'https://www.facebook.com/profile.php?id=61581993734031',
@@ -11,6 +11,8 @@ export const contact = {
   linkedin: 'https://www.linkedin.com/company/the-car-bath/',
   google: 'https://www.google.com/maps/place/The+Car+Bath/data=!4m2!3m1!1s0x1dcc43832d05cf6b:0x15664932bc784450',
 }
+
+export const highEndNote = 'Prices for high-end cars may go up after we inspect the car, because of the extra care they need. We’ll tell you the new price before we start.'
 
 export const rating = { score: '5.0', count: 21 }
 
@@ -22,10 +24,10 @@ export const services = [
     price: 'R180',
     priceLabel: 'R180',
     amount: 180,
-    image: '/img/blue-doors.webp',
-    alt: 'Side of a clean blue sedan with water still on the paving',
+    image: '/img/blue-bakkie.webp',
+    alt: 'Front of a glossy blue bakkie on brick paving',
     line: 'Quick and affordable, for weekly or biweekly bookings.',
-    includes: ['Exterior wash and dry', 'Tyre shine', 'Window cleaning', 'Interior vacuum', 'Dashboard and surfaces wiped'],
+    includes: ['Exterior wash and dry', 'Tyre shine', 'Window cleaning', 'Full interior detail: vacuum, all surfaces wiped, upholstery spot clean, leather and fabric conditioning'],
   },
   {
     id: 'signature-valet',
@@ -37,7 +39,7 @@ export const services = [
     image: '/img/interior.webp',
     alt: 'Clean black leather interior and dashboard of a BMW',
     line: 'A complete clean, for biweekly or monthly bookings.',
-    includes: ['Everything in the Essential Wash', 'Engine bay clean', 'Upholstery spot clean'],
+    includes: ['Everything in the Essential Wash', 'Engine bay clean'],
   },
   {
     id: 'executive-detail',
@@ -49,7 +51,7 @@ export const services = [
     image: '/img/white-headlight.webp',
     alt: 'Polished white BMW bonnet and headlight up close',
     line: 'A thorough clean inside and out, for monthly or occasional use.',
-    includes: ['Everything in the Signature Valet', 'Full interior and exterior deep clean', 'Clay bar treatment and polish, for shine only, no paint protection', 'Leather and fabric conditioning', 'Engine bay detailing'],
+    includes: ['Everything in the Signature Valet', 'Exterior deep clean', 'Clay bar treatment and polish, for shine only, no paint protection', 'Engine bay detailing'],
   },
 ]
 

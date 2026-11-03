@@ -19,7 +19,7 @@ export const pages = {
   },
   '/auto-detailing': {
     title: 'Car Detailing in Cape Town, Mobile or On Site | The Car Bath',
-    description: 'Car detailing in Cape Town, at your home, office or business park. Essential Wash R180, Signature Valet R450, Executive Detail R1500. One price for every car.',
+    description: 'Car detailing in Cape Town, at your home, office or business park. Essential Wash R180, Signature Valet R450, Executive Detail R1500, the same for cars, bakkies and SUVs.',
     crumb: 'Auto detailing',
   },
   '/mobile-car-wash-cape-town': {
@@ -90,7 +90,7 @@ export const business = {
   name: 'The Car Bath',
   url: `${SITE}/`,
   description: 'Mobile and on-site car wash, valet and detailing business in Cape Town. The team comes to homes and offices, works on site at business parks and apartment blocks, and takes drop-offs by appointment in Frere Estate.',
-  telephone: '+27685070088',
+  telephone: '+27760777055',
   email: contact.email,
   image: OG_IMAGE,
   logo: `${SITE}/img/logo-512.png`,

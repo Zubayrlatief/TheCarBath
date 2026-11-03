@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import { contact, rating, services } from '../data/site'
+import { contact, rating, services, highEndNote } from '../data/site'
 
 defineProps({ ground: { type: String, default: 'paper' } })
 
@@ -22,6 +22,7 @@ const facts = [
   { k: 'Prices', v: services.map((s) => `${s.name} ${s.priceLabel}`).join(', ') },
   { k: 'How', v: 'Mobile at your home or office, on site at your business park or block, or drop-off at 27 Honeyside Rd W, Frere Estate' },
   { k: 'Same price', v: 'Cars, bakkies and SUVs, mobile or on site' },
+  { k: 'High-end cars', v: highEndNote },
   { k: 'Hours', v: contact.hours },
   { k: 'Reviews', v: `${rating.score} stars from ${rating.count} Google reviews` },
   { k: 'Experience', v: '4+ years, with public liability insurance' },

@@ -56,6 +56,7 @@
             </tr>
           </tbody>
         </table>
+        <p class="prices__note">{{ highEndNote }}</p>
         <p class="prices__links">Also by quote: <RouterLink to="/paint-correction-cape-town">paint correction</RouterLink> and <RouterLink to="/headlight-restoration-cape-town">headlight restoration</RouterLink>. Every price is the same for cars, bakkies and SUVs. Choose <RouterLink to="/mobile-car-wash-cape-town">mobile</RouterLink> or <RouterLink to="/business-parks">on site</RouterLink>.</p>
       </div>
     </section>
@@ -105,7 +106,7 @@ import { useChoreography } from '../composables/useChoreography'
 import { useSeo } from '../composables/useSeo'
 import { faqCare, faqPricing, faqService } from '../data/faq'
 import { faqSchema, pages, serviceSchema } from '../data/seo'
-import { services } from '../data/site'
+import { services, highEndNote } from '../data/site'
 
 const root = useChoreography()
 const faq = [faqPricing[1], faqPricing[2], faqPricing[4], faqService[0], faqCare[1], faqCare[4]]

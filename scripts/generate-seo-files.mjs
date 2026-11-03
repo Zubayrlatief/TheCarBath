@@ -41,7 +41,7 @@ writeFileSync('public/llms.txt', `# The Car Bath
 ${services.map((s) => `- ${s.name}: ${s.priceLabel}. ${includesSentence(s)}.`).join('\n')}
 - Paint correction and headlight restoration: priced by quote.
 - Ceramic coating: not offered.
-- Prices are the same for cars, bakkies and SUVs, mobile or on site.
+- Prices are the same for cars, bakkies and SUVs, mobile or on site. Prices for high-end cars may go up after we inspect the car, because of the extra care they need. We’ll tell you the new price before we start.
 - Hours: ${contact.hours.toLowerCase()}. No walk-ins. Bookings confirmed within 4 hours.
 - Service area: 15km from Arden Grove, Milnerton as standard; also Woodstock and Frere Estate. Further areas may carry a travel charge.
 - Payment: cash, card or electronic transfer on completion.
