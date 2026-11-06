@@ -681,3 +681,35 @@ address.contact-row { font-style: normal; padding-top: var(--head-gap); padding-
 @media (max-height: 480px) and (max-width: 900px) {
   .bar__links { gap: 2px; padding-block: 8px; }
 }
+
+/* ---------- reels: our own clips, November 2026 ---------- */
+
+.reels { padding-block: var(--section); }
+.reels__head { display: grid; gap: var(--item-gap); margin-bottom: var(--head-gap); max-width: 60rem; }
+.reels__head .lead { opacity: 0.8; }
+.reels__row { display: flex; gap: var(--gap); overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--margin); padding-inline: var(--margin); scrollbar-width: none; }
+.reels__row > li { flex: 0 0 min(64vw, 17.5rem); scroll-snap-align: start; }
+.reels__foot { margin-top: var(--group-gap); }
+.reel { margin: 0; }
+.reel__frame { position: relative; aspect-ratio: 9 / 16; overflow: clip; border-radius: 14px; background: #111; }
+.reel__video { display: block; width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); transition: transform 1.2s var(--expo); }
+.reel.is-playing .reel__video { transform: scale(1); }
+.reel__frame::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(to top, rgb(7 9 10 / 0.45), transparent 35%); }
+.reel__progress { position: absolute; z-index: 1; inset: auto 12px 12px; height: 2px; background: rgb(255 255 255 / 0.25); overflow: clip; border-radius: 2px; }
+.reel__progress i { display: block; height: 100%; background: var(--teal); transform-origin: 0 50%; transform: scaleX(0); }
+.reel__badge { position: absolute; z-index: 1; top: 12px; left: 12px; padding: 4px 9px; border-radius: 99px; background: var(--teal); color: var(--ink); font-size: var(--size-control); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+.reel__caption { display: grid; gap: 2px; margin-top: 12px; font-size: 15px; line-height: 1.35; }
+.reel__caption span { opacity: 0.72; }
+@media (hover: hover) and (pointer: fine) {
+  .reel__frame { transition: transform 0.5s var(--expo); }
+  .reel:hover .reel__frame { transform: translateY(-6px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reel__video, .reel__frame { transition: none; transform: none; }
+}
+
+.work-car { padding-block: var(--section) 0; }
+.work-car:last-of-type { padding-bottom: var(--section); }
+.work-car__head { display: grid; gap: var(--item-gap); margin-bottom: var(--head-gap); max-width: 60rem; }
+.work-car + .svc-block { margin-top: 0; }
+.work__more { margin-top: var(--group-gap); }

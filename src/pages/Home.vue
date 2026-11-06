@@ -108,6 +108,8 @@
         </div>
       </section>
 
+      <WorkReels />
+
       <ReviewsFlip />
 
       <section class="svc-faq chapter-paper">
@@ -136,6 +138,7 @@ import MorphWord from '../components/MorphWord.vue'
 import PolishStage from '../components/PolishStage.vue'
 import ProofStrip from '../components/ProofStrip.vue'
 import ReviewsFlip from '../components/ReviewsFlip.vue'
+import WorkReels from '../components/WorkReels.vue'
 import RingBullet from '../components/RingBullet.vue'
 import SwirlField from '../components/SwirlField.vue'
 import { useChoreography } from '../composables/useChoreography'

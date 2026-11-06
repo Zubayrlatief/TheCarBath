@@ -8,6 +8,7 @@ export const routes = [
   { path: '/business-parks', name: 'BusinessParks', component: () => import('../pages/BusinessParks.vue') },
   { path: '/prices', name: 'Prices', component: () => import('../pages/Prices.vue') },
   { path: '/faq', name: 'Faq', component: () => import('../pages/Faq.vue') },
+  { path: '/our-work', name: 'OurWork', component: () => import('../pages/OurWork.vue') },
   { path: '/about', name: 'About', component: () => import('../pages/About.vue') },
   { path: '/bookings', name: 'Bookings', component: () => import('../pages/Bookings.vue') },
   { path: '/404', name: 'NotFound', component: () => import('../pages/NotFound.vue') },

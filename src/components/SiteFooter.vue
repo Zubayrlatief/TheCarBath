@@ -8,6 +8,7 @@
         <RouterLink to="/headlight-restoration-cape-town"><FlipLabel text="Headlight Restoration" /></RouterLink>
         <RouterLink to="/business-parks"><FlipLabel text="On Site" /></RouterLink>
         <RouterLink to="/prices"><FlipLabel text="Prices" /></RouterLink>
+        <RouterLink to="/our-work"><FlipLabel text="Our Work" /></RouterLink>
         <RouterLink to="/faq"><FlipLabel text="FAQ" /></RouterLink>
         <RouterLink to="/about"><FlipLabel text="About" /></RouterLink>
         <RouterLink to="/bookings"><FlipLabel text="Book" /></RouterLink>

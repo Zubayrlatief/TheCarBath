@@ -5,7 +5,7 @@ import { pages, SITE } from '../src/data/seo.js'
 import { contact, includesSentence, rating, services } from '../src/data/site.js'
 
 const today = new Date().toISOString().slice(0, 10)
-const priority = { '/': '1.0', '/bookings': '0.9', '/auto-detailing': '0.9', '/mobile-car-wash-cape-town': '0.9', '/prices': '0.8' }
+const priority = { '/': '1.0', '/bookings': '0.9', '/auto-detailing': '0.9', '/mobile-car-wash-cape-town': '0.9', '/prices': '0.8', '/our-work': '0.8' }
 
 const urls = Object.keys(pages).map((p) => `  <url>
     <loc>${SITE}${p === '/' ? '/' : p}</loc>
@@ -56,6 +56,7 @@ ${line('/paint-correction-cape-town', 'Paint correction', 'swirl mark removal an
 ${line('/headlight-restoration-cape-town', 'Headlight restoration', 'clearing cloudy lenses')}
 ${line('/business-parks', 'Business parks and apartment blocks', 'what hosting needs and how it works')}
 ${line('/prices', 'Prices', 'every price in one table')}
+${line('/our-work', 'Our work', 'video clips and photos of recent cars we washed and detailed, November 2026')}
 ${line('/faq', 'FAQ', 'answers about prices, booking, cover and care')}
 ${line('/about', 'About', 'who we are and how to reach us')}
 `)

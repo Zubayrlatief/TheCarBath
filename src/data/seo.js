@@ -52,6 +52,11 @@ export const pages = {
     description: 'Prices, what is included, where we work, insurance, payment and cancellation. Straight answers about car washing and detailing with The Car Bath in Cape Town.',
     crumb: 'FAQ',
   },
+  '/our-work': {
+    title: 'Our Work: Cars We Detailed in Cape Town | The Car Bath',
+    description: 'Clips and photos of cars we washed and detailed in Cape Town in November 2026: a BMW M340i, a VW Golf GTI and a VW Tiguan R-Line. Same price for every car.',
+    crumb: 'Our work',
+  },
   '/about': {
     title: 'About The Car Bath, Cape Town Car Wash & Detailing',
     description: 'The Car Bath washes and details cars on site across Cape Town, with 4+ years on the job and 5.0 stars from 21 Google reviews. How to reach us and book.',

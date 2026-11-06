@@ -40,6 +40,7 @@
       <ul class="work__row" tabindex="0" aria-label="Photographs of cars we have cleaned">
         <li v-for="w in work" :key="w.src"><figure data-open><img :src="w.src" :alt="w.alt" width="704" height="528" loading="lazy" /></figure></li>
       </ul>
+      <p class="wrap work__more"><RouterLink class="arrow-link" to="/our-work"><FlipLabel text="Watch clips of recent cars" /><Arrow /></RouterLink></p>
     </section>
 
     <section class="prices chapter-paper">
@@ -119,6 +120,8 @@ useSeo('/auto-detailing', {
 const route = useRoute()
 
 const work = [
+  { src: '/img/bmw-m340i-rear-three-quarter-cape-town-600.webp', alt: 'White BMW M340i on a Cape Town street, clean paint and glowing tail lights, November 2026' },
+  { src: '/img/golf-gti-front-carport-cape-town-600.webp', alt: 'White Volkswagen Golf GTI under a carport, glossy bonnet and headlight, November 2026' },
   { src: '/img/white-side.webp', alt: 'White BMW convertible, polished bonnet and headlight' },
   { src: '/img/blue-doors.webp', alt: 'Blue sedan, clean doors and alloy wheel on wet paving' },
   { src: '/img/interior.webp', alt: 'Clean black leather interior and dashboard' },
