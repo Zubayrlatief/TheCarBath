@@ -9,8 +9,6 @@
     faq-title="Paint correction questions."
     book-label="Ask for a quote"
   >
-    <PolishStage />
-
     <section class="svc-block chapter-white">
       <div class="wrap care__grid">
         <h2 class="quiet" data-snap>Correction or polish?</h2>
@@ -36,7 +34,6 @@
 </template>
 
 <script setup>
-import PolishStage from '../components/PolishStage.vue'
 import RingBullet from '../components/RingBullet.vue'
 import ServicePage from '../components/ServicePage.vue'
 import { useSeo } from '../composables/useSeo'

@@ -13,9 +13,9 @@ export const pages = {
     title: 'Mobile & On-Site Car Detailing, Cape Town | The Car Bath',
     description: 'Mobile car wash and detailing at your home or office, or on site at your business park or block in Cape Town. From R180. 5.0 stars from 21 Google reviews.',
     crumb: 'Home',
-    image: '/img/hero-gti.webp',
-    imageSrcset: '/img/hero-gti-900.webp 900w, /img/hero-gti.webp 1600w',
-    imageSizes: '(max-width: 700px) 180vw, 100vw',
+    image: '/img/hero-bmw-x6m-matte-black.webp',
+    imageSrcset: '/img/hero-bmw-x6m-matte-black-600.webp 600w, /img/hero-bmw-x6m-matte-black.webp 896w',
+    imageSizes: '100vw',
   },
   '/auto-detailing': {
     title: 'Car Detailing in Cape Town, Mobile or On Site | The Car Bath',

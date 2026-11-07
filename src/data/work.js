@@ -92,14 +92,3 @@ export function workSchema() {
   }
 }
 
-/**
- * Concept images, made with AI from our own carport photos: a matte black BMW X6 M.
- * Not a car we have worked on, so they are always labelled as concepts and kept out
- * of the work schema. The model's invented number plates are blurred.
- */
-export const concepts = [
-  { src: '/img/ai-concept-matte-black-bmw-x6m-front.webp', width: 896, height: 1200, name: 'Matte black BMW X6 M', caption: 'AI concept image, not a customer car.', alt: 'AI-generated concept image of a matte black BMW X6 M under our carport, front view' },
-  { src: '/img/ai-concept-matte-black-bmw-x6m-rear.webp', width: 900, height: 1600, name: 'Matte black BMW X6 M', caption: 'AI concept image, not a customer car.', alt: 'AI-generated concept image of a matte black BMW X6 M under our carport, rear view with tail lights on' },
-  { src: '/img/ai-concept-matte-black-bmw-x6m-side.webp', width: 1376, height: 768, wide: true, name: 'Matte black BMW X6 M', caption: 'AI concept image, not a customer car.', alt: 'AI-generated concept image of a matte black BMW X6 M parked under our carport, front three-quarter view' },
-  { src: '/img/ai-concept-matte-black-bmw-x6m-side-sunlit.webp', width: 1360, height: 768, wide: true, name: 'Matte black BMW X6 M', caption: 'AI concept image, not a customer car.', alt: 'AI-generated concept image of a matte black BMW X6 M in sunlight beside our carport, side view' },
-]

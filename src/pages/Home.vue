@@ -3,7 +3,7 @@
     <div class="hero-run">
     <section class="hero">
       <div class="hero__media">
-        <img class="hero__photo--gti" src="/img/hero-gti.webp" srcset="/img/hero-gti-900.webp 900w, /img/hero-gti.webp 1600w" sizes="(max-width: 700px) 180vw, 100vw" width="1600" height="1117" alt="Freshly washed white Golf GTI, its bonnet glossy in low sun" fetchpriority="high" />
+        <img class="hero__photo--bmw" src="/img/hero-bmw-x6m-matte-black.webp" srcset="/img/hero-bmw-x6m-matte-black-600.webp 600w, /img/hero-bmw-x6m-matte-black.webp 896w" sizes="100vw" width="896" height="1200" alt="Matte black BMW X6 M under a carport with hanging plants, AI-generated image" fetchpriority="high" />
         <SwirlField class="hero__swirls" desktop-only :count="620" :alpha="0.2" :thickness="0.75" :sweep-max="0.16" />
       </div>
       <div class="hero__copy">
@@ -79,8 +79,6 @@
         </RouterLink>
       </section>
 
-      <PolishStage />
-
       <div class="band" data-band aria-hidden="true">
         <span class="band__word" data-band-word>A bath, not a rinse</span>
       </div>
@@ -135,7 +133,6 @@ import FaqList from '../components/FaqList.vue'
 import ClosingCall from '../components/ClosingCall.vue'
 import FlipLabel from '../components/FlipLabel.vue'
 import MorphWord from '../components/MorphWord.vue'
-import PolishStage from '../components/PolishStage.vue'
 import ProofStrip from '../components/ProofStrip.vue'
 import ReviewsFlip from '../components/ReviewsFlip.vue'
 import WorkReels from '../components/WorkReels.vue'
