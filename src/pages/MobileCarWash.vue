@@ -34,7 +34,7 @@
       <div class="wrap care__grid">
         <h2 class="quiet" data-snap>Where we work.</h2>
         <div>
-          <p class="lead">Our standard radius is 15km from Arden Grove in Milnerton. We also work in Woodstock and Frere Estate. Further areas may be possible with a travel charge, so ask us.</p>
+          <p class="lead">Our standard radius is 15km from Milnerton. We also work in Woodstock and Frere Estate. Further areas may be possible with a travel charge, so ask us.</p>
           <p class="svc-block__more"><RouterLink class="arrow-link" to="/business-parks"><FlipLabel text="At a business park? See on site" /><Arrow /></RouterLink></p>
         </div>
       </div>

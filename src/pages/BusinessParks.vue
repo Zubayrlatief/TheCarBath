@@ -88,7 +88,7 @@
 
       <section class="places chapter-paper">
         <div class="wrap">
-          <h2 class="sr-only">Where we already work</h2>
+          <h2 class="sr-only">We come to your business park</h2>
           <div v-for="p in places" :key="p.name" class="place">
             <figure class="place__pic" data-open><img :src="p.image" :alt="p.alt" width="1000" height="667" loading="lazy" /></figure>
             <div>
@@ -156,13 +156,12 @@ const gets = [
 
 const steps = [
   { tab: 'Visit', image: '/img/business-park-cape-town-courtyard.webp', alt: 'Office buildings and parking around a landscaped courtyard at a Cape Town business park', text: 'We visit your business park or apartment block to find the best spot, then talk through scheduling, access and terms.' },
-  { tab: 'Agree', image: '/img/brickfield.webp', alt: 'Brickfield Canvas building in Woodstock', text: 'We set out a clear agreement covering revenue sharing, scheduling, access and operations, with no hidden fees.' },
+  { tab: 'Agree', image: '/img/business-park-cape-town-parking-bays.webp', alt: 'Parking bays outside a brick office block at a Cape Town business park', text: 'We set out a clear agreement covering revenue sharing, scheduling, access and operations, with no hidden fees.' },
   { tab: 'Launch', image: '/img/blue-doors.webp', alt: 'Clean blue sedan on wet paving', text: 'We start washing on the agreed schedule. Our team handles everything from there.' },
   { tab: 'Keep going', image: '/img/white-gti.webp', alt: 'Polished white Golf GTI bonnet', text: 'We stay in regular contact, send usage reports and keep improving service for your tenants.' },
 ]
 
 const places = [
-  { name: 'Arden Grove', image: '/img/arden-grove.webp', alt: 'Aerial view of Arden Grove business park', text: 'Business park in Milnerton.' },
-  { name: 'Brickfield Canvas', image: '/img/brickfield.webp', alt: 'Brick and steel Brickfield Canvas building', text: 'Partner location in Woodstock.' },
+  { name: 'Your business park.', image: '/img/business-park-cape-town-courtyard.webp', alt: 'Office buildings and parking around a landscaped courtyard at a Cape Town business park', text: 'We will service your business park or apartment block anywhere in Cape Town, on a set day each week. You give us two bays; we bring the water, the equipment and the team.' },
 ]
 </script>

@@ -15,7 +15,7 @@ export const faqPricing = [
 export const faqService = [
   { q: 'What is the difference between mobile and on site?', a: 'Mobile means we come to your home or office at a time you book. On site means we are already at your business park or apartment block on its set day each week. The services and prices are the same, so choose whichever suits you.' },
   { q: 'Do you come to my home or office?', a: 'Yes. Our mobile service comes to your home or office in Cape Town, and you do not need to move your car.' },
-  { q: 'Which areas of Cape Town do you cover?', a: 'Our standard service radius is 15km from Arden Grove in Milnerton. We also work in Woodstock and Frere Estate, and further areas may be possible with a travel charge.' },
+  { q: 'Which areas of Cape Town do you cover?', a: 'Our standard service radius is 15km from Milnerton. We also work in Woodstock and Frere Estate, and further areas may be possible with a travel charge.' },
   { q: 'Can I bring my car to you instead?', a: 'Yes, by appointment. You can drop your car at our bay at 27 Honeyside Rd W, Frere Estate, Cape Town. Book first, because we do not take walk-ins.' },
   { q: 'What are your opening hours?', a: 'We work by appointment only. Book online, phone 068 507 0088 or send a WhatsApp, and we will agree a time that suits you.' },
   { q: 'Do you need my water or electricity?', a: 'No water is needed, because we bring our own supply. Power is optional: we can use a standard 220V outlet or bring our own generator.' },

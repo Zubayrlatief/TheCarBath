@@ -50,7 +50,7 @@
           </table>
         </div>
         <p class="prices__why">Every service includes a full interior detail. Signature adds the engine bay. Executive is a different job for the paint: an exterior deep clean, then clay bar and polish. That’s where the step up to R1500 goes.</p>
-        <p class="prices__note">Extra charges may apply for added services, difficult conditions, or travel beyond our standard 15km radius from Arden Grove, Milnerton. We’ll tell you before we start. Business parks and apartment blocks: <RouterLink to="/business-parks">see how hosting works</RouterLink>.</p>
+        <p class="prices__note">Extra charges may apply for added services, difficult conditions, or travel beyond our standard 15km radius from Milnerton. We’ll tell you before we start. Business parks and apartment blocks: <RouterLink to="/business-parks">see how hosting works</RouterLink>.</p>
         <RouterLink class="btn btn--ink" to="/bookings"><FlipLabel text="Book now" /></RouterLink>
       </div>
     </section>

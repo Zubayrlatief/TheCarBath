@@ -46,15 +46,7 @@
             </div>
             <template v-else-if="mode === 'onsite'">
               <div class="field">
-                <label for="businessPark">Business park or apartment block</label>
-                <select id="businessPark" v-model="form.businessPark" required>
-                  <option value="">Choose a location</option>
-                  <option value="arden-grove">Arden Grove, Milnerton</option>
-                  <option value="other">Another business park or apartment block</option>
-                </select>
-              </div>
-              <div v-if="form.businessPark === 'other'" class="field">
-                <label for="customBusinessPark">Its name</label>
+                <label for="customBusinessPark">Your business park or apartment block</label>
                 <input id="customBusinessPark" v-model="form.customBusinessPark" type="text" autocomplete="organization" required />
               </div>
             </template>
@@ -176,6 +168,10 @@ watch(mode, (m) => {
   } else if (m === 'dropoff') {
     form.businessPark = 'private'
     form.privateLocation = DROP_OFF
+  } else if (m === 'onsite') {
+    // On site: the visitor names their own park or block.
+    form.businessPark = 'other'
+    form.privateLocation = ''
   } else {
     form.businessPark = ''
     form.privateLocation = ''
@@ -204,7 +200,6 @@ const serviceName = computed(() => chosen.value?.name ?? 'Choose a service')
 const servicePrice = computed(() => chosen.value?.priceLabel ?? '')
 
 const locationName = computed(() => {
-  if (form.businessPark === 'arden-grove') return 'Arden Grove, Milnerton'
   if (form.businessPark === 'other') return form.customBusinessPark || 'Your business park or block'
   if (form.businessPark === 'private') return form.privateLocation || 'Your address'
   return 'Not chosen yet'
