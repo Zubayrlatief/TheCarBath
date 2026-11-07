@@ -742,3 +742,33 @@ address.contact-row { font-style: normal; padding-top: var(--head-gap); padding-
     mask-image: linear-gradient(to right, transparent calc(100% - 74.67svh), #000 calc(100% - 74.67svh + 240px));
   }
 }
+
+
+/* ---------- booking, v2: numbered steps, tighter, gaps marked where they are ---------- */
+.book__form { gap: var(--group-gap); }
+.book__legend { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.step__n { display: inline-grid; place-items: center; width: 32px; height: 32px; flex: none; border-radius: 50%; background: var(--ink); color: var(--teal); font-size: 15px; font-weight: 700; }
+.svc-list { display: grid; gap: 10px; }
+.svc + .svc { margin-top: 0; }
+.svc { padding: 18px 20px; }
+.svc--mode .svc__name { font-size: 18px; }
+.step__more { margin: 16px 0 0; }
+.book__label { font-size: 16px; font-weight: 500; margin: 0 0 10px; }
+.times { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: 8px; margin-bottom: 10px; }
+.time { position: relative; display: grid; place-items: center; min-height: 48px; background: var(--white); border: 1px solid rgb(7 9 10 / 0.3); font-size: 16px; font-variant-numeric: tabular-nums; cursor: pointer; transition: background-color 150ms ease, color 150ms ease; }
+.time input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.time.is-on { background: var(--ink); color: var(--white); border-color: var(--ink); }
+.time:focus-within { outline: 2px solid var(--teal-deep); outline-offset: 2px; }
+@media (hover: hover) and (pointer: fine) { .time:not(.is-on):hover { border-color: var(--ink); } }
+.field { margin-bottom: 18px; }
+.step__error { margin: 10px 0 0; color: #b3261e; font-size: 16px; font-weight: 600; }
+.step.is-missing .svc:not(.is-on), .step.is-missing .time { border-left: 3px solid #b3261e; }
+.field.is-missing input { border-color: #b3261e; border-width: 2px; }
+.agree.is-missing { color: #b3261e; font-weight: 600; }
+.book-head { padding-bottom: 40px; }
+@media (max-width: 860px) {
+  .book-head { padding-top: 132px; }
+  .svc { padding: 16px 16px; }
+  .svc__line { font-size: 15px; }
+  .book__summary { padding: 28px 22px; gap: 20px; }
+}

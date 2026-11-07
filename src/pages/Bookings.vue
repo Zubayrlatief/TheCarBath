@@ -19,74 +19,76 @@
 
       <form v-else class="wrap book__grid" novalidate @submit.prevent="handleSubmit">
         <div class="book__form">
-          <fieldset>
-            <legend class="book__legend">Mobile or on site?</legend>
-            <label v-for="m in modes" :key="m.id" class="svc svc--mode" :class="{ 'is-on': mode === m.id }">
-              <input v-model="mode" type="radio" name="mode" :value="m.id" required />
-              <span class="svc__name">{{ m.name }}</span>
-              <span class="svc__line">{{ m.line }}</span>
-            </label>
+          <fieldset id="step-service" class="step" :class="{ 'is-missing': show('service') }">
+            <legend class="book__legend"><span class="step__n">1</span> Which service?</legend>
+            <div class="svc-list">
+              <label v-for="s in services" :key="s.id" class="svc" :class="{ 'is-on': form.service === s.id }">
+                <input v-model="form.service" type="radio" name="service" :value="s.id" />
+                <span class="svc__name">{{ s.name }}</span>
+                <span class="svc__line">{{ s.includes.slice(0, 2).join('. ') }}.</span>
+                <span class="svc__price">{{ s.priceLabel }}</span>
+              </label>
+            </div>
+            <p v-if="show('service')" class="step__error">Choose a service.</p>
           </fieldset>
 
-          <fieldset>
-            <legend class="book__legend">Which service?</legend>
-            <label v-for="s in services" :key="s.id" class="svc" :class="{ 'is-on': form.service === s.id }">
-              <input v-model="form.service" type="radio" name="service" :value="s.id" required />
-              <span class="svc__name">{{ s.name }}</span>
-              <span class="svc__line">{{ s.includes.slice(0, 2).join('. ') }}.</span>
-              <span class="svc__price">{{ s.priceLabel }}</span>
-            </label>
-          </fieldset>
-
-          <fieldset>
-            <legend class="book__legend">Where should we do it?</legend>
-            <div v-if="mode === 'mobile'" class="field">
+          <fieldset id="step-where" class="step" :class="{ 'is-missing': show('mode') || show('place') }">
+            <legend class="book__legend"><span class="step__n">2</span> Where is the car?</legend>
+            <div class="svc-list">
+              <label v-for="m in modes" :key="m.id" class="svc svc--mode" :class="{ 'is-on': mode === m.id }">
+                <input v-model="mode" type="radio" name="mode" :value="m.id" />
+                <span class="svc__name">{{ m.name }}</span>
+                <span class="svc__line">{{ m.line }}</span>
+              </label>
+            </div>
+            <div v-if="mode === 'mobile'" class="field step__more">
               <label for="privateLocation">Your home or office address</label>
-              <input id="privateLocation" v-model="form.privateLocation" type="text" autocomplete="street-address" required />
+              <input id="privateLocation" v-model="form.privateLocation" type="text" autocomplete="street-address" placeholder="Street and suburb" />
             </div>
-            <template v-else-if="mode === 'onsite'">
-              <div class="field">
-                <label for="customBusinessPark">Your business park or apartment block</label>
-                <input id="customBusinessPark" v-model="form.customBusinessPark" type="text" autocomplete="organization" required />
-              </div>
-            </template>
-            <p v-else-if="mode === 'dropoff'" class="book__drop">Bring your car to <a :href="contact.google" target="_blank" rel="noopener">{{ contact.address }}</a> at your booked time.</p>
-            <p v-else class="field-note">Choose mobile, on site or drop-off above.</p>
+            <div v-else-if="mode === 'onsite'" class="field step__more">
+              <label for="customBusinessPark">Your business park or apartment block</label>
+              <input id="customBusinessPark" v-model="form.customBusinessPark" type="text" autocomplete="organization" placeholder="Its name and area" />
+            </div>
+            <p v-else-if="mode === 'dropoff'" class="book__drop step__more">Book first, then bring your car to <a :href="contact.google" target="_blank" rel="noopener">{{ contact.address }}</a> at your booked time. No walk-ins.</p>
+            <p v-if="show('mode')" class="step__error">Choose mobile, on site or drop off.</p>
+            <p v-else-if="show('place')" class="step__error">{{ mode === 'onsite' ? 'Tell us the business park or block.' : 'Tell us the address.' }}</p>
           </fieldset>
 
-          <fieldset>
-            <legend class="book__legend">Who and what car?</legend>
-            <div class="field-row">
-              <div class="field"><label for="firstName">First name</label><input id="firstName" v-model="form.firstName" type="text" autocomplete="given-name" required /></div>
-              <div class="field"><label for="lastName">Last name</label><input id="lastName" v-model="form.lastName" type="text" autocomplete="family-name" required /></div>
+          <fieldset id="step-when" class="step" :class="{ 'is-missing': show('date') || show('time') }">
+            <legend class="book__legend"><span class="step__n">3</span> When?</legend>
+            <div class="field">
+              <label for="preferredDate">Date</label>
+              <input id="preferredDate" v-model="form.preferredDate" type="date" :min="minDate" />
             </div>
-            <div class="field-row">
-              <div class="field"><label for="email">Email</label><input id="email" v-model="form.email" type="email" autocomplete="email" required /></div>
-              <div class="field"><label for="phone">Phone</label><input id="phone" v-model="form.phone" type="tel" autocomplete="tel" required /></div>
-            </div>
-            <div class="field"><label for="vehicleMake">Car make</label><input id="vehicleMake" v-model="form.vehicleMake" type="text" required /></div>
-          </fieldset>
-
-          <fieldset>
-            <legend class="book__legend">When?</legend>
-            <div class="field-row">
-              <div class="field"><label for="preferredDate">Date</label><input id="preferredDate" v-model="form.preferredDate" type="date" :min="minDate" required /></div>
-              <div class="field">
-                <label for="preferredTime">Time</label>
-                <select id="preferredTime" v-model="form.preferredTime" required aria-describedby="slot-note">
-                  <option value="">Choose a time</option>
-                  <option v-for="t in times" :key="t" :value="t">{{ formatTime(t) }}</option>
-                </select>
-              </div>
+            <p id="time-label" class="book__label">Time</p>
+            <div class="times" role="radiogroup" aria-labelledby="time-label" aria-describedby="slot-note">
+              <label v-for="t in times" :key="t" class="time" :class="{ 'is-on': form.preferredTime === t }">
+                <input v-model="form.preferredTime" type="radio" name="time" :value="t" />{{ formatTime(t) }}
+              </label>
             </div>
             <p id="slot-note" class="field-note" :class="{ 'is-error': slotError }" aria-live="polite">
               {{ checking ? 'Checking that time…' : slotError }}
             </p>
-            <div class="field"><label for="notes">Anything we should know? (optional)</label><textarea id="notes" v-model="form.notes" rows="3"></textarea></div>
+            <p v-if="show('date') || show('time')" class="step__error">Choose a {{ show('date') ? 'date' : 'time' }}.</p>
           </fieldset>
 
-          <label class="agree">
-            <input v-model="form.agreedToTerms" type="checkbox" required />
+          <fieldset id="step-you" class="step" :class="{ 'is-missing': show('you') }">
+            <legend class="book__legend"><span class="step__n">4</span> Your details</legend>
+            <div class="field-row">
+              <div class="field" :class="{ 'is-missing': show('firstName') }"><label for="firstName">First name</label><input id="firstName" v-model="form.firstName" type="text" autocomplete="given-name" /></div>
+              <div class="field" :class="{ 'is-missing': show('lastName') }"><label for="lastName">Last name</label><input id="lastName" v-model="form.lastName" type="text" autocomplete="family-name" /></div>
+            </div>
+            <div class="field-row">
+              <div class="field" :class="{ 'is-missing': show('phone') }"><label for="phone">Phone</label><input id="phone" v-model="form.phone" type="tel" inputmode="tel" autocomplete="tel" /></div>
+              <div class="field" :class="{ 'is-missing': show('email') }"><label for="email">Email</label><input id="email" v-model="form.email" type="email" inputmode="email" autocomplete="email" /></div>
+            </div>
+            <div class="field" :class="{ 'is-missing': show('vehicleMake') }"><label for="vehicleMake">Your car</label><input id="vehicleMake" v-model="form.vehicleMake" type="text" placeholder="Make and model, e.g. VW Golf" /></div>
+            <div class="field"><label for="notes">Anything we should know? (optional)</label><textarea id="notes" v-model="form.notes" rows="2"></textarea></div>
+            <p v-if="show('you')" class="step__error">Fill in the fields marked in red.</p>
+          </fieldset>
+
+          <label id="agree" class="agree" :class="{ 'is-missing': show('agree') }">
+            <input v-model="form.agreedToTerms" type="checkbox" />
             <span>I agree to The Car Bath’s <a href="/terms-of-service.html" target="_blank" rel="noopener">terms of service</a> and <a href="/privacy-policy.html" target="_blank" rel="noopener">privacy policy</a>.</span>
           </label>
         </div>
@@ -99,7 +101,7 @@
             <div><dt>When</dt><dd>{{ whenText }}</dd></div>
           </dl>
           <p v-if="error" class="book__error" role="alert">{{ error }}</p>
-          <p v-else-if="tried && missing.length" class="book__error" role="alert">Still needed: {{ missing.join(', ') }}.</p>
+          <p v-else-if="tried && missing.length" class="book__error" role="alert">{{ missing.length === 1 ? 'One thing is' : missing.length + ' things are' }} still needed, marked in red.</p>
           <button class="btn btn--teal book__submit" type="submit" :disabled="submitting">
             <FlipLabel :text="submitting ? 'Sending…' : 'Complete booking'" />
           </button>
@@ -216,23 +218,30 @@ const whenText = computed(() => {
   return form.preferredTime ? `${date}, ${formatTime(form.preferredTime)}` : date
 })
 
+// Each gap is keyed, so the form can mark the exact step or field and jump to the first one.
+const YOU = ['firstName', 'lastName', 'phone', 'email', 'vehicleMake']
 const missing = computed(() => {
   const out = []
-  if (!form.service) out.push('a service')
-  if (!mode.value) out.push('mobile, on site or drop-off')
-  else if (!form.businessPark) out.push('a location')
-  if (form.businessPark === 'other' && !form.customBusinessPark) out.push('the business park or block name')
-  if (form.businessPark === 'private' && !form.privateLocation) out.push('your address')
-  if (!form.firstName) out.push('first name')
-  if (!form.lastName) out.push('last name')
-  if (!form.email) out.push('email')
-  if (!form.phone) out.push('phone')
-  if (!form.vehicleMake) out.push('car make')
-  if (!form.preferredDate) out.push('a date')
-  if (!form.preferredTime) out.push('a time')
-  if (!form.agreedToTerms) out.push('agreement to the terms')
+  if (!form.service) out.push('service')
+  if (!mode.value) out.push('mode')
+  else if ((form.businessPark === 'other' && !form.customBusinessPark) || (form.businessPark === 'private' && !form.privateLocation)) out.push('place')
+  if (!form.preferredDate) out.push('date')
+  if (!form.preferredTime) out.push('time')
+  for (const f of YOU) if (!form[f]) out.push(f)
+  if (!form.agreedToTerms) out.push('agree')
   return out
 })
+const show = (key) => tried.value && (key === 'you' ? YOU.some((k) => missing.value.includes(k)) : missing.value.includes(key))
+const STEP = { service: 'step-service', mode: 'step-where', place: 'step-where', date: 'step-when', time: 'step-when', agree: 'agree' }
+
+function jumpToFirstGap() {
+  const key = missing.value[0]
+  const el = document.getElementById(STEP[key] || key)
+  if (!el) return
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 110, behavior: reduce ? 'auto' : 'smooth' })
+  if (!STEP[key]) setTimeout(() => el.focus({ preventScroll: true }), reduce ? 0 : 450)
+}
 
 async function slotIsFree() {
   if (!form.preferredDate || !form.preferredTime) return true
@@ -263,7 +272,7 @@ watch(() => [form.preferredDate, form.preferredTime], ([d, t]) => {
 async function handleSubmit() {
   tried.value = true
   error.value = ''
-  if (missing.value.length) return
+  if (missing.value.length) { jumpToFirstGap(); return }
   if (!(await slotIsFree())) return
 
   submitting.value = true
