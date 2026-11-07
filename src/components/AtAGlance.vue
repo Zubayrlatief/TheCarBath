@@ -18,7 +18,7 @@ import { contact, rating, services, highEndNote } from '../data/site'
 defineProps({ ground: { type: String, default: 'paper' } })
 
 const facts = [
-  { k: 'Services', v: 'Car washing, valeting, detailing, paint correction and headlight restoration' },
+  { k: 'Services', v: 'Car washing, valeting, detailing and headlight restoration' },
   { k: 'Prices', v: services.map((s) => `${s.name} ${s.priceLabel}`).join(', ') },
   { k: 'How', v: 'Mobile at your home or office, on site at your business park or block, or drop-off at 27 Honeyside Rd W, Frere Estate' },
   { k: 'Same price', v: 'Cars, bakkies and SUVs, mobile or on site' },

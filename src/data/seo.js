@@ -11,7 +11,7 @@ export const OG_IMAGE = `${SITE}/img/og-the-car-bath.jpg`
 export const pages = {
   '/': {
     title: 'Mobile & On-Site Car Detailing, Cape Town | The Car Bath',
-    description: 'Mobile car wash and detailing at your home or office, or on site at your business park or block in Cape Town. From R180. 5.0 stars from 21 Google reviews.',
+    description: 'Mobile car wash and detailing at your home or office, or on site at your business park or block in Cape Town. From R180. 5.0 stars from 24 Google reviews.',
     crumb: 'Home',
     image: '/img/hero-bmw-x6m-matte-black.webp',
     imageSrcset: '/img/hero-bmw-x6m-matte-black-600.webp 600w, /img/hero-bmw-x6m-matte-black.webp 896w',
@@ -26,11 +26,6 @@ export const pages = {
     title: 'Mobile Car Wash in Cape Town, We Come to You | The Car Bath',
     description: 'A mobile car wash that comes to your home or office in Cape Town. We bring our own water. From R180 for any car, bakkie or SUV. 5.0 stars on Google.',
     crumb: 'Mobile car wash',
-  },
-  '/paint-correction-cape-town': {
-    title: 'Paint Correction in Cape Town, Swirl Removal | The Car Bath',
-    description: 'Paint correction in Cape Town: machine polishing that removes swirl marks and light scratches. Quoted after we see the car, at your place or our bay.',
-    crumb: 'Paint correction',
   },
   '/headlight-restoration-cape-town': {
     title: 'Headlight Restoration in Cape Town | The Car Bath',
@@ -59,7 +54,7 @@ export const pages = {
   },
   '/about': {
     title: 'About The Car Bath, Cape Town Car Wash & Detailing',
-    description: 'The Car Bath washes and details cars on site across Cape Town, with 4+ years on the job and 5.0 stars from 21 Google reviews. How to reach us and book.',
+    description: 'The Car Bath washes and details cars on site across Cape Town, with 4+ years on the job and 5.0 stars from 24 Google reviews. How to reach us and book.',
     crumb: 'About',
   },
   '/bookings': {
@@ -95,7 +90,7 @@ export const business = {
   name: 'The Car Bath',
   url: `${SITE}/`,
   description: 'Mobile and on-site car wash, valet and detailing business in Cape Town. The team comes to homes and offices, works on site at business parks and apartment blocks, and takes drop-offs by appointment in Frere Estate.',
-  telephone: '+27760777055',
+  telephone: '+27685070088',
   email: contact.email,
   image: OG_IMAGE,
   logo: `${SITE}/img/logo-512.png`,
@@ -119,7 +114,7 @@ export const business = {
     { '@type': 'Place', name: 'Frere Estate' },
   ],
   sameAs: [contact.google, contact.facebook, contact.instagram, contact.tiktok, contact.linkedin],
-  knowsAbout: ['Car washing', 'Car valeting', 'Car detailing', 'Paint correction', 'Swirl mark removal', 'Headlight restoration'],
+  knowsAbout: ['Car washing', 'Car valeting', 'Car detailing', 'Headlight restoration'],
   hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Car wash and detailing services', itemListElement: serviceOffers },
   potentialAction: {
     '@type': 'ReserveAction',

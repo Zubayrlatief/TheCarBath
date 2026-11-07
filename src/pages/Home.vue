@@ -92,6 +92,7 @@
           <ol class="how__list" data-rows>
             <li><strong>Book</strong> Pick a service, mobile or on site, and a time. We confirm within 4 hours.</li>
             <li><strong>Leave it parked</strong> Mobile comes to your address. On site runs on your park or block’s set day. Either way, you don’t move your car.</li>
+            <li><strong>Or drop it off</strong> Prefer to bring it to us? Book first, then drop the car at our bay at 27 Honeyside Rd W, Frere Estate, at your booked time. We don’t take walk-ins.</li>
             <li><strong>Drive it home</strong> We inspect it, then hand it back the way it should look.</li>
           </ol>
         </div>

@@ -23,6 +23,11 @@
       ],
       "destination": "https://thecarbath.co.za/:path*",
       "permanent": true
+    },
+    {
+      "source": "/paint-correction-cape-town",
+      "destination": "/auto-detailing",
+      "permanent": true
     }
   ],
   "headers": [

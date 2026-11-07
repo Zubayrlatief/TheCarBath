@@ -24,11 +24,6 @@
               <td class="price-table__price">{{ s.priceLabel }}</td>
             </tr>
             <tr>
-              <th scope="row"><RouterLink to="/paint-correction-cape-town">Paint correction</RouterLink></th>
-              <td>Machine polishing to remove swirl marks and light scratches.</td>
-              <td class="price-table__price price-table__price--quote">By quote</td>
-            </tr>
-            <tr>
               <th scope="row"><RouterLink to="/headlight-restoration-cape-town">Headlight restoration</RouterLink></th>
               <td>Clears cloudy and yellowed headlight lenses.</td>
               <td class="price-table__price price-table__price--quote">By quote</td>

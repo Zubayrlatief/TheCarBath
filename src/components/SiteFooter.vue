@@ -4,7 +4,6 @@
       <nav class="foot__nav" aria-label="Footer">
         <RouterLink to="/auto-detailing"><FlipLabel text="Car Detailing" /></RouterLink>
         <RouterLink to="/mobile-car-wash-cape-town"><FlipLabel text="Mobile Car Wash" /></RouterLink>
-        <RouterLink to="/paint-correction-cape-town"><FlipLabel text="Paint Correction" /></RouterLink>
         <RouterLink to="/headlight-restoration-cape-town"><FlipLabel text="Headlight Restoration" /></RouterLink>
         <RouterLink to="/business-parks"><FlipLabel text="On Site" /></RouterLink>
         <RouterLink to="/prices"><FlipLabel text="Prices" /></RouterLink>

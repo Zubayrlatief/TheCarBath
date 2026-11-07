@@ -56,7 +56,7 @@
           </tbody>
         </table>
         <p class="prices__note">{{ highEndNote }}</p>
-        <p class="prices__links">Also by quote: <RouterLink to="/paint-correction-cape-town">paint correction</RouterLink> and <RouterLink to="/headlight-restoration-cape-town">headlight restoration</RouterLink>. Every price is the same for cars, bakkies and SUVs. Choose <RouterLink to="/mobile-car-wash-cape-town">mobile</RouterLink> or <RouterLink to="/business-parks">on site</RouterLink>.</p>
+        <p class="prices__links">Also by quote: <RouterLink to="/headlight-restoration-cape-town">headlight restoration</RouterLink>. Every price is the same for cars, bakkies and SUVs. Choose <RouterLink to="/mobile-car-wash-cape-town">mobile</RouterLink> or <RouterLink to="/business-parks">on site</RouterLink>.</p>
       </div>
     </section>
     <ProofStrip />
@@ -117,6 +117,14 @@ useSeo('/auto-detailing', {
 const route = useRoute()
 
 const work = [
+  { src: '/img/bmw-m340i-rear-cape-town.webp', alt: 'Rear of a clean white BMW M340i with its tail lights on, November 2026' },
+  { src: '/img/golf-gti-headlights-carport-cape-town.webp', alt: 'White Volkswagen Golf GTI under a carport with its headlights on, November 2026' },
+  { src: '/img/vw-tiguan-r-line-running-lights-cape-town.webp', alt: 'White Volkswagen Tiguan R-Line under a carport with its running lights on, November 2026' },
+  { src: '/img/bmw-m340i-interior-cape-town.webp', alt: 'Steering wheel and leather seat inside a BMW M340i, November 2026' },
+  { src: '/img/golf-gti-rear-lights-cape-town.webp', alt: 'Rear of a white Volkswagen Golf GTI under a carport with its tail lights on, November 2026' },
+  { src: '/img/golf-gti-interior-cape-town.webp', alt: 'Steering wheel and seats inside a Volkswagen Golf GTI, November 2026' },
+  { src: '/img/vw-tiguan-r-line-tail-light-cape-town.webp', alt: 'Tail light and rear quarter of a white Volkswagen Tiguan R-Line, November 2026' },
+  { src: '/img/vw-tiguan-r-line-leather-seats-cape-town.webp', alt: 'Black leather front seats in a Volkswagen Tiguan R-Line, November 2026' },
   { src: '/img/bmw-m340i-rear-three-quarter-cape-town-600.webp', alt: 'White BMW M340i on a Cape Town street, clean paint and glowing tail lights, November 2026' },
   { src: '/img/golf-gti-hand-drying-cape-town.webp', alt: 'Drying a white Volkswagen Golf GTI by hand with a towel, November 2026' },
   { src: '/img/bmw-m340i-tail-lights-carport-cape-town.webp', alt: 'White BMW M340i under a carport, tail lights on, November 2026' },

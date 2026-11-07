@@ -39,7 +39,8 @@ writeFileSync('public/llms.txt', `# The Car Bath
 ## Key facts
 
 ${services.map((s) => `- ${s.name}: ${s.priceLabel}. ${includesSentence(s)}.`).join('\n')}
-- Paint correction and headlight restoration: priced by quote.
+- Headlight restoration: priced by quote.
+- Paint correction: not offered.
 - Ceramic coating: not offered.
 - Prices are the same for cars, bakkies and SUVs, mobile or on site. Prices for high-end cars may go up after we inspect the car, because of the extra care they need. We’ll tell you the new price before we start.
 - Hours: ${contact.hours.toLowerCase()}. No walk-ins. Bookings confirmed within 4 hours.
@@ -52,7 +53,6 @@ ${services.map((s) => `- ${s.name}: ${s.priceLabel}. ${includesSentence(s)}.`).j
 
 ${line('/auto-detailing', 'Car detailing', 'the three services and what each includes')}
 ${line('/mobile-car-wash-cape-town', 'Mobile car wash', 'how on-site washing works and where')}
-${line('/paint-correction-cape-town', 'Paint correction', 'swirl mark removal and how to get a quote')}
 ${line('/headlight-restoration-cape-town', 'Headlight restoration', 'clearing cloudy lenses')}
 ${line('/business-parks', 'Business parks and apartment blocks', 'what hosting needs and how it works')}
 ${line('/prices', 'Prices', 'every price in one table')}

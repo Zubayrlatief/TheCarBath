@@ -724,3 +724,21 @@ address.contact-row { font-style: normal; padding-top: var(--head-gap); padding-
 
 .reels__row > li.is-wide { flex-basis: min(86vw, 36rem); }
 .reels__row { align-items: flex-end; }
+
+/* Phones: the band's words stack on lines at a large size, so the scroll stretch stays near natural proportions. */
+@media (max-width: 700px) {
+  .band { height: auto; padding: 40px var(--gutter, 16px) 0; }
+  .band__word { white-space: normal; text-align: center; font-size: 17vw; line-height: 0.82; }
+}
+
+/* Hero, wide screens: the BMW at (at most) its own resolution on the right, faded into ink
+   behind the headline, so it is never stretched past its pixels. Phones keep the full bleed. */
+@media (min-width: 861px) {
+  .hero__media .hero__photo--bmw {
+    object-fit: contain; object-position: right center;
+    filter: brightness(0.78) contrast(1.05);
+    /* the picture is 896x1200, so at full hero height it is 74.67svh wide; fade over its first 240px */
+    -webkit-mask-image: linear-gradient(to right, transparent calc(100% - 74.67svh), #000 calc(100% - 74.67svh + 240px));
+    mask-image: linear-gradient(to right, transparent calc(100% - 74.67svh), #000 calc(100% - 74.67svh + 240px));
+  }
+}
