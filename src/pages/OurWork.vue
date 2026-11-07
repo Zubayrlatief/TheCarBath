@@ -21,7 +21,7 @@
         <li v-if="car.still && n > 0">
           <figure class="reel" data-open>
             <div class="reel__frame"><img class="reel__video" :src="car.still.src600" :srcset="`${car.still.src600} 600w, ${car.still.src} 1200w`" sizes="(max-width: 700px) 70vw, 300px" :alt="car.still.alt" width="1200" height="1600" loading="lazy" /></div>
-            <figcaption class="reel__caption"><strong>{{ car.name }}</strong><span>Photo, {{ car.dateLabel }}.</span></figcaption>
+            <figcaption class="reel__caption"><strong>{{ car.name }}</strong></figcaption>
           </figure>
         </li>
       </ReelRow>

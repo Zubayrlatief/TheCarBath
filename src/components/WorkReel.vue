@@ -22,7 +22,6 @@
     </div>
     <figcaption class="reel__caption">
       <strong>{{ item.name }}</strong>
-      <span>{{ item.caption }}</span>
     </figcaption>
   </figure>
 </template>
