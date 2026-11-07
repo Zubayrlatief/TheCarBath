@@ -56,20 +56,23 @@
 
           <fieldset id="step-when" class="step" :class="{ 'is-missing': show('date') || show('time') }">
             <legend class="book__legend"><span class="step__n">3</span> When?</legend>
-            <div class="field">
-              <label for="preferredDate">Date</label>
-              <input id="preferredDate" v-model="form.preferredDate" type="date" :min="minDate" />
+            <p class="field-note book__hours">We're open {{ hoursText }}. One car at a time, so a booked time disappears for everyone else.</p>
+            <p id="day-label" class="book__label">Day</p>
+            <div class="times days" role="radiogroup" aria-labelledby="day-label">
+              <label v-for="d in days" :key="d" class="time day" :class="{ 'is-on': form.preferredDate === d }">
+                <input v-model="form.preferredDate" type="radio" name="day" :value="d" /><span>{{ dayName(d) }}</span><small>{{ dayDate(d) }}</small>
+              </label>
             </div>
             <p id="time-label" class="book__label">Time</p>
             <div class="times" role="radiogroup" aria-labelledby="time-label" aria-describedby="slot-note">
-              <label v-for="t in times" :key="t" class="time" :class="{ 'is-on': form.preferredTime === t }">
-                <input v-model="form.preferredTime" type="radio" name="time" :value="t" />{{ formatTime(t) }}
+              <label v-for="t in times" :key="t" class="time" :class="{ 'is-on': form.preferredTime === t, 'is-taken': taken.includes(t) }">
+                <input v-model="form.preferredTime" type="radio" name="time" :value="t" :disabled="taken.includes(t)" />{{ taken.includes(t) ? 'Booked' : formatTime(t) }}
               </label>
             </div>
             <p id="slot-note" class="field-note" :class="{ 'is-error': slotError }" aria-live="polite">
-              {{ checking ? 'Checking that time…' : slotError }}
+              {{ loadingSlots ? 'Checking which times are free…' : slotError || (times.length && taken.length === times.length ? 'That day is fully booked. Please choose another day.' : '') }}
             </p>
-            <p v-if="show('date') || show('time')" class="step__error">Choose a {{ show('date') ? 'date' : 'time' }}.</p>
+            <p v-if="show('date') || show('time')" class="step__error">Choose a {{ show('date') ? 'day' : 'time' }}.</p>
           </fieldset>
 
           <fieldset id="step-you" class="step" :class="{ 'is-missing': show('you') }">
@@ -122,19 +125,13 @@ import FlipPrice from '../components/FlipPrice.vue'
 import { useChoreography } from '../composables/useChoreography'
 import { useSeo } from '../composables/useSeo'
 import { contact, services, highEndNote } from '../data/site'
+import { hoursText, nextOpenDays, slotsFor } from '../data/hours'
 
 const API = 'https://thecarbath-mail.vercel.app/api'
 
 const root = useChoreography()
 useSeo('/bookings')
 const route = useRoute()
-
-function localDate(offsetDays) {
-  const d = new Date()
-  d.setDate(d.getDate() + offsetDays)
-  const pad = (n) => String(n).padStart(2, '0')
-  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
-}
 
 const blank = () => ({
   service: '',
@@ -179,13 +176,40 @@ watch(mode, (m) => {
     form.privateLocation = ''
   }
 })
-const minDate = ref('')
-const times = ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+// Only open days (Saturday and Sunday) are offered, and only their opening hours.
+const days = ref([])
+const times = computed(() => (form.preferredDate ? slotsFor(form.preferredDate) : []))
+const taken = ref([])
+const loadingSlots = ref(false)
+const dayName = (d) => new Date(`${d}T12:00:00`).toLocaleDateString('en-ZA', { weekday: 'short' })
+const dayDate = (d) => new Date(`${d}T12:00:00`).toLocaleDateString('en-ZA', { day: 'numeric', month: 'short' })
+
+// Ask the server which times on the chosen day are already booked, so they can't be picked.
+async function loadTaken(date) {
+  taken.value = []
+  if (!date) return
+  loadingSlots.value = true
+  try {
+    const r = await fetch(`${API}/slots?date=${date}`, { cache: 'no-store' })
+    const j = await r.json()
+    if (form.preferredDate === date) taken.value = Array.isArray(j.taken) ? j.taken : []
+  } catch {
+    // If the check fails, every time stays open; the server still refuses a double booking.
+  } finally {
+    loadingSlots.value = false
+  }
+}
+watch(() => form.preferredDate, (d) => {
+  if (form.preferredTime && !slotsFor(d).includes(form.preferredTime)) form.preferredTime = ''
+  slotError.value = ''
+  loadTaken(d)
+})
+watch(taken, (t) => { if (t.includes(form.preferredTime)) form.preferredTime = '' })
 
 onMounted(() => {
   // Date and query are per-visitor, so they are set after the pre-rendered page hydrates.
-  minDate.value = localDate(1)
-  form.preferredDate = localDate(1)
+  days.value = nextOpenDays(8)
+  form.preferredDate = days.value[0]
   if (services.some((s) => s.id === route.query.service)) form.service = route.query.service
   if (modes.some((m) => m.id === route.query.mode)) mode.value = route.query.mode
 })
@@ -289,9 +313,16 @@ async function handleSubmit() {
     const result = await response.json()
     if (response.ok) {
       sent.value = result.message || 'Tell us the car, the place and the time. We’ll confirm your appointment within 4 hours.'
-      Object.assign(form, blank(), { preferredDate: localDate(1) })
+      Object.assign(form, blank(), { preferredDate: days.value[0] })
       mode.value = ''
       tried.value = false
+      return
+    }
+    if (response.status === 409) {
+      slotError.value = result.message || 'That time is no longer free. Please choose another.'
+      form.preferredTime = ''
+      loadTaken(form.preferredDate)
+      document.getElementById('step-when')?.scrollIntoView({ block: 'start' })
       return
     }
     error.value = result.error || result.message || `We couldn’t send your booking. Please call ${contact.phone}.`

@@ -17,7 +17,7 @@ export const faqService = [
   { q: 'Do you come to my home or office?', a: 'Yes. Our mobile service comes to your home or office in Cape Town, and you do not need to move your car.' },
   { q: 'Which areas of Cape Town do you cover?', a: 'Our standard service radius is 15km from Milnerton. We also work in Woodstock and Frere Estate, and further areas may be possible with a travel charge.' },
   { q: 'Can I bring my car to you instead?', a: 'Yes, by appointment. You can drop your car at our bay at 27 Honeyside Rd W, Frere Estate, Cape Town. Book first, because we do not take walk-ins.' },
-  { q: 'What are your opening hours?', a: 'We work by appointment only. Book online, phone 068 507 0088 or send a WhatsApp, and we will agree a time that suits you.' },
+  { q: 'What are your opening hours?', a: 'We are open on Saturday from 9am to 6pm and on Sunday from 10am to 6pm, by appointment only. Book a time online, phone 068 507 0088 or send a WhatsApp. We take one car at a time, so each time slot is yours alone.' },
   { q: 'Do you need my water or electricity?', a: 'No water is needed, because we bring our own supply. Power is optional: we can use a standard 220V outlet or bring our own generator.' },
   { q: 'How much notice do you need?', a: 'We ask for at least 24 hours’ notice. Same-day bookings may be possible, depending on availability, and can carry an extra charge.' },
   { q: 'How quickly do you confirm a booking?', a: 'We confirm every booking within 4 hours, by email or SMS.' },

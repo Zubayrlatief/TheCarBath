@@ -82,7 +82,7 @@ const serviceOffers = services.map((s) => ({
  * Deliberately no aggregateRating or Review here: Google treats a business marking up
  * reviews of itself as self-serving, and asks sites not to aggregate from other sites.
  * The rating stays visible in the page text, and the Google listing is linked in sameAs.
- * Deliberately no openingHours either: the business works by appointment only.
+ * Opening hours match the Google Business Profile (read 8 Nov 2026) and src/data/hours.js.
  */
 export const business = {
   '@type': 'AutoWash',
@@ -95,6 +95,10 @@ export const business = {
   image: OG_IMAGE,
   logo: `${SITE}/img/logo-512.png`,
   priceRange: 'R180 to R1500',
+  openingHoursSpecification: [
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'https://schema.org/Saturday', opens: '09:00', closes: '18:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'https://schema.org/Sunday', opens: '10:00', closes: '18:00' },
+  ],
   currenciesAccepted: 'ZAR',
   paymentAccepted: 'Cash, Card, EFT',
   address: {

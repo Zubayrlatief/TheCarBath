@@ -4,7 +4,7 @@ export const contact = {
   email: 'thecarsbath@gmail.com',
   whatsapp: 'https://wa.me/27685070088',
   address: '27 Honeyside Rd W, Frere Estate, Cape Town',
-  hours: 'By appointment only',
+  hours: 'Saturday 9am to 6pm, Sunday 10am to 6pm, by appointment',
   facebook: 'https://www.facebook.com/profile.php?id=61581993734031',
   instagram: 'https://www.instagram.com/thecar.bath/',
   tiktok: 'https://www.tiktok.com/@thecarbath',

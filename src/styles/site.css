@@ -772,3 +772,13 @@ address.contact-row { font-style: normal; padding-top: var(--head-gap); padding-
   .svc__line { font-size: 15px; }
   .book__summary { padding: 28px 22px; gap: 20px; }
 }
+
+
+/* booking: open days and taken times */
+.book__hours { margin: -6px 0 16px; }
+.days { grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); margin-bottom: 18px; }
+.day { grid-template-rows: auto auto; gap: 0; padding: 6px 4px; line-height: 1.2; }
+.day span { font-weight: 600; }
+.day small { font-size: 13px; opacity: 0.8; }
+.time.is-taken { background: var(--paper-2); color: rgb(7 9 10 / 0.45); border-style: dashed; cursor: not-allowed; text-decoration: line-through; }
+.time.is-taken input { cursor: not-allowed; }
