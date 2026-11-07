@@ -45,7 +45,7 @@
             </span>
           </RouterLink>
           <RouterLink class="door" to="/business-parks">
-            <span class="door__pic"><img src="/img/arden-grove.webp" width="640" height="507" alt="Aerial view of Arden Grove business park in Milnerton" loading="lazy" /></span>
+            <span class="door__pic"><img src="/img/business-park-cape-town-parking-bays.webp" width="1257" height="889" alt="Cars parked in the bays outside a brick office block at a Cape Town business park" loading="lazy" /></span>
             <span class="flipbox">
               <span class="flipbox__in">
                 <span class="flipbox__face">

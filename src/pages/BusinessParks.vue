@@ -2,7 +2,7 @@
   <div ref="root">
     <section class="hero hero--short">
       <div class="hero__media">
-        <img src="/img/arden-grove.webp" width="640" height="507" alt="Aerial view of Arden Grove business park in Milnerton" fetchpriority="high" />
+        <img src="/img/business-park-cape-town-parking-bays.webp" width="1257" height="889" alt="Cars parked in the bays outside a brick office block at a Cape Town business park" fetchpriority="high" />
       </div>
       <div class="hero__copy">
         <p class="loud hero__stack" data-velocity aria-hidden="true">
@@ -155,7 +155,7 @@ const gets = [
 ]
 
 const steps = [
-  { tab: 'Visit', image: '/img/arden-grove.webp', alt: 'Aerial view of Arden Grove business park', text: 'We visit your business park or apartment block to find the best spot, then talk through scheduling, access and terms.' },
+  { tab: 'Visit', image: '/img/business-park-cape-town-courtyard.webp', alt: 'Office buildings and parking around a landscaped courtyard at a Cape Town business park', text: 'We visit your business park or apartment block to find the best spot, then talk through scheduling, access and terms.' },
   { tab: 'Agree', image: '/img/brickfield.webp', alt: 'Brickfield Canvas building in Woodstock', text: 'We set out a clear agreement covering revenue sharing, scheduling, access and operations, with no hidden fees.' },
   { tab: 'Launch', image: '/img/blue-doors.webp', alt: 'Clean blue sedan on wet paving', text: 'We start washing on the agreed schedule. Our team handles everything from there.' },
   { tab: 'Keep going', image: '/img/white-gti.webp', alt: 'Polished white Golf GTI bonnet', text: 'We stay in regular contact, send usage reports and keep improving service for your tenants.' },
