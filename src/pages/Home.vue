@@ -30,7 +30,7 @@
         </div>
         <div class="doors__grid">
           <RouterLink class="door door--teal" to="/mobile-car-wash-cape-town">
-            <span class="door__pic"><img src="/img/white-side.webp" width="1000" height="720" alt="White BMW convertible with a polished bonnet and glowing headlight" loading="lazy" /></span>
+            <span class="door__pic"><img src="/img/bmw-m340i-rear-three-quarter-cape-town.webp" width="1200" height="1600" alt="White BMW M340i parked on a Cape Town street, clean paint and glowing tail lights" loading="lazy" /></span>
             <span class="flipbox">
               <span class="flipbox__in">
                 <span class="flipbox__face">

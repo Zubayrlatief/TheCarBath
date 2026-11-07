@@ -7,7 +7,7 @@
         <h1 class="quiet svc-head__title" data-snap>Car wash and detailing prices in Cape Town.</h1>
         <p class="lead svc-head__answer" data-rise>An Essential Wash costs R180, a Signature Valet costs R450, and an Executive Detail costs R1500. Those prices are the same for cars, bakkies and SUVs, mobile or on site, though high-end cars may cost more after inspection. They include VAT where applicable, and you pay when the work is done.</p>
       </div>
-        <figure class="svc-head__pic"><img src="/img/interior.webp" alt="Clean black leather interior and dashboard of a BMW" width="1000" height="750" fetchpriority="high" /></figure>
+        <figure class="svc-head__pic"><img src="/img/vw-tiguan-r-line-leather-seats-cape-town.webp" alt="Clean black leather front seats inside a Volkswagen Tiguan R-Line" width="1000" height="750" fetchpriority="high" /></figure>
       </div>
     </section>
 

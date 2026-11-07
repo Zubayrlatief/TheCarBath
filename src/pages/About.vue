@@ -7,7 +7,7 @@
         <h1 class="quiet svc-head__title" data-snap>About The Car Bath, Cape Town.</h1>
         <p class="lead svc-head__answer" data-rise>We’ve been washing and detailing cars for more than 4 years. Most of our work happens where the car is already parked, because nobody should lose a morning to a car wash.</p>
       </div>
-        <figure class="svc-head__pic"><img src="/img/hero-gti.webp" alt="Freshly washed white Golf GTI, its bonnet glossy in low sun" width="1000" height="750" fetchpriority="high" /></figure>
+        <figure class="svc-head__pic"><img src="/img/bmw-m340i-rear-street-cape-town.webp" alt="White BMW M340i parked on a Cape Town street after a wash, rear view with glossy paint" width="1000" height="750" fetchpriority="high" /></figure>
       </div>
     </section>
 

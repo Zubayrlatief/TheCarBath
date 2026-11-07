@@ -121,6 +121,9 @@ const route = useRoute()
 
 const work = [
   { src: '/img/bmw-m340i-rear-three-quarter-cape-town-600.webp', alt: 'White BMW M340i on a Cape Town street, clean paint and glowing tail lights, November 2026' },
+  { src: '/img/golf-gti-hand-drying-cape-town.webp', alt: 'Drying a white Volkswagen Golf GTI by hand with a towel, November 2026' },
+  { src: '/img/bmw-m340i-tail-lights-carport-cape-town.webp', alt: 'White BMW M340i under a carport, tail lights on, November 2026' },
+  { src: '/img/vw-tiguan-r-line-front-cape-town.webp', alt: 'Front wing and headlight of a white Volkswagen Tiguan R-Line, November 2026' },
   { src: '/img/golf-gti-front-carport-cape-town-600.webp', alt: 'White Volkswagen Golf GTI under a carport, glossy bonnet and headlight, November 2026' },
   { src: '/img/white-side.webp', alt: 'White BMW convertible, polished bonnet and headlight' },
   { src: '/img/blue-doors.webp', alt: 'Blue sedan, clean doors and alloy wheel on wet paving' },

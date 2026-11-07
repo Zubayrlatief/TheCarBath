@@ -7,7 +7,7 @@
         <h1 class="quiet svc-head__title" data-snap>Car wash and detailing questions, answered.</h1>
         <p class="lead svc-head__answer" data-rise>Everything people ask us about prices, where we work, how to book and how we look after your car.</p>
       </div>
-        <figure class="svc-head__pic"><img src="/img/white-side.webp" alt="White BMW convertible with a polished bonnet" width="1000" height="750" fetchpriority="high" /></figure>
+        <figure class="svc-head__pic"><img src="/img/bmw-m340i-tail-lights-carport-cape-town.webp" alt="White BMW M340i under a carport with its tail lights on after a wash" width="1000" height="750" fetchpriority="high" /></figure>
       </div>
     </section>
 

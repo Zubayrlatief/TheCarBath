@@ -713,3 +713,10 @@ address.contact-row { font-style: normal; padding-top: var(--head-gap); padding-
 .work-car__head { display: grid; gap: var(--item-gap); margin-bottom: var(--head-gap); max-width: 60rem; }
 .work-car + .svc-block { margin-top: 0; }
 .work__more { margin-top: var(--group-gap); }
+
+/* reel rows: previous and next buttons under the row */
+.reel-row__bar { display: flex; align-items: center; justify-content: space-between; gap: var(--gap); margin-top: var(--group-gap); }
+.reel-row__nav { display: flex; gap: 10px; margin-left: auto; }
+.chapter-ink .reel-row__btn { border-color: var(--teal); color: var(--white); }
+.reel-row__btn:disabled { opacity: 0.3; cursor: default; }
+@media (hover: hover) and (pointer: fine) { .chapter-ink .reel-row__btn:not(:disabled):hover { background: var(--teal); color: var(--ink); } }
