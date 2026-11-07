@@ -720,3 +720,13 @@ address.contact-row { font-style: normal; padding-top: var(--head-gap); padding-
 .chapter-ink .reel-row__btn { border-color: var(--teal); color: var(--white); }
 .reel-row__btn:disabled { opacity: 0.3; cursor: default; }
 @media (hover: hover) and (pointer: fine) { .chapter-ink .reel-row__btn:not(:disabled):hover { background: var(--teal); color: var(--ink); } }
+
+/* AI concept images: always badged, wide ones get a 16:9 card */
+.reels__row > li.is-wide { flex-basis: min(86vw, 36rem); }
+.reel--wide .reel__frame { aspect-ratio: 16 / 9; }
+.reels__row { align-items: flex-end; }
+.concept-banner { margin-top: var(--section); display: grid; gap: 14px; }
+.concept-banner__pic { position: relative; aspect-ratio: 16 / 9; overflow: clip; border-radius: 14px; }
+.concept-banner__pic img { width: 100%; height: 100%; object-fit: cover; }
+.concept-banner figcaption { max-width: 44rem; font-size: 16px; line-height: 1.45; }
+.concept-banner figcaption a { text-decoration: underline; text-underline-offset: 0.25em; text-decoration-color: var(--teal-deep); }

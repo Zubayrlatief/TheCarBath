@@ -41,6 +41,10 @@
         <li v-for="w in work" :key="w.src"><figure data-open><img :src="w.src" :alt="w.alt" width="704" height="528" loading="lazy" /></figure></li>
       </ul>
       <p class="wrap work__more"><RouterLink class="arrow-link" to="/our-work"><FlipLabel text="Watch clips of recent cars" /><Arrow /></RouterLink></p>
+      <figure class="wrap concept-banner" data-open>
+        <div class="concept-banner__pic"><img :src="concepts[3].src" :alt="concepts[3].alt" :width="concepts[3].width" :height="concepts[3].height" loading="lazy" /><span class="reel__badge">AI concept</span></div>
+        <figcaption><strong>Matte black, imagined.</strong> A BMW X6 M by our carport, made with AI from our own photos. Not a customer car. <RouterLink to="/our-work#concept-title">See the concepts</RouterLink>.</figcaption>
+      </figure>
     </section>
 
     <section class="prices chapter-paper">
@@ -108,6 +112,7 @@ import { useSeo } from '../composables/useSeo'
 import { faqCare, faqPricing, faqService } from '../data/faq'
 import { faqSchema, pages, serviceSchema } from '../data/seo'
 import { services, highEndNote } from '../data/site'
+import { concepts } from '../data/work'
 
 const root = useChoreography()
 const faq = [faqPricing[1], faqPricing[2], faqPricing[4], faqService[0], faqCare[1], faqCare[4]]

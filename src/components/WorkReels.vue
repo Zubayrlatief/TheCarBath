@@ -6,8 +6,8 @@
     </div>
     <ReelRow label="Video clips of cars we have washed and detailed">
       <li v-for="(r, i) in homeReels" :key="r.slug"><WorkReel :item="r" :badge="i === 0 ? 'Nov 2026' : ''" /></li>
-      <li v-for="c in concepts" :key="c.src">
-        <figure class="reel reel--concept" data-open>
+      <li v-for="c in concepts" :key="c.src" :class="{ 'is-wide': c.wide }">
+        <figure class="reel reel--concept" :class="{ 'reel--wide': c.wide }" data-open>
           <div class="reel__frame"><img class="reel__video" :src="c.src" :alt="c.alt" :width="c.width" :height="c.height" loading="lazy" /><span class="reel__badge">AI concept</span></div>
           <figcaption class="reel__caption"><strong>{{ c.name }}</strong><span>{{ c.caption }}</span></figcaption>
         </figure>

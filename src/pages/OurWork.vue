@@ -33,8 +33,8 @@
         <p class="lead">A matte black BMW X6 M under our own carport. These two pictures were made with AI from our photos. They are not a car we have worked on.</p>
       </div>
       <ReelRow label="AI concept images of a matte black BMW X6 M">
-        <li v-for="c in concepts" :key="c.src">
-          <figure class="reel reel--concept" data-open>
+        <li v-for="c in concepts" :key="c.src" :class="{ 'is-wide': c.wide }">
+          <figure class="reel reel--concept" :class="{ 'reel--wide': c.wide }" data-open>
             <div class="reel__frame"><img class="reel__video" :src="c.src" :alt="c.alt" :width="c.width" :height="c.height" loading="lazy" /><span class="reel__badge">AI concept</span></div>
             <figcaption class="reel__caption"><strong>{{ c.name }}</strong><span>{{ c.caption }}</span></figcaption>
           </figure>
